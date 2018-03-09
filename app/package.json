@@ -10,8 +10,13 @@
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "express-subdomain": "^1.0.5",
     "jade": "~1.11.0",
+    "markdown-js": "0.0.4",
     "morgan": "~1.9.0",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
   }
 }

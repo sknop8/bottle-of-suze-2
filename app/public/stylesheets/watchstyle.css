@@ -1,0 +1,32 @@
+body {
+  background-color: #000000;
+  color: #eeeeee;
+}
+
+.movie {
+  padding-bottom: 60px;
+  max-width: 80%;
+}
+
+img {
+  /* width: 80%; */
+  max-width: 100%;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.title {
+  height: 5pt;
+  color: #aaa;
+}
+
+.sub {
+  color: #404040;
+}
+
+.description {
+  color: #353535;
+  font-size: 9pt;
+}

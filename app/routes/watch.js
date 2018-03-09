@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET watch listing. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Watch' });
+  res.render('watch', {
+    title: 'watch',
+    image: 'fallen_image.png'
+  });
 });
 
 module.exports = router;
