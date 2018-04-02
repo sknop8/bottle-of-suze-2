@@ -1,0 +1,50 @@
+body {
+  background-color: #eeeeee;
+  color: #333;
+}
+
+img {
+  /* width: 80%; */
+  max-width: 100%;
+}
+
+p {
+  /* margin-left: 5px; */
+}
+
+h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #655;
+}
+
+a:hover {
+  /* color: #a80e00; */
+  /* color: #eee; */
+  background-color:#e8a7a7;
+  transition-duration: 0.2s;
+}
+
+div.link {
+  /* margin-left:5px; */
+}
+
+.title {
+  height: 5pt;
+  color: #333;
+  font-weight:600;
+  font-style:italic;
+  font-size:13pt;
+}
+
+.sub {
+  color: #404040;
+}
+
+.description {
+  color: #353535;
+  font-size: 9pt;
+}

@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var watch = require('./routes/watch');
+var write = require('./routes/write');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(subdomain('watch', watch));
+app.use(subdomain('write', write));
 app.use('/', index);
 
 

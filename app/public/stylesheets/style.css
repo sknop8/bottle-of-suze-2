@@ -1,7 +1,21 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  padding-left:10%;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* font-family: 'Crimson Text'; */
+  font-family: 'Open Sans';
+  /* padding-left: 30%; */
+  /* padding-right: 30%; */
+  /* margin-left: 30%; */
+  /* margin-right: 40%; */
+
+  /* margin-left:20%; */
+  padding-left:20%;
+  padding-right:20%;
+  /* padding-right:30%; */
+  max-width: 600px;
+
+  font-size: 12pt;
 }
 
 a {
@@ -9,12 +23,18 @@ a {
 }
 
 footer {
-  position:fixed;
+  position: fixed;
   left:0px;
   bottom:0px;
   height:30px;
-  width:100%;
-  font-size: 9pt;
+  width:99%;
+  font-size: 8pt;
   text-align: right;
-  color: #222;
+  /* color: #6d0e05; */
+  /* color: #333; */
+  color:#aaa;
+  color:white;
+  /* font-style: italic; */
+  font-family: 'IBM Plex Mono', monospace;
+
 }
