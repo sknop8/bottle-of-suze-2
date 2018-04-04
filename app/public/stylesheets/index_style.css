@@ -1,0 +1,179 @@
+body {
+  /* background-color: #eee; */
+  /* color: #333; */
+  /* font-weight: 500; */
+}
+
+h1 {
+  font-size: 25pt;
+}
+
+h1, h2, h3, h4, h5{
+  line-height: 0.95;
+  margin-bottom:0px;
+  margin-top:0px;
+
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.extra-bold:hover {
+  font-weight: 600;
+  font-style:italic;
+  /* transition-duration: 0.1s; */
+}
+
+.extra-bold-italic {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.extra-bold-italic:hover {
+  font-weight: 600;
+  font-style: normal;
+  /* transition-duration: 0.1s; */
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.bold:hover {
+  font-style: italic;
+  font-weight: 400;
+  /* transition-duration: 0.1s; */
+}
+
+.bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.bold-italic:hover {
+  font-style: normal;
+  font-weight:400;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.semi-bold:hover {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.semi-bold-italic {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.semi-bold-italic:hover {
+  font-weight: 300;
+  font-style: normal;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.regular:hover {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.regular-italic {
+  font-weight: 400;
+  font-style:italic;
+}
+
+.regular-italic:hover {
+  font-weight: 800;
+  font-style:normal;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.light:hover {
+  font-weight: 700;
+  font-style:italic;
+}
+
+.light-italic {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.light-italic:hover {
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+hr {
+  border: solid 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #a44;
+  padding-right: 5px;
+}
+
+a:hover {
+  transition-duration: 0.2s;
+}
+
+p.link {
+  font-size: 14pt;
+  line-height:0.3;
+  /* font-style: italic; */
+  font-weight: bold;
+}
+
+div.br {
+  height: 1px;
+}
+
+
+p.description {
+  font-size: 10pt;
+  /* max-width: 250px; */
+  max-width:60%;
+  color:  #666;
+  margin-bottom: 0px;
+}
+
+p.description:hover {
+  /* color:#c66; */
+  /* font-weight: 800; */
+  font-weight:300;
+  font-style:normal;
+  text-align: right;
+}
+
+.email, .meaning {
+  font-size:10pt;
+  margin-bottom:0px;
+
+}
+.meaning {
+  margin-bottom: 0px;
+  color:  #666;
+}
+
+.meaning:hover {
+  color:black;
+  transition-duration: 0.2s;
+}
+
+a.email:hover {
+  font-weight: 800;
+  font-style: italic;
+  text-align:left;
+  font-style:normal;
+}

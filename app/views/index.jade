@@ -1,5 +1,76 @@
-extends layout
+include layout
+
+link(rel='stylesheet', href='/stylesheets/index_style.css')
 
 block content
-  h1= title
-  p Welcome to #{title}
+  //- h1 welcome and hello 
+  //- h1 my name is suzanne knop
+  //- br
+  //- h1 i'm an artist and developer
+  //- h4 and i would like to share some of my work with you!
+  //- hr
+  //- br
+  
+  h1.extra-bold hello
+  h1.extra-bold-italic it's suzanne knop
+  h1.bold please take a look at my
+  //- br
+  //- div.br
+  br
+  
+  //- p.link
+  h1.bold-italic
+    a(href='http://projects.bottleofsuze.com') technical projects
+      
+  //- p.link
+  h1.semi-bold
+    a(href='http://video.bottleofsuze.com') video work
+  
+  //- p.link
+  h1.semi-bold-italic
+    a(href='http://write.bottleofsuze.com') writing 
+    
+  h1.regular
+    a(href='http://write.bottleofsuze.com') art
+    
+  h1.regular-italic
+    a(href='http://write.bottleofsuze.com') movie log
+  
+  h1.light
+    a(href='/resume') book log
+  //- 
+  h1.light-italic
+    a(href='http://write.bottleofsuze.com') resume
+
+  
+  //- p.link
+  //-   a(href='http://watch.bottleofsuze.com').
+  //-     &nbsp; movie thoughts &nbsp;
+  
+  
+br
+br
+
+//- (style='white-space:pre;')
+ 
+p.light.description.
+  i am a junior at the university of pennsylvania studying digital media design, an interdisciplinary major combining computer science, computer graphics, animation, and art
+  
+br
+
+
+p.light.description.
+  i like making videos, watching movies, writing poetry and fiction, listening to beach house, reading magical realism, eating cheddar jalepeno bagels with honey, learning how to live, and being outside
+  
+br
+
+p.light.description.
+  i believe in the importance of vulnerability for friendship and growth, the mystical and infinite nature of love, and the essential role that art plays in human communication and connection
+  
+br
+
+p.light.meaning
+  | what gives you meaning?
+a(href='mailto:sknop8@gmail.com').light.email i would love to know!
+
+//- p sknop8@gmail.com

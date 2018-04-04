@@ -1,0 +1,95 @@
+body {
+  background-color: #eee;
+  color: #333;
+}
+
+p {
+  /* margin-left: 5px; */
+}
+
+h1 {
+  font-weight: 700;
+  /* font-style: italic; */
+  margin-bottom: 0px;;
+}
+
+h1:hover {
+  /* font-weight: 800; */
+  /* font-style: normal;   */
+}
+
+p.sub {
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  transition-duration: 0.2s;
+}
+
+div.link {
+  line-height: 1.5;
+}
+
+.link a {
+  font-weight: 300;
+  color: #ba5555;
+  margin: 5px;
+}
+
+.link a:hover {
+  font-style: italic;
+  font-weight:800;
+  /* color: #e8a7a7; */
+   /* color: #f9aeae; */
+  /* border-bottom: 4px solid #f9aeae;/*#e8a7a7;*/ */
+}
+
+div.link {
+  /* margin-left:5px; */
+}
+
+.title {
+  height: 5pt;
+  color: #333;
+  font-weight:700;
+  font-style:italic;
+  font-size:13pt;
+}
+
+p.title:hover {
+  /* font-style:normal; */
+  /* font-weight: 300; */
+  /* background: white; */
+  /* border-bottom: 3px solid black; */
+  /* text-align: right; */
+}
+
+/* .sub {
+  color: #404040;
+} */
+
+.description {
+  color: #353535;
+  font-size: 9pt;
+}
+
+.home {
+  font-weight: 300;
+  color: #ecc;
+  margin: 5px;
+}
+
+.home:hover {
+  font-weight:800;
+  background: #eee;
+  color: #e8a7a7;
+  border-bottom: 4px solid #e8a7a7;
+}
