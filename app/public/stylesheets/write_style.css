@@ -47,6 +47,7 @@ div.link {
 .link a:hover {
   font-style: italic;
   font-weight:800;
+  /* transition-duration: 0.2s; */
   /* color: #e8a7a7; */
    /* color: #f9aeae; */
   /* border-bottom: 4px solid #f9aeae;/*#e8a7a7;*/ */

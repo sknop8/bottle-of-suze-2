@@ -2,6 +2,9 @@ body {
   background-color: #000000;
   color: #eeeeee;
 }
+h1 {
+  font-weight: 700;
+}
 
 .movie {
   padding-bottom: 80px;
@@ -10,7 +13,10 @@ body {
 
 img {
   /* width: 80%; */
-  max-width: 100%;
+  /* min-width: 40%: */
+  width: 80vw;
+  /* max-width: 100vw; */
+  max-width: 600px;
 }
 
 p {
@@ -18,15 +24,26 @@ p {
 }
 
 .title {
-  height: 5pt;
+  /* height: 5pt; */
   color: #aaa;
+  font-weight: 700;
+  /* margin: 0px; */
+  /* padding: 0px; */
+  line-height: 0.8;
+  /* padding-bottom: 0px; */
+  /* margin-bottom: 0px; */
 }
 
 .sub {
-  color: #404040;
+  /* color: #404040; */
+  color:#555;
+  font-weight: 300;
+  /* padding: 0px; */
+  /* margine: 0pc */
 }
 
 .description {
-  color: #353535;
+  /* color: #353535; */
+  color:#666;
   font-size: 9pt;
 }
