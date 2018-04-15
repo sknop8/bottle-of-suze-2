@@ -28,6 +28,7 @@ footer {
   color:#aaa;
   color:white;
   /* font-style: italic; */
-  font-family: 'IBM Plex Mono', monospace;
+  /* font-family: mon */
+  font-weight: 300;
 
 }

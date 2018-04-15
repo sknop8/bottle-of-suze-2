@@ -1,37 +1,46 @@
 body {
-  background-color: #eee;
+  background-color: #efeded;
   color: #333;
+  padding-right: 200px;
+  max-width: 500px;
 }
 
 p {
   /* margin-left: 5px; */
 }
 
+:hover {
+  transition-duration: 0.2s;
+}
+
 h1 {
   font-weight: 700;
-  /* font-style: italic; */
+  color: #fefefe;
   margin-bottom: 0px;;
 }
 
 h1:hover {
-  /* font-weight: 800; */
-  /* font-style: normal;   */
+  font-weight: 800;
+  color: white;
+}
+
+h3 {
+  font-weight: 700;
+  color: #fefefe;
+  font-size: 25pt;
+  font-family: 'Lora';
+}
+
+h3:hover {
+
 }
 
 p.sub {
   font-weight: 300;
 }
 
-h3 {
-  font-weight: bold;
-}
-
 a {
   text-decoration: none;
-}
-
-a:hover {
-  transition-duration: 0.2s;
 }
 
 div.link {
@@ -41,7 +50,8 @@ div.link {
 .link a {
   font-weight: 300;
   color: #ba5555;
-  margin: 5px;
+  /* margin: 5px; */
+  margin: 100px;
 }
 
 .link a:hover {
@@ -59,15 +69,18 @@ div.link {
 
 .title {
   height: 5pt;
-  color: #333;
-  font-weight:700;
+  /* color: #333; */
+  color: #fefefe;
+  /* font-weight:700; */
+  font-weight: 300;
   font-style:italic;
   font-size:13pt;
+  margin-left: 40px;
 }
 
 p.title:hover {
   /* font-style:normal; */
-  /* font-weight: 300; */
+  font-weight: 700;
   /* background: white; */
   /* border-bottom: 3px solid black; */
   /* text-align: right; */
@@ -82,6 +95,30 @@ p.title:hover {
   font-size: 9pt;
 }
 
+
+
+/**************************** poems *******************************/
+.poem {
+  font-family: 'Crimson Text';
+  margin: 0px;
+  /* padding: 0px; */
+  line-height: 1.3;
+  font-size: 13pt;
+  /* font-weight: 500; */
+  padding-bottom: 100px;
+  /* padding-left: 100px; */
+  margin-left: 30%;
+}
+
+.poem-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: 'Lora';
+  /* font-size: 12pt; */
+}
+
+
+/************************ write home page link *************************/
 .home {
   font-weight: 300;
   color: #ecc;
@@ -92,5 +129,7 @@ p.title:hover {
   font-weight:800;
   background: #eee;
   color: #e8a7a7;
-  border-bottom: 4px solid #e8a7a7;
+  /* color: #ba5555; */
+  /* border-bottom: 4px solid #e8a7a7; */
+  /* transition-duration: 0.2s; */
 }
