@@ -26,7 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(subdomain('watch', watch));
+app.use('/watch', watch);
 app.use(subdomain('write', write));
+app.use('/write', write);
 app.use(subdomain('projects', index));
 app.use(subdomain('video', index));
 app.use(subdomain('art', index));
