@@ -3,49 +3,43 @@ include layout
 link(rel='stylesheet', href='/stylesheets/index_style.css')
 
 block content
-  //- h1 welcome and hello 
-  //- h1 my name is suzanne knop
-  //- br
-  //- h1 i'm an artist and developer
-  //- h4 and i would like to share some of my work with you!
-  //- hr
-  //- br
+  //- (onmouseover="this.innerHTML='hello'", onmouseout="this.innerHTML='did you think'")
+  //- h1.extra-bold hello
+  h1.extra-bold did you think
+  //- h1.extra-bold-italic it's suzanne knop
+  h1.extra-bold-italic i would leave you
+  //- h1.bold please take a look at my
+  h1.bold that quickly
   
-  h1.extra-bold hello
-  h1.extra-bold-italic it's suzanne knop
-  h1.bold please take a look at my
-  //- br
-  //- div.br
   br
   
-  //- p.link
+
   h1.bold-italic
-    a(href='http://projects.bottleofsuze.com') technical projects
+    //- a(href='http://projects.bottleofsuze.com') technical projects
+    a(href='http://projects.bottleofsuze.com') like a bee
       
-  //- p.link
   h1.semi-bold
-    a(href='http://video.bottleofsuze.com') video work
+    //- a(href='http://video.bottleofsuze.com') video work
+    a(href='http://video.bottleofsuze.com') from a plastic petal
   
-  //- p.link
   h1.semi-bold-italic
-    a(href='http://write.bottleofsuze.com') writing 
+    //- a(href='http://write.bottleofsuze.com') writing 
+    a(href='http://art.bottleofsuze.com') did you really  
     
   h1.regular
-    a(href='http://write.bottleofsuze.com') art
+    //- a(href='http://art.bottleofsuze.com') art
+    a(href='http://watch.bottleofsuze.com') think
     
   h1.regular-italic
-    a(href='http://write.bottleofsuze.com') movie log
+    //- a(href='http://watch.bottleofsuze.com') movie log
+    a(href='http://write.bottleofsuze.com') my heart
   
   h1.light
-    a(href='/resume') book log
-  //- 
-  h1.light-italic
-    a(href='http://write.bottleofsuze.com') resume
-
+    a(href='http://read.bottleofsuze.com') hard enough?
   
-  //- p.link
-  //-   a(href='http://watch.bottleofsuze.com').
-  //-     &nbsp; movie thoughts &nbsp;
+  //- h1.light-italic
+    //- a(href='/files/Suzanne_Knop_Resume.pdf') resume
+
   
   
 br
@@ -54,7 +48,7 @@ br
 //- (style='white-space:pre;')
  
 p.light.description.
-  i am a junior at the university of pennsylvania studying digital media design, an interdisciplinary major combining computer science, computer graphics, animation, and art
+  hello and welcome! i am a junior at the university of pennsylvania studying digital media design, an interdisciplinary major combining computer science, computer graphics, animation, and art
   
 br
 
@@ -73,4 +67,7 @@ p.light.meaning
   | what gives you meaning?
 a(href='mailto:sknop8@gmail.com').light.email i would love to know!
 
-//- p sknop8@gmail.com
+
+
+script. 
+  

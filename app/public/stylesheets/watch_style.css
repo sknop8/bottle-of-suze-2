@@ -55,6 +55,13 @@ p {
   /* max-width: 500px; */
 }
 
+.date {
+  color: #666;
+  font-weight: 300;
+  font-size: 9pt;
+  line-height: 0.5;
+}
+
 footer {
   color: #333;
 }
