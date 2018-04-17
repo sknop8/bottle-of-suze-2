@@ -27,10 +27,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(subdomain('watch', watch));
 app.use(subdomain('write', write));
-// app.use(subdomain('projects', projects));
-// app.use(subdomain('video', video));
-// app.use(subdomain('art', art));
-// app.use(subdomain('read', read));
+app.use(subdomain('projects', index));
+app.use(subdomain('video', index));
+app.use(subdomain('art', index));
+app.use(subdomain('read', index));
 app.use('/', index);
 
 
@@ -51,5 +51,9 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen(3000, () => {
+    console.log('Server is up on 3000')
+})
 
 module.exports = app;
