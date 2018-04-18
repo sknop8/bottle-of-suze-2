@@ -102,6 +102,9 @@ p.title:hover {
   font-family: 'Minion Pro';
 }
 
+.secret, .secret a {
+  color:  #e8e3e3;
+}
 
 
 /**************************** poems *******************************/
