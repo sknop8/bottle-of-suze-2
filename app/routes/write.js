@@ -16,6 +16,10 @@ router.get('/thirty-two-pm-prose', function(req, res, next) {
   res.render('write/thirty_two_pm_prose');
 });
 
+router.get('/the-embarrassment-of-pain', function(req, res, next) {
+  res.render('write/embarrassment_of_pain');
+});
+
 router.get('/dreams-drive-canyons-between-the-days', function(req, res, next) {
   res.render('write/dreams_drive');
 });
