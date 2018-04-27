@@ -144,7 +144,7 @@ p.title:hover {
   color: #e8a7a7;
 }
 
-.link a:hover, .poem-link a:hover {
+.poem-link a:hover {
   font-style: italic;
   font-weight:800;
   color: #e8a7a7;
