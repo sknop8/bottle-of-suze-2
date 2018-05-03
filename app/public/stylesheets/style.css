@@ -1,11 +1,41 @@
 @font-face {
     font-family: 'Minion Pro';
-    src: url('Minion Pro Regular.ttf');
+    src: url('fonts/Minion Pro Regular.ttf');
 }
 
 @font-face {
     font-family: 'Minion Pro';
-    src: url('minionpro-bold.otf');
+    src: url('fonts/minionpro-bold.otf');
+    font-weight: bold;
+}
+
+/* @font-face {
+    font-family: 'Charter';
+    src: url('CharterITC.otf');
+} */
+
+@font-face {
+    font-family: 'Garamond Pro';
+    src: url('fonts/AGaramondPro-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Garamond Pro';
+    src: url('fonts/AGaramondPro-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Garamond Pro';
+    src: url('fonts/AGaramondPro-Italic.otf');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Garamond Pro';
+    src: url('fonts/AGaramondPro-BoldItalic.otf');
+    font-style: italic;
     font-weight: bold;
 }
 
@@ -15,31 +45,39 @@ body {
   /* font-family: 'Source Sans Pro', sans-serif; */
   /* font-family: 'Crimson Text'; */
   font-family: 'Open Sans';
-  padding-left:25%;
-  /* padding-right:20%; */
+  padding-left: 30vw;
   max-width: 600px;
   font-size: 12pt;
+}
+@media screen and (max-width: 850px) {
+  body {
+    padding-left: 15vw;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  body {
+    padding-left: 5vw;
+  }
 }
 
 a {
   color: #00B7FF;
 }
 
-footer {
+footer a{
   position: fixed;
   left:0px;
   bottom:0px;
-  height:30px;
+  height:25px;
   width:99%;
   font-size: 8pt;
   text-align: right;
-  /* color: #6d0e05; */
-  /* color: #333; */
-  color:#aaa;
+  font-weight: 600;
+  opacity: 0.5;
   color:white;
-  /* font-style: italic; */
-  /* font-family: mon */
-  font-weight: 300;
+}
 
+footer a:hover {
+  opacity: 1;
 }
