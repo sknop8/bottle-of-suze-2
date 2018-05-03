@@ -27,6 +27,7 @@ h1:hover {
   color: white;
 }
 
+/* page title*/
 h3 {
   font-weight: 700;
   /* color: #fefefe; */
@@ -48,19 +49,27 @@ a {
 }
 
 div.link {
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 .link a {
+  /* font-family: 'Garamond Pro'; */
+  font-family: 'Lora';
+  /* font-size:15pt; */
+  line-height: 1.6;
   font-weight: 300;
   color: #ba5555;
   /* margin: 5px; */
-  margin: 100px;
+  /* margin: 100px; */
 }
 
 .link a:hover {
-  font-style: italic;
-  font-weight:800;
+  /* font-style: italic; */
+  /* font-weight:800; */
+  /* color: #7a2e2e; */
+  background-color: #ba5555;
+  /* color:#e8a7a7; */
+    /* border-bottom: 2px solid #ba5555; */
 }
 
 div.link {
@@ -68,19 +77,20 @@ div.link {
 }
 
 .title {
+  font-family: 'Lora';
   height: 5pt;
   /* color: #333; */
   /* color: #fefefe; */
   color:#fff;
-  /* font-weight:700; */
-  font-weight: 300;
-  font-style:italic;
-  font-size:13pt;
-  margin-left: 40px;
+  /* font-weight: 700; */
+  /* font-style:italic; */
+  /* font-size:13pt; */
+  opacity: 1.0;
+  padding-top: 10px;
 }
 
 p.title:hover {
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 
@@ -136,9 +146,9 @@ p.title:hover {
 }
 
 .poem-link a:hover {
-  font-style: italic;
+  /* font-style: italic; */
   font-weight:800;
-  color: #e8a7a7;
+  background-color: #e8a7a7;
   /* transition-duration: 0.2s; */
   /* color: #e8a7a7; */
    /* color: #f9aeae; */
@@ -148,16 +158,20 @@ p.title:hover {
 /************************ write home page link *************************/
 .home {
   font-weight: 300;
+  font-family: 'Garamond Pro';
   /* color: #ecc; */
   color:#e8a7a7;
   margin: 5px;
+  font-size: 14pt;
 }
 
 .home:hover {
-  font-weight:800;
+  /* font-weight:800; */
   /* background: #eee; */
-  color: #e8a7a7;
+  /* color: #e8a7a7; */
   /* color: #ba5555; */
+  background-color: #e8a7a7;
+
   /* border-bottom: 4px solid #e8a7a7; */
   /* transition-duration: 0.2s; */
 }
