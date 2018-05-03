@@ -1,7 +1,13 @@
 body {
-  /* background-color: #eee; */
-  /* color: #333; */
-  /* font-weight: 500; */
+
+}
+
+::selection {
+  color: #ddd;
+}
+
+::-moz-selection {
+  color: #ddd;
 }
 
 h1 {

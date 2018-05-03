@@ -5,6 +5,15 @@ body {
   max-width: 60vw;
   padding-right: 25%;
 }
+
+::selection {
+  color: #ddd;
+}
+
+::-moz-selection {
+  color: #ddd;
+}
+
 h1 {
   font-weight: 700;
 }

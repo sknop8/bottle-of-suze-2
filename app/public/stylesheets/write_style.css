@@ -7,6 +7,14 @@ body {
   /* font-size: 15pt; */
 }
 
+::selection {
+  background:#fff;
+}
+
+::-moz-selection {
+  background:#fff;
+}
+
 p {
   /* margin-left: 5px; */
 
