@@ -159,7 +159,8 @@ p.description:hover {
   /* font-weight: 800; */
   font-weight:300;
   font-style:normal;
-  text-align: right;
+
+  /* text-align: right; */
 }
 
 .email, .meaning {
