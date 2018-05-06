@@ -167,6 +167,14 @@ p.title:hover {
   margin-right: 3em;
 }
 
+@media screen and (max-width: 600px) {
+
+  .indent {
+    margin-left: 2em;
+    margin-right: 1em;
+  }
+}
+
 
 /************************ write home page link *************************/
 .home {
