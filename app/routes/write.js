@@ -41,5 +41,10 @@ router.get('/the-fence', function(req, res, next) {
 });
 
 
+router.get('/ars-poetica', function(req, res, next) {
+  res.render('write/ars_poetica');
+});
+
+
 
 module.exports = router;

@@ -1,10 +1,8 @@
 body {
   background-color: #e8e3e3;
   color: #333;
-  /* padding-right: 200px; */
   max-width: 500px;
   /* font-family: 'Garamond Pro'; */
-  /* font-size: 15pt; */
 }
 
 ::selection {
@@ -16,7 +14,6 @@ body {
 }
 
 p {
-  /* margin-left: 5px; */
 
 }
 
@@ -35,10 +32,9 @@ h1:hover {
   color: white;
 }
 
-/* page title*/
+/* page title */
 h3 {
   font-weight: 700;
-  /* color: #fefefe; */
   color: #fff;
   font-size: 25pt;
   font-family: 'Lora';
@@ -46,6 +42,12 @@ h3 {
 
 h3:hover {
 
+}
+
+h2 {
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Lora';
 }
 
 p.sub {
@@ -67,8 +69,6 @@ div.link {
   line-height: 1.6;
   font-weight: 300;
   color: #ba5555;
-  /* margin: 5px; */
-  /* margin: 100px; */
 }
 
 .link a:hover {
@@ -78,6 +78,7 @@ div.link {
   background-color: #ba5555;
   /* color:#e8a7a7; */
     /* border-bottom: 2px solid #ba5555; */
+  transition-duration: 0.2s;
 }
 
 div.link {
@@ -91,14 +92,12 @@ div.link {
   /* color: #fefefe; */
   color:#fff;
   /* font-weight: 700; */
-  /* font-style:italic; */
-  /* font-size:13pt; */
   opacity: 1.0;
   padding-top: 10px;
 }
 
 p.title:hover {
-  /* font-weight: 700; */
+
 }
 
 
@@ -116,6 +115,10 @@ p.title:hover {
 
 .secret, .secret a {
   color:  #e8e3e3;
+}
+
+.secret a:hover {
+  background: #e8e3e3;
 }
 
 
@@ -154,12 +157,14 @@ p.title:hover {
 }
 
 .poem-link a:hover {
-  /* font-style: italic; */
-  font-weight:800;
   background-color: #e8a7a7;
-  /* transition-duration: 0.2s; */
-  /* color: #e8a7a7; */
-   /* color: #f9aeae; */
+  transition-duration: 0.2s;
+}
+
+/************************ prose *************************/
+.indent {
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 
@@ -181,5 +186,5 @@ p.title:hover {
   background-color: #e8a7a7;
 
   /* border-bottom: 4px solid #e8a7a7; */
-  /* transition-duration: 0.2s; */
+  transition-duration: 0.2s;
 }
