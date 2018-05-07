@@ -1,8 +1,19 @@
 body {
   background-color: #e8e3e3;
   color: #333;
-  max-width: 500px;
+  max-width: 600px;
   /* font-family: 'Garamond Pro'; */
+}
+@media screen and (max-width: 850px) {
+  body {
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 400px;
+  }
 }
 
 ::selection {
@@ -66,9 +77,10 @@ div.link {
   /* font-family: 'Garamond Pro'; */
   font-family: 'Lora';
   /* font-size:15pt; */
-  line-height: 1.6;
+  line-height: 1.8;
   font-weight: 300;
   color: #ba5555;
+  letter-spacing: 0.01em;
 }
 
 .link a:hover {
@@ -111,6 +123,10 @@ p.title:hover {
   font-family: 'Garamond Pro';
   line-height: 1.3;
   font-size: 15pt;
+}
+
+.serif i {
+  letter-spacing:0.01em;
 }
 
 .secret, .secret a {
@@ -173,6 +189,27 @@ p.title:hover {
     margin-left: 2em;
     margin-right: 1em;
   }
+}
+
+.the-fence {
+  line-height: 1.8;
+  background-color: white;
+}
+
+.the-fence i {
+  /* letter-spacing: 0.01em; */
+}
+
+.the-fence h1 {
+  color: #e8e3e3;
+  font-family: 'Josefin Sans';
+  font-size: 25pt;
+  /* font-weight: 800; */
+  letter-spacing: 3px;
+}
+
+.the-fence ::selection {
+  background: #e8e3e3;
 }
 
 
