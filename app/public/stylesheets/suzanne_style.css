@@ -1,0 +1,19 @@
+body {
+  /* font-size: 14pt; */
+  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Traveling Typewriter'; */
+  /* letter-spacing: 0.1em; */
+}
+
+::selection {
+  background:  #000;
+}
+
+::-moz-selection {
+  background:  #000;
+}
+
+.sorry {
+    font-family: 'Hammer Keys';
+    font-size: 50pt;
+}

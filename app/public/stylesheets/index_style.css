@@ -184,3 +184,14 @@ a.email:hover {
   text-align:left;
   font-style:normal;
 }
+
+.secret {
+  padding-top: 15px;
+  color: white;
+  font-family: 'Hammer Keys';
+  font-size: 25pt;
+}
+
+.secret:hover{
+  /* background-color: blue; */
+}

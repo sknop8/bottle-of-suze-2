@@ -39,6 +39,16 @@
     font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Traveling Typewriter';
+  src: url('fonts/TravelingTypewriter.otf');
+}
+
+@font-face {
+  font-family: 'Hammer Keys';
+  src: url('fonts/HAMMK.ttf');
+}
+
 body {
   padding: 50px;
   /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
