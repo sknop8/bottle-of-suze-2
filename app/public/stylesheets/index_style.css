@@ -15,7 +15,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5{
-  line-height: 0.95;
+  line-height: 1;
   margin-bottom:0px;
   margin-top:0px;
 
@@ -152,6 +152,15 @@ p.description {
   max-width:60%;
   color:  #666;
   margin-bottom: 0px;
+
+}
+
+p.description a {
+  color:black;
+}
+
+p.description a:hover {
+  color: #a44;
 }
 
 p.description:hover {
