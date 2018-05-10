@@ -1,2 +1,3 @@
-# bottle-of-suze-2
-Personal website (2018)
+# bottle of suze 2 (2018)
+
+Hello friend, glad you made it.
