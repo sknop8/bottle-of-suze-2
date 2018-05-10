@@ -191,16 +191,16 @@ p.title:hover {
   }
 }
 
-.the-fence {
+.fiction {
   line-height: 1.8;
   background-color: white;
 }
 
-.the-fence i {
+.fiction i {
   /* letter-spacing: 0.01em; */
 }
 
-.the-fence h1 {
+.fiction h1 {
   color: #e8e3e3;
   font-family: 'Josefin Sans';
   font-size: 25pt;
@@ -208,7 +208,7 @@ p.title:hover {
   letter-spacing: 3px;
 }
 
-.the-fence ::selection {
+.fiction ::selection {
   background: #e8e3e3;
 }
 
