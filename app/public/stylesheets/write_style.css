@@ -163,6 +163,14 @@ p.title:hover {
 
 }
 
+.poetry-footer {
+  /* font-family: 'Lora'; */
+  font-family: 'Garamond Pro';
+  font-size: 15pt;
+  color: white;
+  font-style: italic;
+}
+
 .poem-link.poem {
   padding-bottom: 50px;
 }
