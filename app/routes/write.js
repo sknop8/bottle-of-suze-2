@@ -45,6 +45,9 @@ router.get('/ars-poetica', function(req, res, next) {
   res.render('write/ars_poetica');
 });
 
+router.get('/catharine-bliss', function(req, res, next) {
+  res.render('write/catharine_bliss');
+});
 
 
 module.exports = router;
