@@ -2,8 +2,8 @@ body {
   background-color: #e8e3e3;
   color: #333;
   max-width: 600px;
-  /* font-family: 'Garamond Pro'; */
 }
+
 @media screen and (max-width: 850px) {
   body {
 
@@ -17,11 +17,11 @@ body {
 }
 
 ::selection {
-  background:#fff;
+  background:rgba(255,255,255,0.99);
 }
 
 ::-moz-selection {
-  background:#fff;
+  background:rgba(255,255,255,0.99);
 }
 
 p {
@@ -43,7 +43,7 @@ h1:hover {
   color: white;
 }
 
-/* page title */
+/** page title **/
 h3 {
   font-weight: 700;
   color: #fff;
@@ -70,13 +70,11 @@ a {
 }
 
 div.link {
-  /* line-height: 1.5; */
+
 }
 
 .link a {
-  /* font-family: 'Garamond Pro'; */
   font-family: 'Lora';
-  /* font-size:15pt; */
   line-height: 1.8;
   font-weight: 300;
   color: #ba5555;
@@ -84,26 +82,18 @@ div.link {
 }
 
 .link a:hover {
-  /* font-style: italic; */
-  /* font-weight:800; */
-  /* color: #7a2e2e; */
   background-color: #ba5555;
-  /* color:#e8a7a7; */
-    /* border-bottom: 2px solid #ba5555; */
   transition-duration: 0.2s;
 }
 
 div.link {
-  /* margin-left:5px; */
+
 }
 
 .title {
   font-family: 'Lora';
   height: 5pt;
-  /* color: #333; */
-  /* color: #fefefe; */
   color:#fff;
-  /* font-weight: 700; */
   opacity: 1.0;
   padding-top: 10px;
 }
@@ -140,8 +130,6 @@ p.title:hover {
 
 /**************************** poems *******************************/
 .poem {
-  /* font-family: 'Minion Pro'; */
-  /* font-family: 'Source Serif Pro'; */
   font-family: 'Garamond Pro';
   margin: 0px;
   line-height: 1.3;
@@ -152,19 +140,16 @@ p.title:hover {
 .poem-title {
   font-weight: bold;
   padding-bottom: 10px;
-  /* font-family: 'Lora'; */
 }
 
 .poetry-heading {
   font-family: 'Lora';
-  /* font-family: 'Garamond Pro'; */
   font-size: 24pt;
   padding-bottom: 40px;
 
 }
 
 .poetry-footer {
-  /* font-family: 'Lora'; */
   font-family: 'Garamond Pro';
   font-size: 15pt;
   color: white;
@@ -212,12 +197,15 @@ p.title:hover {
   color: #e8e3e3;
   font-family: 'Josefin Sans';
   font-size: 25pt;
-  /* font-weight: 800; */
   letter-spacing: 3px;
 }
 
 .fiction ::selection {
-  background: #e8e3e3;
+  background-color: rgba(232, 227, 227, 0.99);
+}
+
+.fiction ::-moz-selection {
+  background-color: rgba(232, 227, 227, 0.99);
 }
 
 

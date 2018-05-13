@@ -15,10 +15,9 @@ h1 {
 }
 
 h1, h2, h3, h4, h5{
-  line-height: 1;
-  margin-bottom:0px;
-  margin-top:0px;
-
+  line-height: 1.1;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .extra-bold {
@@ -28,7 +27,6 @@ h1, h2, h3, h4, h5{
 .extra-bold:hover {
   font-weight: 600;
   font-style:italic;
-  /* transition-duration: 0.1s; */
 }
 
 .extra-bold-italic {
@@ -39,7 +37,6 @@ h1, h2, h3, h4, h5{
 .extra-bold-italic:hover {
   font-weight: 600;
   font-style: normal;
-  /* transition-duration: 0.1s; */
 }
 
 .bold {
@@ -49,7 +46,6 @@ h1, h2, h3, h4, h5{
 .bold:hover {
   font-style: italic;
   font-weight: 400;
-  /* transition-duration: 0.1s; */
 }
 
 .bold-italic {
@@ -92,7 +88,7 @@ h1, h2, h3, h4, h5{
 
 .regular-italic {
   font-weight: 400;
-  font-style:italic;
+  font-style: italic;
 }
 
 .regular-italic:hover {
@@ -137,7 +133,6 @@ a:hover {
 p.link {
   font-size: 14pt;
   line-height:0.3;
-  /* font-style: italic; */
   font-weight: bold;
 }
 
@@ -148,15 +143,14 @@ div.br {
 
 p.description {
   font-size: 10pt;
-  /* max-width: 250px; */
   max-width:60%;
-  color:  #666;
+  color: #666;
   margin-bottom: 0px;
 
 }
 
 p.description a {
-  color:black;
+  color: #666;
 }
 
 p.description a:hover {
@@ -164,12 +158,8 @@ p.description a:hover {
 }
 
 p.description:hover {
-  /* color:#c66; */
-  /* font-weight: 800; */
   font-weight:300;
-  font-style:normal;
-
-  /* text-align: right; */
+  font-style: normal;
 }
 
 .email, .meaning {
@@ -190,17 +180,17 @@ p.description:hover {
 a.email:hover {
   font-weight: 800;
   font-style: italic;
-  text-align:left;
-  font-style:normal;
+  text-align: left;
+  font-style: normal;
 }
 
 .secret {
   padding-top: 15px;
   color: white;
-  font-family: 'Hammer Keys';
+  font-family: 'Hammer Keys', monospace;
   font-size: 25pt;
 }
 
 .secret:hover{
-  /* background-color: blue; */
+
 }

@@ -1,16 +1,13 @@
 body {
-  /* font-size: 14pt; */
-  /* font-family: 'VT323', monospace; */
-  /* font-family: 'Traveling Typewriter'; */
-  /* letter-spacing: 0.1em; */
+
 }
 
 ::selection {
-  background:  #000;
+  background: rgba(0,0,0,0.99);
 }
 
 ::-moz-selection {
-  background:  #000;
+  background: rgba(0,0,0,0.99);
 }
 
 .sorry {
