@@ -108,6 +108,10 @@ p.title:hover {
   font-size: 9pt;
 }
 
+.sans-serif {
+  font-family: 'Open Sans' !important;
+}
+
 .serif {
   /* font-family: 'Minion Pro'; */
   font-family: 'Garamond Pro';
