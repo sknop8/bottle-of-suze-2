@@ -13,7 +13,7 @@ block content
     p.title <i>The Good Place</i> (TV Series)
     p.sub 
       | 2016- , Michael Shur
-    img(src='images/the_good_place.png')
+    img(data-src='images/the_good_place.png')
     p.date May 2018
     p.description
       | I just want to say: I recently watched Seasons 1 and 2 and this show is hilarious, and also thought-provoking. It manages to be original and balanced -- not too light or heavy, and very fun. It also has a pretty diverse cast and upholds diverse narratives, so +1! I recommend!! 
@@ -24,7 +24,7 @@ block content
       | Changeling
     p.sub 
       | 2008, Clint Eastwood
-    img(src='images/changeling.png')
+    img(data-src='images/changeling.png')
     p.date 25 May 2018
     p.description
       | I watched this at the same time that I was reading <i>The Bell Jar</i> -- very fitting
@@ -35,7 +35,7 @@ block content
       | Thelma & Louise
     p.sub 
       | 1991, Ridley Scott
-    img(src='images/thelma_and_louise.png')
+    img(data-src='images/thelma_and_louise.png')
     p.date 17 May 2018
     p.description
       | I finally watched it!!! Wow, what an iconic movie!! Amazing. I love Susan Sarandon. This movie was incredibly satisfying
@@ -45,7 +45,7 @@ block content
       | Ikiru
     p.sub 
       | 1952, Akira Kurosawa
-    img(src='images/ikiru.png')
+    img(data-src='images/ikiru.png')
     p.date 14 May 2018
     
 
@@ -55,7 +55,7 @@ block content
       | Dunkirk
     p.sub 
       | 2017, Christopher Nolan
-    img(src='images/dunkirk.png')
+    img(data-src='images/dunkirk.png')
     p.date 12 May 2018
     //- p.description
      
@@ -239,3 +239,8 @@ block content
       br
       br
       | Worth noting also that this film is a “loose sequel” to <i>In the Mood for Love</i> (2000) and <i>Days of Being Wild</i> (1990), which were both directed by Wong Kar-Wai. I think the movie is good as standalone, but I watched <i>In the Mood for Love</i> some time beforehand and it did make <i>2046</i> a bit less confusing.
+      
+      
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+    script.
+      new LazyLoad();
