@@ -9,17 +9,25 @@ block content
   br
   br
   
+  - var path = 'images/watch'
+  
+  div.movie
+    p.title Incredibles 2
+    p.sub 2018, Brad Bird 
+    p.date 27 June 2018
+    p.description watch it! I really liked the Pixar short, <i>Bao</i>, and the movie itself was very satisfying and funny :). <i>The Incredibles</i> was my favorite Pixar movie growing up because of the style and the chararacters and the music, and they did a good job on the sequel!! hehe 
+  
   div.movie
     p.title Days of Being Wild
     p.sub 1990, Wong Kar-wai
-    img(data-src='images/days_of_being_wild.png')
+    img(data-src='#{path}/days_of_being_wild-min.png')
     p.date 15 June 2018
       
       
   div.movie
     p.title The Big Lebowski
     p.sub
-    img(data-src='images/the_big_lebowski.png')
+    img(data-src='#{path}/the_big_lebowski-min.png')
     p.date June 2018
     p.description Great movie
       
@@ -27,7 +35,7 @@ block content
   div.movie
     p.title Black Panther
     p.sub 2018, Ryan Coogler
-    img(data-src='images/black_panther.png')
+    img(data-src='#{path}/black_panther-min.png')
     p.date June 2018
       
       
@@ -35,20 +43,20 @@ block content
     p.title Boyhood
     p.sub 2014, Richard Linklater
     p.date May 2018
-    //- p.description I recommend!
+    p.description I recommend!
       
       
   div.movie
     p.title Silence
     p.sub 2016, Martin Scorsese
-    img(data-src='images/silence.png')
+    img(data-src='#{path}/silence-min.png')
     p.date May 2018
       
   div.movie
     p.title <i>The Good Place</i> (TV Series)
     p.sub 
       | 2016- , Michael Shur
-    img(data-src='images/the_good_place.png')
+    img(data-src='#{path}/the_good_place-min.png')
     p.date May 2018
     p.description
       | I just want to say: I recently watched Seasons 1 and 2 and this show is hilarious, and also thought-provoking. It manages to be original and balanced -- not too light or heavy, and very fun. It also has a pretty diverse cast and upholds diverse narratives, so +1! I recommend!! 
@@ -59,7 +67,7 @@ block content
       | Changeling
     p.sub 
       | 2008, Clint Eastwood
-    img(data-src='images/changeling.png')
+    img(data-src='#{path}/changeling-min.png')
     p.date 25 May 2018
     p.description
       | I watched this at the same time that I was reading <i>The Bell Jar</i> -- very fitting
@@ -70,7 +78,7 @@ block content
       | Thelma & Louise
     p.sub 
       | 1991, Ridley Scott
-    img(data-src='images/thelma_and_louise.png')
+    img(data-src='#{path}/thelma_and_louise-min.png')
     p.date 17 May 2018
     p.description
       | I finally watched it!!! Wow, what an iconic movie!! Amazing. I love Susan Sarandon. This movie was incredibly satisfying
@@ -80,7 +88,7 @@ block content
       | Ikiru
     p.sub 
       | 1952, Akira Kurosawa
-    img(data-src='images/ikiru.png')
+    img(data-src='#{path}/ikiru-min.png')
     p.date 14 May 2018
     
 
@@ -90,7 +98,7 @@ block content
       | Dunkirk
     p.sub 
       | 2017, Christopher Nolan
-    img(data-src='images/dunkirk.png')
+    img(data-src='#{path}/dunkirk-min.png')
     p.date 12 May 2018
     //- p.description
      
@@ -101,7 +109,7 @@ block content
       | The Shape of Water
     p.sub 
       | 2017, Guillermo del Toro
-    img(data-src='images/the_shape_of_water.png')
+    img(data-src='#{path}/the_shape_of_water-min.png')
     p.date 11 May 2018
     p.description
       | Visually a very green, hazy, beautiful movie. Also a beautiful story, but I'm not sure that I liked seeing it live action haha (as opposed to animated). But repressed sexuality was definitely a theme in the story so maybe it had to be live action. The music and score were also really nice. I <i>loved</i> the poem at the end:
@@ -119,7 +127,7 @@ block content
       | Blade Runner 2049
     p.sub 
       | 2017, Denis Villeneuve
-    img(data-src='images/blade_runner_2049.png')
+    img(data-src='#{path}/blade_runner_2049-min.png')
     p.date 4 May 2018
     //- p.description
     //-   | Wow, very intriguing story, and raises many questions about humanity and life. Beautiful cinematography - this film definitely maintained the slow, cinematic, philosophical tone of the original <i> Blade Runner</i>, though keeping a lot of the original's problematic depiction of an Asian / "exotic" future where only white people live in.
@@ -129,7 +137,7 @@ block content
       | I, Tonya
     p.sub 
       | 2017, Craig Gillespie
-    img(data-src='images/tonya.png')
+    img(data-src='#{path}/tonya-min.png')
     p.date 3 May 2018
     p.description
       | This film broke my heart as much as it touched it. Tonya Harding's story is tragic because so many of the decisive events of her life were not done by her own decision, and she has been forced to give up the possibility of ever being fully understood. Time and time again she has attempted to tell her own story, but the cruelty of the media and the public's thirst for drama has robbed her of that. Everything has been taken from her. Yet from what I know of her story, it is also beautiful because of how she keeps fighting to find love and happiness on her own terms. To this day she is a woman of raw drive, talent, emotion, and power -- in a world that tells her from every angle that she shouldn't be. From what I know, she has prevailed. Justice doesn't always work the way we think it does.
@@ -139,7 +147,7 @@ block content
       | Pinocchio
     p.sub 
       | 1940, Walt Disney 
-    img(data-src='images/pinocchio.png')
+    img(data-src='#{path}/pinocchio-min.png')
     p.date April 2018
     p.description
       | <i>"Little puppet made of pine, wake, the gift of life is thine"</i> - The Blue Fairy
@@ -158,7 +166,7 @@ block content
       | Hasan Minhaj: Homecoming King
     p.sub 
       | 2017
-    img(data-src='images/homecoming_king.jpg')
+    img(data-src='#{path}/homecoming_king-min.jpg')
     p.date March 2018
     p.description
       | standup!! asian-american stories!! I cried (and laughed) with A and J
@@ -169,7 +177,7 @@ block content
       | Your Name
     p.sub 
       | Makoto Shinkai, 2016
-    img(data-src='images/your_name.png')
+    img(data-src='#{path}/your_name-min.png')
     p.description
       | Really beautiful realist animation and interesting story concept. I especially loved the way natural and artificial light was rendered ! The skies were all really beautiful, and even light from phones and technology was given a lot of attention, which made it feel very contemporary and real.
       
@@ -178,7 +186,7 @@ block content
       | La belle saison
     p.sub 
       | Catherine Corsini, 2015
-    img(data-src='images/la_belle_saison.png')
+    img(data-src='#{path}/la_belle_saison-min.png')
     p.date March 2018
     p.description
       | I could relate sometimes too much to this movie. I was really excited but as the plot progressed i just started to feel shameful (of myself) and anxious for the characters. It was fun to see paris during second (?) wave feminism though! 
@@ -188,7 +196,7 @@ block content
       | Atonement
     p.sub
       | 2007
-    img(data-src='images/atonement.png')
+    img(data-src='#{path}/atonement-min.png')
     p.date March 2018
     p.description
       | really loved this still of the movie. I have a crush on keira and saoirse is so talented. some type of camera or filter was used so that everything white seemed to be glowing, and everything was dreamy
@@ -209,7 +217,7 @@ block content
       | Mudbound
     p.sub 
       | Dee Rees, 2017
-    img(data-src='images/mudbound.png')
+    img(data-src='#{path}/mudbound-min.png')
     p.date March 2018
     p.description
       | watched this on oscars night. love dee rees
@@ -220,7 +228,7 @@ block content
       | Akira
     p.sub 
       | Katsuhiro Otomo, 1988
-    img(data-src='images/akira.png')
+    img(data-src='#{path}/akira-min.png')
     p.date March 2018
     p.description
       | really amazing!!! recommend 
@@ -230,7 +238,7 @@ block content
       | Call Me By Your Name
     p.sub 
       | Luca Guadagnino, 2017
-    img(data-src='images/call_me_by_your_name.png')
+    img(data-src='#{path}/call_me_by_your_name-min.png')
     p.description
       | good for your eyes and ears ! first love ! 
       
@@ -239,7 +247,7 @@ block content
       | Dead Poet's Society
     p.sub 
       | 1989
-    img(data-src='images/dead_poets_society.png')
+    img(data-src='#{path}/dead_poets_society-min.png')
     p.description
       | made me sad about robin williams and kind of anxious about needing to contribute my 'verse' to the 'great play'
       
@@ -248,7 +256,7 @@ block content
       | Fallen Angels
     p.sub 
       | Wong Kar-wai, 1985
-    img(data-src='images/fallen_angels.png')
+    img(data-src='#{path}/fallen_angels-min.png')
     p.description
       | longing, longing, longing for love. loved this movie emotionally, visually, everything
       
@@ -258,7 +266,7 @@ block content
       | 2046
     p.sub
       | Wong Kar-wai, 2004
-    img(data-src='images/2046.png')
+    img(data-src='#{path}/2046-min.png')
     p.date October 2017
     p.description
       | Watched this on Friday with AF. It hit us (<i>destroyed</i> us) both toward the end — what a beautiful, complex, and emotional film. It’s about love, timing, the parts of ourselves we give to others (in exchange for what?), and carrying pain with us while trying to leave a pained section of life (but being unable to let go). <i>2046</i> is a slow burner, with a few different story arcs that don’t start to seem that connected until we get some explanation from the sci-fi arc (which I LOVED and was very unsettling).
