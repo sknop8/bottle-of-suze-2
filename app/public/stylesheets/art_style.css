@@ -61,9 +61,10 @@ h2 {
 }
 
 p.section {
-  font-weight: 400;
-  font-size: 13pt;
+  font-weight: 700;
+  font-size: 17pt;
   padding: 5px;
+  font-style: italic;
 }
 
 p.section a {
