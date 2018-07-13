@@ -1,0 +1,39 @@
+body {
+  /* font-family: 'IBM Plex Mono'; */
+  margin-top: 10vh;
+  font-size: 11.5pt;
+  /* font-family: 'Space Mono'; */
+  /* font-family: 'Karla', sans-serif; */
+  font-family: 'PT Mono', monospace;
+  /* font-family: 'Alegreya Sans SC'; */
+
+  /* font-family: 'Traveling Typewriter'; */
+}
+
+::selection {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+::-moz-selection {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+p {
+
+}
+
+a {
+  text-decoration: none;
+  color: #a44;
+  margin-right: 15px;
+  padding-bottom: 2.5px;
+  display: inline-block;
+  margin-bottom: 10px;
+  height: 20px;
+}
+
+a:hover {
+  border-bottom: 3px solid #a44;
+  /* adjust height for the border */
+  height: 17px;
+}

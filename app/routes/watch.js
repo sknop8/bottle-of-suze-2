@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET watch listing. */
 router.get('/', function(req, res, next) {
   res.render('watch', {
-    title: 'watch'
+    title: 'watch | bottle of suze'
   });
 });
 

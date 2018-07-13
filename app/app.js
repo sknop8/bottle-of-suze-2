@@ -9,6 +9,9 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var watch = require('./routes/watch');
 var write = require('./routes/write');
+var art = require('./routes/art');
+var software = require('./routes/software');
+var video = require('./routes/video');
 
 var app = express();
 
@@ -16,7 +19,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// uncomment after placing your favicon in /public
+// uncomment after placing favicon in /public
 // app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -29,9 +32,12 @@ app.use(subdomain('watch', watch));
 app.use('/watch', watch);
 app.use(subdomain('write', write));
 app.use('/write', write);
-app.use(subdomain('projects', index));
+app.use(subdomain('art', art));
+app.use('/art', art);
+app.use(subdomain('software', software));
+app.use('/software', software);
 app.use(subdomain('video', index));
-app.use(subdomain('art', index));
+app.use('/video', video);
 app.use(subdomain('read', index));
 app.use('/', index);
 

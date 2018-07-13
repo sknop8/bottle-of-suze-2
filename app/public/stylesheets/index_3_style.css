@@ -1,0 +1,33 @@
+.everything {
+  font-size: 16pt;
+  font-family: 'Traveling Typewriter';
+  letter-spacing: 1px;
+  color: #555;
+  position: absolute;
+  left: 20vw;
+  top: 10vh;
+
+}
+
+
+::selection {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+::-moz-selection {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+pre {
+  font-size: 16pt;
+  font-family: 'Traveling Typewriter';
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  height: 40px;
+  color: #555;
+}

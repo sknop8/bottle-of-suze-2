@@ -1,0 +1,56 @@
+include ./../layout
+
+link(rel='stylesheet', href='/stylesheets/art_style.css')
+
+block content
+  div.back
+    a(href='/art') &larr;
+    
+  center
+    h1
+      i sketches & fun stuff
+    p.sub.
+      welcome
+
+    br
+    br
+
+    h2.year 2018
+    - var path = '/images/art/fun/2018'
+    div.art
+      img(data-src='#{path}/2018-06-17.jpg')
+      p.sub hello from san josé
+    div.art
+      img(data-src='#{path}/2018-06-16.jpg')
+      p.sub the sun was so bright that after staring at the white paper of my sketchbook while drawing this i almost couldn't see anything when i looked up
+    div.art
+      img(data-src='#{path}/2018-03-25.jpg')
+      
+
+
+    h2.year 2017
+    - var path = '/images/art/fun/2017'
+    div.art
+      img(data-src='#{path}/2017-09-20.jpg')
+    div.art
+      img(data-src='#{path}/2017-07-11.jpg')
+      p.sub july, san francisco
+    div.art
+      img(data-src='#{path}/2017-05-21.jpg')
+    div.art
+      img(data-src='#{path}/2017-04-30.jpg')
+      p.sub april
+    div.art
+      img(data-src='#{path}/2017-03-12.jpg')
+    div.art
+      img(data-src='#{path}/2017-02-23.png')
+      p.sub playing around with some glitch algorithms and a shiny 3d model of venus de milo. i really liked this composition :)
+    div.art
+      img(data-src='#{path}/2017-02-08.jpg')
+      p.sub BEEAAACH HOOOUUUSEEE!!!!
+    div.art
+      img(data-src='#{path}/2017-01-10.jpg')
+          
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
