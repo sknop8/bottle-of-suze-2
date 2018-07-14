@@ -75,6 +75,15 @@ p {
   line-height: 0.5;
 }
 
+.movie a {
+  color: #888;
+  text-decoration: none;
+}
+
+.movie a:hover {
+  color: #aaa;
+}
+
 footer {
   color: #333;
 }

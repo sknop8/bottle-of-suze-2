@@ -10,12 +10,19 @@ block content
   br
   
   - var path = 'images/watch'
-  
+  div.movie
+    p.title Velvet Goldmine
+    p.sub 1998, Todd Haynes
+    //- TODO: compress
+    img(data-src='#{path}/velvet_goldmine-min.png') 
+    p.date 12 July 2018
+    p.description Wow there were so many great stills I could've chosen from this fabulous movie. It was really artfully done, and the storytelling was both bold and nuanced. I wasn't alive during the height of glam-rock and David Bowie, etc., but I can definitely see that period's lingering influence in today's music and culture. The movie captured really well the appeal that glam rock had to outcasts and "weirdos," and the sort of release and freedom the movement provided, while also highlighting a lot of the emptiness behind the glamour.<br><br> I really like what one <a href='https://film.avclub.com/velvet-goldmine-captures-the-spirit-if-not-the-biograp-1798243465'>article</a> says about the film: "Glitter-filled, chaotic, and often bizarre (one key emotional scene is acted out by two young girls playing with Barbie dolls, a nod to Haynes earlier <i>Superstar: The Karen Carpenter Story</i>), <i> Velvet Goldmine</i> nevertheless possesses a wonderfully observed humanity to go with its aggressive experimentalism." <br><br>Also, Ewan McGregor AND Christian Bale were both in this and amazing, and I didn't realize Todd Haynes also directed <i>Carol</i>, which is one my favorite movies. I hope to watch more of his movies!
+    
   div.movie
     p.title Taxi Driver
     p.sub 1976, Martin Scorsese
     //- TODO: compress
-    img(data-src='#{path}/taxi_driver.png') 
+    img(data-src='#{path}/taxi_driver-min.png') 
     p.date 29 June 2018
   
   div.movie
@@ -33,7 +40,7 @@ block content
       
   div.movie
     p.title The Big Lebowski
-    p.sub
+    p.sub 1998, Joel Coen & Ethan Coen
     img(data-src='#{path}/the_big_lebowski-min.png')
     p.date June 2018
     p.description Great movie
