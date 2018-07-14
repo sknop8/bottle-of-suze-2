@@ -13,8 +13,21 @@ block content
       welcome
 
     br
-    br
+    
+    div.time-jump 
+      span time travel &#10513;
+      a(href='#2018') 2018
+      span &bull;
+      a(href='#2017') 2017
+      span &bull;
+      a(href='#2016') 2016
+      span &bull;
+      a(href='#2015') 2015-2013
 
+      
+    br
+    
+    a(name='2018')
     h2.year 2018
     - var path = '/images/art/fun/2018'
     div.art
@@ -27,7 +40,11 @@ block content
       img(data-src='#{path}/2018-03-25.jpg')
       
 
-
+    br
+    br
+    
+    
+    a(name='2017')
     h2.year 2017
     - var path = '/images/art/fun/2017'
     div.art
@@ -50,6 +67,45 @@ block content
       p.sub BEEAAACH HOOOUUUSEEE!!!!
     div.art
       img(data-src='#{path}/2017-01-10.jpg')
+      
+      
+    br  
+    br
+    
+    
+    a(name='2016')
+    h2.year 2016
+    - var path = '/images/art/fun/2016'
+    div.art
+      img(data-src='#{path}/2016-08.png')
+      p.sub I went to São Paulo in the summer and I took a picture of every single cafezinho I had and then I made this :-)
+    div.art
+      img(data-src='#{path}/2016-05-annie-mesh.jpg')
+    div.art
+      img(data-src='#{path}/2016-04.jpg')
+      
+    p.sub there is a lot more 2016 stuff but I haven't had the chance yet to take pictures of my old sketchbooks :]
+    
+    
+    br
+    br
+    
+    a(name='2015')
+    h2.year 2013-2015
+    - var path = '/images/art/fun/2013-15'
+    div.art
+      img(data-src='#{path}/2015-10-sleeping-boi.jpg')
+    div.art
+      img(data-src='#{path}/2015-07-paris-table.jpg')
+    div.art
+      img(data-src='#{path}/2015-07-orsay.jpg')
+    div.art
+      img(data-src='#{path}/2015-07-orsay-2.jpg')
+    div.art
+      img(data-src='#{path}/2015-07-louvre.jpg')
+      p.sub I saw her in person !
+    
+    
           
   script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
   script.

@@ -82,9 +82,7 @@ p.section a {
 
 div.art {
   padding: 50px 0;
-  /* max-width: 100vw; */
   height: 100vh;
-  /* height: auto\9; */
 }
 
 img {
@@ -93,7 +91,6 @@ img {
   max-width: 100%;
   width: auto\9;
   max-height: 100%;
-  /* height: 100vh; */
 }
 
 a {
@@ -102,8 +99,7 @@ a {
 
 }
 
-a:hover {
-  /* background-color: #a44; */
+a:hover
   font-style: italic;
 }
 
@@ -119,8 +115,20 @@ a:hover {
 .back a:hover {
   background-color: white;
   font-style: normal;
-  /* opacity: 1; */
   color: #a44;
+}
+
+.time-jump {
+  font-weight: 200;
+}
+
+.time-jump a {
+  padding: 0 3px;
+}
+
+.time-jump a:hover {
+  background-color: #eee;
+  font-style: normal;
 }
 
 footer a {

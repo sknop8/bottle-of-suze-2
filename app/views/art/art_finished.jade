@@ -13,8 +13,17 @@ block content
       paintings, mostly
       
     br
+    
+    div.time-jump 
+      span time travel &#10513;
+      a(href='#2018') 2018
+      span &bull;
+      a(href='#2016') 2016
+      
+      
     br
     
+    a(name='2018')
     h2.year 2018
     - var path = '/images/art/finished/2018'
     div.art
@@ -22,8 +31,10 @@ block content
     div.art
       img(data-src='#{path}/2018-05-13.jpg')
       
-
-
+    br
+    br
+    
+    a(name='2016')
     h2.year 2016
     - var path = '/images/art/finished/2016'
     div.art
