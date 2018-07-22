@@ -11,10 +11,18 @@ block content
   
   - var path = 'images/watch'
   div.movie
+    p.title Being John Malkovich
+    p.sub 1999, Spike Jonze
+    img(data-src='#{path}/being_john_malkovich-min.png') 
+    p.date 21 July 2018
+    p.description Wooooooowwwsswwwww what a great and strange and unexpectedly dark yet perfectly weird movie. Catherine Keener was iconic as Maxine. It was so (hilariously) weird that it stopped being weird and there were a lot of feelings underneath like longing, desire, jealousy, and greed, and the destructive tendencies of those emotions. Twisty turny excitey quirky darkish movie, just My type :--]
+    
+    
+  - var path = 'images/watch'
+  div.movie
     p.title Dazed and Confused
     p.sub 1993, Richard Linklater
-    //- TODO: compress
-    img(data-src='#{path}/dazed_and_confused.png') 
+    img(data-src='#{path}/dazed_and_confused-min.png') 
     p.date 17 July 2018
     p.description lol
 
@@ -22,8 +30,7 @@ block content
   div.movie
     p.title Citizen Kane
     p.sub 1941, Orson Welles
-    //- TODO: compress
-    img(data-src='#{path}/citizen_kane.png') 
+    img(data-src='#{path}/citizen_kane-min.png') 
     p.date 15 July 2018
     p.description deeeep focus
       
