@@ -1,4 +1,4 @@
-include layout
+include ./../layout
 
 link(rel='stylesheet', href='/stylesheets/watch_style.css')
 
@@ -10,6 +10,16 @@ block content
   br
   
   - var path = 'images/watch'
+  
+  div.movie
+    p.title Persona
+    p.sub 1966, Ingmar Bergman
+    img(data-src='#{path}/persona-min.png') 
+    p.date 25 July 2018
+    p.description 
+      a(href='/watch/persona') x
+    
+    
   div.movie
     p.title Being John Malkovich
     p.sub 1999, Spike Jonze
@@ -17,8 +27,6 @@ block content
     p.date 21 July 2018
     p.description Wooooooowwwsswwwww what a great and strange and unexpectedly dark yet perfectly weird movie. Catherine Keener was iconic as Maxine. It was so (hilariously) weird that it stopped being weird and there were a lot of feelings underneath like longing, desire, jealousy, and greed, and the destructive tendencies of those emotions. Twisty turny excitey quirky darkish movie, just My type :--]
     
-    
-  - var path = 'images/watch'
   div.movie
     p.title Dazed and Confused
     p.sub 1993, Richard Linklater
