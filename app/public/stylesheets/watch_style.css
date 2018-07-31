@@ -83,6 +83,11 @@ p {
 
 .movie a:hover {
   color: #aaa;
+  background-color: #111;
+}
+
+a.quiet-link {
+  padding: 5px 20px;
 }
 
 footer {
