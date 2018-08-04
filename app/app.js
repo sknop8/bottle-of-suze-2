@@ -12,6 +12,7 @@ var write = require('./routes/write');
 var art = require('./routes/art');
 var software = require('./routes/software');
 var video = require('./routes/video');
+var read = require('./routes/read');
 
 var app = express();
 
@@ -39,6 +40,7 @@ app.use('/software', software);
 app.use(subdomain('video', index));
 app.use('/video', video);
 app.use(subdomain('read', index));
+app.use('/read', read);
 app.use('/', index);
 
 

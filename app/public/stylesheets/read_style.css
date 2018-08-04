@@ -1,0 +1,110 @@
+body {
+  background-color: #eee;
+  color: #000;
+  max-width: 100vw;
+  padding-left: 30vw;
+  padding-right: 30vw;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+
+::selection {
+  background-color: rgba(0,26,61,0.99);
+  color: #888;
+}
+
+::-moz-selection {
+  background-color: rgba(0,26,61,0.99);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.book {
+  padding-bottom: 80px;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto\9;
+  padding: 5px 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.update {
+  margin: 0 5px;
+  /* font-size: 10pt; */
+  /* color: #c7e0d3; */
+  /* color: #afd1bf; */
+  /* color: #bee2cf; */
+  color: #afd1bf;
+  font-weight: 600;
+}
+
+.title {
+  color: #565656;
+  font-weight: 700;
+  margin: 0 0 0 5px;
+  /* font-style: italic; */
+  font-size: 15pt;
+}
+
+.sub {
+  color: #555;
+  font-weight: 300;
+  margin: 5px 5px 10px;
+}
+
+.description {
+  color: #666;
+  letter-spacing: 0.01em;
+  font-family: 'Lato';
+  font-size: 9.5pt;
+}
+
+.date {
+  color: #666;
+  font-weight: 300;
+  font-size: 9pt;
+  line-height: 0.5;
+}
+
+.book a {
+  color: #888;
+  text-decoration: none;
+}
+
+.book a:hover {
+  color: #aaa;
+  background-color: #111;
+}
+
+a.quiet-link {
+  padding: 5px 20px;
+}
+
+footer {
+  color: #333;
+}

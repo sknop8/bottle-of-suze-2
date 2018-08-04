@@ -1,0 +1,123 @@
+include layout
+
+link(rel='stylesheet', href='/stylesheets/read_style.css')
+
+block content
+  h1
+    i read!
+    
+  br
+  br
+  
+  - var path = 'images/read'
+  - var moon = '&#9790;'
+  - var sun = '&#9728;'
+  - var cloud = '&#9729;'
+  
+  div.book
+    p.update !{sun} Started
+    span.title
+      i Songmaster 
+      | by Orson Scott Card 
+    span.sub (1980)
+    p.date 3 August 2018
+    p.description.
+      Ooh wow, this is really beautiful so far. I haven't read sci-fi in a while. I got this for like a dollar at the book sale outside of King Library and I'm glad I did!!
+      
+      
+  div.book
+    p.update !{moon} Finished
+    span.title
+      i The Trial 
+      | by Franz Kafka
+    span.sub (1925)
+    br
+    img(data-src='#{path}/the_trial_cover.jpg') 
+    p.date 30 July 2018
+    
+  div.book
+    p.update !{cloud} Update
+    span.title Reeeading 
+      i The Trial
+    br
+    img(data-src='#{path}/the_trial.jpg')
+    p.date July 2018
+    p.description It's escalating!!
+    
+  div.book
+    p.update !{moon} Finished
+    span.title
+      i One Hundred Years of Solitude 
+      | by Gabriel García Márquez
+    span.sub (1967)
+    br
+    img(data-src='#{path}/one_hundred_cover.jpg') 
+    p.date 21 July 2018
+    p.description woweeeee. long book. good book.
+    
+  div.book
+    p.update !{sun} Started
+    span.title
+      i Why We Sleep: Unlocking the Power of Sleep and Dreams 
+      | by Matthew P. Walker
+    span.sub (2017)
+    p.date 14 July 2018
+    p.description Bought this after reading a really interesting article about by this author. Very interesting, somewhat scary stuff.
+    
+  div.book
+    p.update !{moon} Finished
+    span.title
+      i The Stranger 
+      | by Albert Camus
+    span.sub (1942)
+    p.date 28 May 2018
+    p.description.
+      So, my story with this one...
+      <br><br>
+      When I was in high school, I would go to Barnes & Nobles a lot. Usually I would spend around half an hour there. I used to flip through books, and browse, etc. One time I went and I was captivated by the cover of a version of <i>The Stranger</i> that was black and white and hypnotizing. I started to read that every time I went to Barnes & Nobles, but I would keep forgetting where I left off and ended up re-reading the beginning a lot. I never got very far, but I always wanted to finish the novel. Years later now, I've finally read the book! It only took two days, and while I'm glad I finally read it, it was a pretty bare, anxiety-filled book.
+  div.book
+    p.update !{moon} Finished
+    span.title
+      i The Bell Jar 
+      | by Sylvia Plath
+    span.sub (1963)
+    br
+    img(data-src='#{path}/the_bell_jar.jpg') 
+    p.date 26 May 2018
+    p.description From this book, Doctor Nolan emerged as a new favorite fictional character. Felt a lot of empathy for the protagonist, Esther.
+    
+  div.book
+    p.update !{moon} Finished
+    span.title 
+      i The Waves 
+      | by Virginia Woolf
+    span.sub (1931)
+    img(data-src='#{path}/the_waves_2.jpg') 
+    p.date 14 May 2018
+    p.description Oh my, what a breathtaking, inspirational book. My love for Virginia Woolf grows.
+    
+  div.book
+    p.update !{cloud} Update
+    span.title 
+      i The Waves 
+      | by Virginia Woolf
+    br
+    img(data-src='#{path}/the_waves.jpg')
+    p.date May 2018
+    p.description reading at home :-)
+    
+  div.book
+    p.update !{moon} Finished
+    span.title 
+      i Tuesdays with Morrie 
+      | by Mitch Albom
+    span.sub (1997)
+    br
+    img(data-src='#{path}/morrie_nch.jpg')
+    p.date May 2018
+    p.description ^^ the location I often read this lovely little book!! can you find it?
+    
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+    script.
+      new LazyLoad();
