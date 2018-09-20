@@ -21,11 +21,11 @@ body {
 }
 
 ::selection {
-  background-color: rgba(0,26,61,0.99);
+  background-color: #eee;
 }
 
 ::-moz-selection {
-  background-color: rgba(0,26,61,0.99);
+  background-color: #eee;
 }
 
 h1 {
