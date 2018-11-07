@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('/', index);
 app.use(subdomain('watch', watch));
 app.use('/watch', watch);
 app.use(subdomain('write', write));
@@ -39,9 +39,9 @@ app.use(subdomain('software', software));
 app.use('/software', software);
 app.use(subdomain('video', index));
 app.use('/video', video);
-app.use(subdomain('read', index));
+app.use(subdomain('read', read));
 app.use('/read', read);
-app.use('/', index);
+
 
 
 // catch 404 and forward to error handler

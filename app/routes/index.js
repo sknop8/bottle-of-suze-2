@@ -10,4 +10,8 @@ router.get('/suzanne-channel', function(req, res, next) {
   res.render('suzanne');
 });
 
+router.get('/hi', function(req, res, next) {
+  res.render('about');
+});
+
 module.exports = router;

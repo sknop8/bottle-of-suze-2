@@ -1,0 +1,43 @@
+body {
+    background-color: #eee;
+    color: #555;
+    max-width: 100vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    font-size: 11pt;
+    text-align: right;
+    font-family: 'Minion Pro';
+  }
+  
+  @media screen and (max-width: 850px) {
+    body {
+      padding-left: 15vw;
+      padding-right: 15vw;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto\9;
+    padding: 5px 0;
+  }
+  
+  div {
+    margin: 0 30px 0 30px;
+  }
+
+  a {
+      text-decoration: none;
+      color: #555;
+      /* font-style: italic; */
+  }
+  
+  
