@@ -19,6 +19,8 @@ block content
       a(href='#2018') 2018
       span &bull;
       a(href='#2016') 2016
+      span &bull;
+      a(href='#2015') 2015
       
       
     br
@@ -38,12 +40,6 @@ block content
     div.art 
       img(data-src='#{path}/short_2018_09_24.jpg')
       p.sub finished this one up... study of white cloth (I will go back and take better pictures of these later)<br> september 24 2018
-    //- div.art
-    //-   img(data-src='#{path}/2018-05-20.jpg')
-    //-   p.sub watercolor
-    //- div.art
-    //-   img(data-src='#{path}/2018-05-13.jpg')
-    //-   p.sub watercolor
       
     br
     br
@@ -70,6 +66,26 @@ block content
     div.art
       img(data-src='#{path}/2016-05.jpg')
       p.sub 3d model of the Fragonard room at the Frick Collection in New York! that room was my favorite because of the huge paintings and many shiny, intricate objects. I gotta say though, it was a pain to model
+
+    a(name='2015')
+    h2.year 2015
+    - var path = '/images/art/finished/2013-15'
+
+    div.art
+      img(data-src='#{path}/2015.03 self.jpg')
+      p.sub self portrait (acrylic)<br> march 2015 
+    
+    div.art
+      img(data-src='#{path}/2015.03 ma.jpg')
+      p.sub mother (acrylic)<br> march 2015 
+
+    div.art
+      img(data-src='#{path}/2015.05 woolf.jpg')
+      p.sub virginia woolf (acrylic)<br> may 2015
+
+    div.art
+      img(data-src='#{path}/2015-06 self portrait after school.jpg')
+      p.sub self portrait after school (oil) <br> june 2015
 
       
   script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
