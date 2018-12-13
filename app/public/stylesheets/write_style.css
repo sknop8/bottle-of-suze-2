@@ -1,5 +1,6 @@
 body {
-  background-color: #e8e3e3;
+  /* background-color: #e8e3e3; */
+  background-color: #e5dada;
   color: #333;
   max-width: 600px;
 }
@@ -84,10 +85,16 @@ div.link {
 .link a:hover {
   background-color: #ba5555;
   transition-duration: 0.2s;
+  color: #ba5555;
 }
 
-div.link {
-
+.link span.year{
+  color: #fff;
+  /* color: #ce8686; */
+  font-family: 'Open Sans';
+  padding: 0 10px 0 10px;
+  font-size: 10pt;
+  font-weight: lighter;
 }
 
 .title {
@@ -96,6 +103,9 @@ div.link {
   color:#fff;
   opacity: 1.0;
   padding-top: 10px;
+  font-weight: 600;
+  font-size: 13pt;
+  letter-spacing: 0.5px;
 }
 
 p.title:hover {
@@ -202,6 +212,14 @@ p.title:hover {
   font-family: 'Josefin Sans';
   font-size: 25pt;
   letter-spacing: 3px;
+  margin-bottom: 0px;
+}
+
+.fiction h3 {
+  color: #e8e3e3;
+  font-family: 'Josefin Sans';
+  font-size: 18pt;
+  margin: 0px;
 }
 
 .fiction ::selection {
@@ -212,6 +230,9 @@ p.title:hover {
   background-color: rgba(232, 227, 227, 0.99);
 }
 
+.golden h1, .golden h3{
+  color: #efd07f;
+}
 
 /************************ write home page link *************************/
 .home {

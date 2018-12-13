@@ -54,6 +54,12 @@ router.get('/the-fence', function(req, res, next) {
   );
 });
 
+router.get('/golden', function(req, res, next) {
+  res.render('write/golden',
+    { title: 'Golden | bottle of suze' }
+  );
+});
+
 
 router.get('/ars-poetica', function(req, res, next) {
   res.render('write/ars_poetica',
