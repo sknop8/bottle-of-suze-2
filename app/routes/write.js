@@ -14,6 +14,7 @@ router.get('/on-goal-orientation', function(req, res, next) {
   );
 });
 
+
 router.get('/thirty-two-pm-prose', function(req, res, next) {
   res.render('write/thirty_two_pm_prose');
 });
@@ -73,5 +74,10 @@ router.get('/catharine-bliss', function(req, res, next) {
   );
 });
 
+router.get('/revisiting-the-embarrassment-of-pain', function(req, res, next) {
+  res.render('write/revisiting_the_embarrassment',
+    { title: 'Revisiting the Embarrassment of Pain | bottle of suze' }
+  );
+});
 
 module.exports = router;

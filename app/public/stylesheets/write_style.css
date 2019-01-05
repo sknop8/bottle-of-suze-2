@@ -234,6 +234,12 @@ p.title:hover {
   color: #efd07f;
 }
 
+.quote {
+  padding-left: 15px;
+  margin-left: 30px;
+  border-left: 4px solid #ededed;
+}
+
 /************************ write home page link *************************/
 .home {
   font-weight: 300;
