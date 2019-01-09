@@ -7,7 +7,6 @@ body {
 
 @media screen and (max-width: 850px) {
   body {
-
   }
 }
 
@@ -23,10 +22,6 @@ body {
 
 ::-moz-selection {
   background:rgba(255,255,255,0.99);
-}
-
-p {
-
 }
 
 :hover {
@@ -48,8 +43,9 @@ h1:hover {
 h3 {
   font-weight: 700;
   color: #fff;
-  font-size: 25pt;
+  font-size: 30pt;
   font-family: 'Lora';
+  margin: 10px 0 10px 0;
 }
 
 h3:hover {
@@ -62,8 +58,9 @@ h2 {
   font-family: 'Lora';
 }
 
-p.sub {
+.sub {
   font-weight: 300;
+  font-size: 15pt;
 }
 
 a {
@@ -71,7 +68,9 @@ a {
 }
 
 div.link {
-
+  /* Indents second line of link (if overflow) */
+  padding-left:3.2em;
+  text-indent:-3.2em;
 }
 
 .link a {
@@ -190,13 +189,21 @@ p.title:hover {
   margin-right: 3em;
 }
 
-@media screen and (max-width: 600px) {
+.quote { /* Like an indent, but with a line on the left */
+  padding-left: 15px;
+  margin-left: 3em;
+  border-left: 4px solid #ededed;
+  margin-right: 3em;
+}
 
+@media screen and (max-width: 600px) {
   .indent {
     margin-left: 2em;
     margin-right: 1em;
   }
 }
+
+
 
 .fiction {
   line-height: 1.8;
@@ -234,11 +241,7 @@ p.title:hover {
   color: #efd07f;
 }
 
-.quote {
-  padding-left: 15px;
-  margin-left: 30px;
-  border-left: 4px solid #ededed;
-}
+
 
 /************************ write home page link *************************/
 .home {
