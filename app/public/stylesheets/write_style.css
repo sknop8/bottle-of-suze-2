@@ -39,6 +39,10 @@ h1:hover {
   color: white;
 }
 
+a {
+  color: #ba5555;
+}
+
 /** page title **/
 h3 {
   font-weight: 700;

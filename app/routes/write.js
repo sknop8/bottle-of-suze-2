@@ -8,6 +8,12 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/help', function(req, res, next) {
+  res.render('write/help',
+    { title: 'write help | bottle of suze' }
+  );
+});
+
 router.get('/on-goal-orientation', function(req, res, next) {
   res.render('write/write_goal_orientation',
     { title: 'On Goal Orientation | bottle of suze' }
