@@ -16,6 +16,9 @@ block content
     
     div.time-jump 
       span time travel &#10513;
+      
+      a(href='#2019') 2019
+      span &bull;
       a(href='#2018') 2018
       span &bull;
       a(href='#2016') 2016
@@ -23,6 +26,16 @@ block content
       a(href='#2015') 2015
       
       
+    br
+    a(name='2019')
+    h2.year 2019
+    - var path = '/images/art/finished/2019'
+
+    div.art 
+      img(data-src='#{path}/snow_2019_03_03.jpg')
+      p.sub Acrylic, March 2019
+
+    br
     br
     
     a(name='2018')

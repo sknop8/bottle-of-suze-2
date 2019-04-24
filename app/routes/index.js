@@ -14,4 +14,9 @@ router.get('/hi', function(req, res, next) {
   res.render('about');
 });
 
+router.get('/takecourage', function(req, res, next) {
+  res.render('take-courage');
+});
+
+
 module.exports = router;
