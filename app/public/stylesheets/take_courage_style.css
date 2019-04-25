@@ -31,7 +31,7 @@ body {
   
   h1 {
     font-weight: 900;
-    font-size: 70pt;
+    font-size: 65pt;
     color: white;
     line-height: 50pt;
   }
@@ -49,11 +49,11 @@ body {
 
   .verse {
     color: #00afce;
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 500;
     margin: 10px 0 5px 15px;
     font-family: 'Minion Pro';
-    font-style: italic;
+    /* font-style: italic; */
   }
 
   .thoughts {
