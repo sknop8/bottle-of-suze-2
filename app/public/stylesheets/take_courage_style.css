@@ -53,7 +53,10 @@ body {
     font-weight: 500;
     margin: 10px 0 5px 15px;
     font-family: 'Minion Pro';
-    /* font-style: italic; */
+  }
+
+  .verse.name {
+    padding-left: 20px;
   }
 
   .thoughts {
