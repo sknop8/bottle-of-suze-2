@@ -22,7 +22,6 @@ body {
   
   ::selection {
     background-color: rgba(255,255,255,0.99);
-    color: #888;
   }
   
   ::-moz-selection {
@@ -66,8 +65,10 @@ body {
     color: #565656;
   }
   
-  a.quiet-link {
-    padding: 5px 20px;
+  a {
+    color: #f7b238;
+    text-decoration: none;
+    font-style: italic;
   }
   
   footer {
