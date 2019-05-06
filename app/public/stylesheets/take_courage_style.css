@@ -54,6 +54,10 @@ body {
     font-family: 'Minion Pro';
   }
 
+  span {
+    font-variant: small-caps;
+  }
+
   .verse.name {
     padding-left: 20px;
     margin-bottom: 10px;
