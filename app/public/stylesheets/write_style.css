@@ -61,6 +61,13 @@ h2 {
   color: #fff;
   font-family: 'Lora';
 }
+/* 
+h4 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 15pt;
+  font-family: 'Lora';
+} */
 
 .sub {
   font-weight: 300;
@@ -198,6 +205,8 @@ p.title:hover {
   margin-left: 3em;
   border-left: 4px solid #ededed;
   margin-right: 3em;
+  /* font-family: 'Open Sans';   */
+  /* font-weight: 100; */
 }
 
 @media screen and (max-width: 600px) {
