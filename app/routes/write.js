@@ -86,4 +86,10 @@ router.get('/revisiting-the-embarrassment-of-pain', function(req, res, next) {
   );
 });
 
+router.get('/if-i-am-to-be-filled', function(req, res, next) {
+  res.render('write/if_i_am',
+    { title: 'If I Am To Be Filled | bottle of suze' }
+  );
+});
+
 module.exports = router;
