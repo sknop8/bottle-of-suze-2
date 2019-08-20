@@ -15,7 +15,11 @@ router.get('/hi', function(req, res, next) {
 });
 
 router.get('/takecourage', function(req, res, next) {
-  res.render('take-courage');
+  res.render('take_courage');
+});
+
+router.get('/to-the-seeker', function(req, res, next) {
+  res.render('to_the_seeker');
 });
 
 
