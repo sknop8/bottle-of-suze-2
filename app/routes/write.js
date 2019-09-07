@@ -92,4 +92,10 @@ router.get('/if-i-am-to-be-filled', function(req, res, next) {
   );
 });
 
+router.get('/letters', function(req, res, next) {
+  res.render('write/letters',
+    { title: 'Letters | bottle of suze' }
+  );
+});
+
 module.exports = router;
