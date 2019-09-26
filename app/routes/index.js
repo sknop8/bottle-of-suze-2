@@ -22,5 +22,9 @@ router.get('/to-the-seeker', function(req, res, next) {
   res.render('to_the_seeker');
 });
 
+router.get('/music', function(req, res, next) {
+  res.status(301).redirect("https://soundcloud.com/suzanne-knop/tracks");
+});
+
 
 module.exports = router;
