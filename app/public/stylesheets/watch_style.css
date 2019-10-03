@@ -87,6 +87,11 @@ p {
   background-color: #111;
 }
 
+.movie a:visited {
+  color: #888;
+  text-decoration: none;
+}
+
 a.quiet-link {
   padding: 5px 20px;
 }
