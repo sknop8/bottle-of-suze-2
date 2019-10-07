@@ -20,4 +20,10 @@ router.get('/fun', function(req, res, next) {
   });
 });
 
+router.get('/photos', function(req, res, next) {
+  res.render('art/art_photos', {
+    title: 'photo journal | bottle of suze'
+  });
+});
+
 module.exports = router;

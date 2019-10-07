@@ -78,12 +78,19 @@ p.section a {
 .art p.sub {
   font-size: 10pt;
   padding: 5px 0;
+  text-align: left;
+}
+
+.art.photojournal {
+  font-family: 'Courier New', monospace;
 }
 
 div.art {
   padding: 50px 0;
   height: 100vh;
 }
+
+
 
 img {
   display: block;
@@ -96,10 +103,9 @@ img {
 a {
   text-decoration: none;
   color: #a44;
-
 }
 
-a:hover
+a:hover {
   font-style: italic;
 }
 

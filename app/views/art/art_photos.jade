@@ -1,0 +1,40 @@
+include ./../layout
+
+link(rel='stylesheet', href='/stylesheets/art_style.css')
+
+block content
+  div.back
+    a(href='/art') &larr;
+    
+  center
+    h1
+      i photo journal
+    //- p.sub
+    
+    br
+    
+    div.time-jump 
+      span time travel &#10513;
+      a(href='#2018') 2019
+    //-   span &bull;
+    //-   a(href='#2018') 2018
+
+      
+    br
+
+    a(name='2019')
+    h2.year 2019
+    - var path = '/images/art/photos/2019'
+
+    div.art.photojournal 
+      img(data-src='#{path}/P1120246.jpg')
+      p.sub Innisfree Garden, Millbrook, New York<br>2019/10/06
+
+    div.art.photojournal
+      img(data-src='#{path}/P1060920.jpg')
+      p.sub Abashiri, Hokkaidō, Japan<br>2019/07/11
+
+          
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
