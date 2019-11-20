@@ -2,8 +2,8 @@ body {
   background-color: #000000;
   color: #eeeeee;
   max-width: 100vw;
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 22vw;
+  padding-right: 22vw;
 }
 
 @media screen and (max-width: 850px) {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .video {
-  padding-bottom: 80px;
+  padding-bottom: 25%;
   max-width: 100%;
 }
 
@@ -42,8 +42,20 @@ img {
   width: auto\9;
 }
 
-iframe {
-  width: 100%;
+.iframe-container {
+  overflow: hidden;
+  /* Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
 }
 
 p {
@@ -68,7 +80,7 @@ p {
   font-size: 9.5pt;
 }
 
-.date {
+.date, .runtime {
   color: #666;
   font-weight: 300;
   font-size: 9pt;
