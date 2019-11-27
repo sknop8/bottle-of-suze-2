@@ -75,22 +75,24 @@ p.section a {
   font-weight: 100;
 }
 
+div.art {
+  padding: 50px 0;
+  height: 100vh;
+  font-family: 'Minion Pro';
+  align-content: center;
+}
+
 .art p.sub {
   font-size: 10pt;
   padding: 5px 0;
   text-align: left;
+  display: table;
+  max-width: 80%;
 }
 
 .art.photojournal {
   font-family: 'Courier New', monospace;
 }
-
-div.art {
-  padding: 50px 0;
-  height: 100vh;
-}
-
-
 
 img {
   display: block;
