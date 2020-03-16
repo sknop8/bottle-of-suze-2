@@ -17,9 +17,6 @@ body {
     height: auto !important;
   }
 
-  img {
-
-  }
 }
 
 @media screen and (max-width: 850px) {
@@ -100,6 +97,11 @@ img {
   max-width: 100%;
   width: auto\9;
   max-height: 100%;
+}
+
+.main-page > img {
+  padding: 30px 0;
+  max-height: 50vh;
 }
 
 a {
