@@ -1,0 +1,62 @@
+include ./../layout
+include watch_menu
+
+link(rel='stylesheet', href='/stylesheets/watch_style.css')
+
+block content
+  h1
+    i watch
+
+  +menu(2017)
+
+  br
+  
+  - var path = '../images/watch'
+
+  div.movie    
+    p.title Call Me By Your Name
+    p.sub Luca Guadagnino, 2017
+    img(data-src='#{path}/call_me_by_your_name-min.jpg')
+    p.description
+      | good for your eyes and ears ! first love ! 
+      
+  div.movie    
+    p.title Dead Poet's Society
+    p.sub 1989
+    img(data-src='#{path}/dead_poets_society-min.jpg')
+    p.description
+      | made me sad about robin williams and kind of anxious about needing to contribute my 'verse' to the 'great play'
+      
+  div.movie    
+    p.title Fallen Angels
+    p.sub  Wong Kar-wai, 1985
+    img(data-src='#{path}/fallen_angels-min.jpg')
+    p.description
+      | longing, longing, longing for love. loved this movie emotionally, visually, everything
+      
+      
+  div.movie
+    p.title 2046
+    p.sub Wong Kar-wai, 2004
+    img(data-src='#{path}/2046-min.jpg')
+    p.date October 2017
+    p.description
+      | Watched this on Friday with AF. It hit us (<i>destroyed</i> us) both toward the end — what a beautiful, complex, and emotional film. It’s about love, timing, the parts of ourselves we give to others (in exchange for what?), and carrying pain with us while trying to leave a pained section of life (but being unable to let go). <i>2046</i> is a slow burner, with a few different story arcs that don’t start to seem that connected until we get some explanation from the sci-fi arc (which I LOVED and was very unsettling).
+      br
+      br
+      | The significance of the number 2046 in this movie is also super interesting — it is the hotel number of the main character's true love, it is the distant future that the fictional sci-fi protagonist is stuck in, it is missed timing and lost love, and it is also perhaps just a number. As time passes, so does love.
+      br
+      br
+      | Delayed reaction time is also an important theme — expressed quite literally through the robots’ delayed processing time. Time is just so important in this film, it makes me think about how it plays a role in my life. Time hurts, helps, heals. Time is mysterious, and as the film points out, we may not always know the reasons behind waiting, and delayed answers / answers that never come.
+      br
+      br
+      | Ultimately, pain, love, and time are all interconnected. Each narrative arc is quite beautiful and painful. As always, the actors and actresses are amazing, my favorite here is Gong Li!! (pictured above)
+      br
+      br
+      | Worth noting also that this film is a “loose sequel” to <i>In the Mood for Love</i> (2000) and <i>Days of Being Wild</i> (1990), which were both directed by Wong Kar-Wai. I think the movie is good as standalone, but I watched <i>In the Mood for Love</i> some time beforehand and it did make <i>2046</i> a bit less confusing.
+      
+  +menu(2017)
+   
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();

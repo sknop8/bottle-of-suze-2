@@ -1,0 +1,318 @@
+include ./../layout
+include watch_menu
+
+link(rel='stylesheet', href='/stylesheets/watch_style.css')
+
+block content
+  h1
+    i watch
+    
+  +menu(2019)
+  
+  br
+  
+  - var path = '../images/watch'
+
+  div.movie
+    p.title The King's Speech
+    p.sub Tom Hooper, 2010
+    img(data-src='#{path}/the_kings_speech.png') 
+    p.date 1 January 2020
+    //- p.description 
+
+  div.movie
+    p.title Other People
+    p.sub Chris Kelly, 2016
+    img(data-src='#{path}/other_people.png') 
+    p.date 31 December 2019
+    p.description Wow. Well-written, many familiar faces from millenial TV: <i>The Office</i>, <i>Parks and Recreation</i>, <i>The Good Place</i> 
+
+
+  div.movie
+    p.title About Time
+    p.sub Richard Curtis, 2013
+    p.date 30 December 2019
+    p.description :'^)
+
+
+  div.movie
+    p.title Private Life
+    p.sub Tamara Jenkins, 2018
+    img(data-src='#{path}/private_life.png') 
+    p.date 28 December 2019
+    p.description I really liked this movie! Kathryn Hahn is great, all the characters were given a lot of depth, and there's an impressive range of emotions in this movie
+
+
+  div.movie
+    p.title Marriage Story
+    p.sub Noah Baumbach, 2019
+    img(data-src='#{path}/marriage_story.png')
+    p.date 18 December 2019 
+    p.description Good divorce movie--honest, simple--though I didn't feel like it was expressing anything new or particularly special. 
+
+
+  div.movie
+    p.title Enough Said
+    p.sub Nicole Holofcener, 2013
+    img(data-src='#{path}/enough_said.png')
+    p.date 8 December 2019
+    p.description Ahhhhhhh ha I loved this movie :)<br><br>It's about life after divorce, those little things that can poison relationships, parenthood, daughters, the moral ambiguity of knowing too much about someone, middle age maturity.<br><br>In the calm aftermath of this movie, and the ingenuis dramatic/comedic suspense of its plot, I feel content and somehow comforted; through the thick of hurt, heartbreak, and awkwardly necessary social situations, it's still possible to end on a good laugh, shoulder to shoulder. It's a nice thought in which to wrap myself inside of and rest.
+
+  div.movie
+    p.title Panic Room
+    p.sub David Fincher, 2002
+    p.date November 2019
+    p.description Tiny Kristen Stewart and classic Jodie... hehe
+
+
+  div.movie
+    p.title The Sound of Music
+    p.sub Robert Wise, 1965
+    img(data-src='#{path}/the_sound_of_music_1.png') 
+    p.date November 2019
+    p.description The most magical, wonderful movie in the world *~* !
+
+
+  //- div.movie
+  //-   p.title El Camino: A Breaking Bad Movie
+  //-   p.sub Vince Gilligan, 2019
+  //-   p.date 3 November 2019
+
+
+  div.movie
+    p.title Magnolia
+    p.sub Paul Thomas Anderson, 1999
+    img(data-src='#{path}/magnolia.png') 
+    p.date 1 November 2019
+    p.description Paul Thomas Anderson, Melora Walters, Tom Cruise, Julianne Moore, Philip Seymour Hoffman, Aimee Mann, Jon Brion, Fiona Apple (c/o PTA)...what more could you want??? Our lovely 90s heroes in a strange three hour blossoming of stories with great (the best) music
+
+  div.movie
+    p.title The Butterfly Effect
+    p.sub Eric Bress, J. Mackye Gruber, 2004
+    img(data-src='#{path}/the_butterfly_effect.png') 
+    p.date 25 October 2019
+    p.description This was more thrilling than I expected, and a really gripping story despite the simple premise (<a href="https://en.wikipedia.org/wiki/Butterfly_effect" target="_blank">the butterfly effect</a>).
+
+  div.movie
+    p.title The French Connection
+    p.sub William Friedkin, 1971
+    img(data-src='#{path}/the_french_connection.png') 
+    p.date 16 October 2019
+    p.description One long chase, mostly action//kinda boring, cool score, very mobile camera technique. It's kinda crazy to me that this won Best Picture over <i>A Clockwork Orange</i>, (then again, it would also be disturbing for <i>Clockwork</i> to win), but I guess it set the precedent for the new "American crime film"--sort of gritty, running around New York City, brash, chasing trains, European criminals, etc.
+
+
+  div.movie
+    p.title Rosemary's Baby
+    p.sub Roman Polanski, 1968
+    img(data-src='#{path}/rosemarys_baby.png') 
+    p.date 14 October 2019
+    p.description Ooh mama.....very good
+
+  div.movie
+    p.title Vertigo
+    p.sub Alfred Hitchcock, 1958
+    img(data-src='#{path}/vertigo.png') 
+    p.date 13 October 2019
+    p.description Vertigo in San Francisco, how fitting. I think this was my first Hitchcock film?? (We may have watched part of The Birds in 11th grade English, though.) It wasn't as scary or intense as I feared, though it was pretty mysterious, and a lot of the cinematopgraphy was beautiful. I felt a little let down by the plot, but I loved seeing shots of San Francisco in the 50s.
+
+  div.movie
+    p.title The Graduate
+    p.sub Mike Nichols, 1967
+    img(data-src='#{path}/the_graduate.png') 
+    p.date 10 October 2019
+
+  div.movie
+    p.title Ad Astra
+    p.sub 2019, James Gray
+    img(data-src='#{path}/ad_astra.jpg') 
+    p.date 5 October 2019
+    p.description I liked this...though it left me with a sad feeling
+
+  div.movie
+    p.title American Psycho
+    p.sub 2000, dir. Mary Harron, based on novel by Bret Easton Ellis
+    img(data-src='#{path}/american_psycho.png') 
+    p.date 2 October 2019
+    p.description Truly psycho...I've never been more off-put by Christian Bale's smile<br><br>"I have all the characteristics of a human being: blood, flesh, skin, hair; but not a single, clear, identifiable emotion, except for greed and disgust. Something horrible is happening inside of me and I don't know why. My nightly bloodlust has overflown into my days. I feel lethal, on the verge of frenzy. I think my mask of sanity is about to slip."<br><br>Perhaps the real disturbing thing about this film is that I can in some ways relate to Patrick Bateman's frustration, where his tension (that leads him to compulsive, serial violence) comes from: the incredible vacuity of yuppie culture. <br><br>(According to <a href="https://en.wikipedia.org/wiki/Yuppie" target="_blank">wikipedia</a>, <i>yuppie</i> was a term coined in the 80s, short for "young urban professional" or "young, upwardly-mobile professional." Nowadays, yuppies are SF or LA hip, white, twenty-somethings who do yoga and drink kombucha -- a fitting extension of the term three decades later.)<br><br>Bret Easton Ellis, the author of the novel of the same name which the movie is based on, comments:<br>"[Bateman] was crazy the same way [I was]. He did not come out of me sitting down and wanting to write a grand sweeping indictment of yuppie culture. <strong>It initiated because of my own isolation and alienation at a point in my life. I was living like Patrick Bateman. I was slipping into a consumerist kind of void that was supposed to give me confidence and make me feel good about myself but just made me feel worse and worse and worse about myself.</strong> That is where the tension of <i>American Psycho</i> came from. It wasn't that I was going to make up this serial killer on Wall Street. High concept. Fantastic. It came from a much more personal place, and that's something that I've only been admitting in the last year or so."<br><br>This is all...too! much!
+
+  div.movie
+    p.title The Lord of the Rings: The Return of the King
+    p.sub 2003, dir. Peter Jackson, based on J.R.R. Tolkien's novels
+    img(data-src='#{path}/lord_of_the_rings-min.jpg') 
+    p.date 23 September 2019
+    p.description Oh my goodness...I have finally finished the trilogy, after 3 whole nights of watching the Return of the King......I've read and reread the LotR wiki so many times....
+
+  div.movie
+    p.title A Clockwork Orange
+    p.sub Stanley Kubrick, 1971
+    img(data-src='#{path}/a_clockwork_orange-min.jpg') 
+    p.date 5 September 2019
+
+
+   div.movie
+    p.title Please Give
+    p.sub Nicole Holofcener, 2010
+    img(data-src='#{path}/please_give-min.jpg') 
+    p.date 21 August 2019
+    p.description Such an excellent collection of characters
+
+
+  div.movie
+    p.title A Star Is Born
+    p.sub Bradley Cooper, 2018
+    img(data-src='#{path}/a_star_is_born-min.jpg') 
+    p.date July 2019
+    p.description (I love you Lady Gaga) the story with this movie is that I watched the first half of it on my flight to Osaka for the beginning of my July travels, and I finished the movie on my flight home from Milan at the end of month, so I really felt the passage of time during this movie !
+
+
+  div.movie
+    p.title Ringu
+    p.sub Nakata Hideo, 1998
+    p.date July 2019
+    p.description big scream
+
+  div.movie 
+    p.title Free Solo
+    p.sub Jimmy Chin, 2018
+    p.date July 2019
+    p.description Omg...Alex Honnold...look him up...
+
+  div.movie
+    p.title (500) Days of Summer
+    p.sub Marc Webb, 2009
+    img(data-src='#{path}/500_days_of_summer-min.jpg') 
+    p.date May 2019
+    p.description I rewatched <i>500 Days of Summer</i>! It was interesting because the first time I saw it was in the beginning of high school, before I ever had any real romantic experience, and now I'm here, fresh off the end of my third major relationship. I felt like I could understand Zooey Deschanel's character a lot more this time around, though at heart I am so Joseph Gordon-Levitt in this movie. This was also a darn good reminder of JGL's cuteyness...I remember him being one of my high school celebrity crushes hehe
+
+
+  div.movie
+    p.title Punch Drunk Love
+    p.sub Paul Thomas Anderson, 2002
+    img(data-src='#{path}/punch_drunk_love-min.jpg') 
+    p.date March 2019
+    p.description Endearing performance by young Adam Sandler, and I LOVED the score (Jon Brion!).
+
+  div.movie
+    p.title Shoplifters
+    p.sub Kore-eda Hirokazu, 2018
+    img(data-src='#{path}/shoplifters-min.jpg') 
+    p.date March 2019
+    p.description Absolute heart-wrencher, and so, so beautiful
+
+  div.movie
+    p.title Mary and the Witch's Flower
+    p.sub Hiromasa Yonebayashi, 2017
+    img(data-src='#{path}/mary_and_the_witchs_flower-min.jpg') 
+    p.date 2 March 2019
+    p.description The story fell a little flat for me, but I loved the animation
+
+  div.movie
+    p.title Vice
+    p.sub Adam McKay, 2018
+    //- img(data-src='#{path}/vice.jpg') 
+    p.date February 2019
+    p.description I watched this in theaters with my brother, who I think is about the only person I know who would actually want to watch this with me, and it definitely surprised me! I was mostly in it because I wanted to see Christian Bale transform into Dick Cheney, but the film painted a nuanced, complicated, strained picture of Dick Cheney's life and rise to power, key political figures of the time, and the U.S. from the 80s to 9/11 and the post-9/11 era. Cinematically, the film was also really bold and unconventional, and used a lot of playful/experimental narrative techniques (I think you have to just see it for yourself).
+
+  div.movie
+    p.title The Favourite
+    p.sub Yorgos Lanthimos, 2018
+    img(data-src='#{path}/the_favourite-min.jpg') 
+    p.date 18 February 2019
+    p.description !!!!!!!!! Scream wow I have no words (don't think I didn't miss those <i>Lobster</i> references in there ;-))
+
+  div.movie
+    p.title The Lobster
+    p.sub Yorgos Lanthimos, 2015
+    img(data-src='#{path}/the_lobster-min.jpg') 
+    p.date 8 February 2019 
+    p.description !!!! This movie was so funny to me (how can I shout, "I love you Rachel Weisz (and everyone else)!!!"). What a well-written, well-acted, well-shot satire (or arguably speculative fiction) of modern romance. I am eager but apprehensive to watch Lanthimos's other films hahahehe
+
+  div.movie
+    p.title Wildlife
+    p.sub Paul Dano, 2018
+    img(data-src='#{path}/wildlife-min.jpg') 
+    p.date 28 January 2019  
+    p.description This had an unexpectedly eerie mood (not sure if that's just what I feel whenever Jake Gyllenhaal comes on screen) but the setting/cinematography was quite beautiful 
+
+
+  div.movie
+    p.title My Week with Marilyn
+    p.sub 2011, Simon Curtis
+    img(data-src='#{path}/my_week_with_marilyn-min.jpg') 
+    p.date 26 January 2019  
+    //- p.description 
+
+  div.movie
+    p.title There Will Be Blood
+    p.sub Paul Thomas Anderson, 2007
+    img(data-src='#{path}/there_will_be_blood-min.jpg') 
+    p.date 27 January 2019  
+    p.description My first Paul Thomas Anderson film, my first Daniel Day-Lewis film, ... an overwhelming but highly cinematic experience for sure.
+
+  div.movie
+    p.title Café Lumière
+    p.sub Hsiao-Hsien Hou, 2003
+    img(data-src='#{path}/cafe_lumiere-min.jpg') 
+    p.date 25 January 2019  
+    p.description Trains and quiet
+
+  div.movie
+    p.title Killing Eve <span style='font-style:normal'>(TV Series)</span>
+    p.sub Phoebe Waller-Bridge, 2018-
+    img(data-src='#{path}/killing_eve-min.jpg') 
+    p.date 23 January 2019  
+    p.description OMG please watch...I knew I could trust Sandra Oh to make this thriller/drama-com amazing. Jodie Comer was so good as the incredibly ruthless, fun, and compelling assassin. Eve Polastri (Sandra Oh) and Villanelle (Jodie Comer) were both such complicated characters, and the queer tension was also complicated and interesting on a level I feel like I don't see very often in media. Can't wait for the second season.
+
+  div.movie
+    p.title Office Space
+    p.sub Mike Judge, 1999
+    img(data-src='#{path}/office_space-min.jpg') 
+    p.date January 2018  
+
+
+  div.movie
+    p.title Maniac <span style='font-style:normal'>(TV Mini-Series)</span>
+    p.sub Cary Joji Fukunaga, 2018
+    img(data-src='#{path}/maniac-min.jpg') 
+    p.date 13 January 2019  
+    p.description 
+      | Annie (Emma Stone) and Owen's (Jonah Hill) tour de force journey through three pills--an experimental drug treatment under trial to completely "heal" their patients--is, by the end, nothing less than a cathartic tale of friendship between strangers in the face of their own brokenness. 
+      br
+      br
+      | <i>Maniac</i> tells the story and backstory of the trauma and schizophrenia of two people whose primary interactions are in the dream world of a depressed computer created by two scientists with pscyhological problems of their own. It's a wonderfully complex, technologically imaginative, and wildly fantastical story with a humor and grandeur of its own, dignifying the utterly personal, convoluted nature of our psychological disorders.
+      br
+      br
+      | It was also super fun to see Emma Stone and Jonah Hill play so many different versions of their characters in the dream-states. Such heartfelt, subtle acting by the both of them!!
+
+  div.movie
+    p.title Spider-Man: Into the Spider-Verse
+    p.sub 2018
+    p.date 12 January 2019  
+    p.description Beautiful, artful, amazing animation! I came out of the theater feeling for the first time in years (since <i>The Incredibles</i>? When I was 7?? Or perhaps <i>The Dark Knight?</i>) moved and impressed by a superhero movie. I think animation as a medium really unleashes so much potential for the superhero movie, while also allowing it to stylistically tie back to the genre's comicbook roots. Really enjoyed all the cool glitch and drawing-style rendering effects :^) Glad I saw this!
+
+  div.movie
+    p.title A Late Quartet
+    p.sub 2012, Yaron Zilberman
+    img(data-src='#{path}/a_late_quartet-min.jpg') 
+    p.date 11 January 2019  
+    p.description This was a riveting drama centered around the interpersonal relationships between members of a world-renowned string quartet. I used to play viola so it took a lot of effort for me not to obsess over how the actors were acting out their instrument playing. For a story with an ensemble cast (no single main character) and many moving parts, I thought the depth each character was portrayed with was really impressive!<br><br>Here's a quote from the beginning of the movie that I really liked, excellently performed by Christopher Walken's father-figure-music-professor character:<br>"We begin with Beethoven's Opus 131, said to be his personal favorite. It has seven movements at a time when the standard was four. And they're all connected--you're not allowed to stop between movements--no resting, no tuning. Beethoven insisted it be played attacca, without pause...<strong>For us, it means that playing for so long without pause, our instruments must in time go out of tune, each in its own quite different way. It's a mess! What are we supposed to do, stop? Or, struggle to continuously adjust to each other up to the end, even if we are out of tune?</strong> I don't know. Let's find out."<br><br>I thought this was such a beautiful metaphor for the messiness that arises when relations with people we love get complicated--we must keep going, keep <i>playing</i>, keep adjusting, despite our brokenness and imperfections.
+
+  div.movie
+    p.title Forever <span style='font-style:normal'>(TV Series)</span>
+    p.sub 2018-, Matt Hubbard / Alan Yang
+    img(data-src='#{path}/forever-min.jpg') 
+    p.date 9 January 2019  
+    p.description Felt a little off, but nonetheless an enjoyable and interesting show! Think <i>Portlandia</i> x <i>Black Mirror</i> x <i>The Good Place</i> lol
+
+  div.movie
+    p.title Nostalgia
+    p.sub 2018, Mark Pellington
+    img(data-src='#{path}/nostalgia-min.jpg') 
+    p.date 8 January 2019
+    p.description Watched this on the plane back from São Paulo....oh my.....beautiful, ambitious, <i>saudade</i>-provoking stories and "lives lived"....perhaps a little unbalanced <br><br>Not that related...but I listened to this a lot afterwards <a href='https://www.youtube.com/watch?v=S4yVwj9Y8HE' target='_blank'>https://www.youtube.com/watch?v=S4yVwj9Y8HE</a><br><br>I say "ambitious" because I think the feeling of nostalgia and saudade is so difficult to capture real-time (without flashback scenes). Those feelings are so mysterious and essential and <i>human</i>...perhaps that's why I felt Beach House was a good musical pair to this film, since their music attempts to express these mysterious feelings as well. This film meditates on our ties to physical objects, and how they hold significance, memories... 
+
+  +menu(2019)
+      
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();

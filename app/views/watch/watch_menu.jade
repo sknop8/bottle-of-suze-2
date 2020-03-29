@@ -1,0 +1,29 @@
+mixin menu(year)
+  div.menu
+    if year == 2020
+      span.link.selected
+        a(href='/watch/2020') 2020
+    else
+      span.link
+        a(href='/watch/2020') 2020
+    span |
+    if year == 2019
+      span.link.selected
+        a(href='/watch/2019') 2019
+    else
+      span.link
+        a(href='/watch/2019') 2019
+    span |
+    if year == 2018
+      span.link.selected
+        a(href='/watch/2018') 2018
+    else
+      span.link
+        a(href='/watch/2018') 2018
+    span |
+    if year == 2017
+      span.link.selected
+        a(href='/watch/2017') 2017
+    else
+      span.link
+        a(href='/watch/2017') 2017

@@ -33,6 +33,29 @@ h1 {
   font-weight: 700;
 }
 
+.menu {
+  color: #555;
+  font-size: 11pt;
+}
+
+.menu .link a {
+  padding: 0 4px;
+  text-decoration: none;
+  color: #888;
+  font-weight: 100;
+}
+
+.menu .link a:hover {
+  font-weight: 700;
+  color: #a44;
+}
+
+.menu > .link.selected a {
+  color: #a44;
+  font-weight: 700;
+  font-style: italic;
+}
+
 .movie {
   padding-bottom: 80px;
   max-width: 100%;
