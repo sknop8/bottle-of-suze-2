@@ -1,29 +1,16 @@
-mixin menu(year)
+
+- var menu_list = [{name:'2020',href:'/watch/2020'}, {name:'2019',href:'/watch/2019'}, {name:'2018',href:'/watch/2018'}, {name:'2017',href:'/watch/2017'}, {name:'Index',href:'/watch/index'}]
+
+mixin menu(selected)
   div.menu
-    if year == 2020
-      span.link.selected
-        a(href='/watch/2020') 2020
-    else
-      span.link
-        a(href='/watch/2020') 2020
-    span |
-    if year == 2019
-      span.link.selected
-        a(href='/watch/2019') 2019
-    else
-      span.link
-        a(href='/watch/2019') 2019
-    span |
-    if year == 2018
-      span.link.selected
-        a(href='/watch/2018') 2018
-    else
-      span.link
-        a(href='/watch/2018') 2018
-    span |
-    if year == 2017
-      span.link.selected
-        a(href='/watch/2017') 2017
-    else
-      span.link
-        a(href='/watch/2017') 2017
+    each item, i in menu_list
+      if (selected == item.name)
+        span.link.selected
+          a(href=item.href) #{item.name}
+      else
+        span.link
+          a(href=item.href) #{item.name}
+      if i != menu_list.length - 1
+        span |
+
+

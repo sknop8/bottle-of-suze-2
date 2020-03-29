@@ -32,6 +32,12 @@ router.get('/2017', function(req, res, next) {
   });
 });
 
+router.get('/index', function(req, res, next) {
+  res.render('watch/watch_index', {
+    title: 'watch index | bottle of suze'
+  });
+});
+
 router.get('/persona', function(req, res, next) {
   res.render('watch/persona', {
     title: 'persona | bottle of suze'
