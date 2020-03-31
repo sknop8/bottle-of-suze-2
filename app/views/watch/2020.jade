@@ -14,6 +14,14 @@ block content
   - var path = '../images/watch'
 
   div.movie
+    p.title The Talented Mr. Ripley
+    p.sub 1999, dir. Anthony Minghella, based on Patricia Highsmith's 1955 novel
+    img(data-src='#{path}/the_talented_mr_ripley.png')
+    p.date 30 March 2020
+    p.description so many young beauties, very thrilling and psychotically alluring. somehow matt damon succeeded in being eery and strange by being  smiley and baby-faced
+    //- if you enjoyed both <i>Call Me By Your Name</i> and <i>You</i>...this will take you for a crazy late 90s ride
+
+  div.movie
     p.title The Master
     p.sub Paul Thomas Anderson, 2012
     img(data-src='#{path}/the_master.png')
@@ -23,7 +31,7 @@ block content
   div.movie
     p.title Parasite
     p.sub Bong Joon Ho, 2019
-    //- img(data-src='#{path}/parasite.png') 
+    img(data-src='#{path}/parasite.jpg') 
     p.date 2 March 2020
     p.description Ohhhhhhhh my goshhhhhhhhhhhhhhhhh this is a must watch, this movie was so deserving of every reward. It speaks of life like <i>Shoplifters</i> but with of course added twisted layers like <i>The Handmaiden</i> and some class-based thrill/horror like <i>Get Out</i>. Plus it's absolutely hilarious!
 
@@ -37,7 +45,7 @@ block content
   div.movie
     p.title Lost Highway
     p.sub David Lynch, 1997
-    //- img(data-src='#{path}/lost_highway.png') 
+    img(data-src='#{path}/lost_highway.png') 
     p.date 8 February 2020
     p.description I watched this so that I could read David Foster Wallace's essay on Lynch, "David Lynch Keeps His Head," where DFW does a good job analyzing just why exactly Lynch makes you feel the way you do after watching any of his movies, which is, to be preciese: irrationally frightened out of your mind. <i>Lost Highway</i> was no exception to the Lynch directorial phenomenon for me. It was fascinating and alluring, but I don't think I can take another Lynch movie for a few months.
 
@@ -53,7 +61,6 @@ block content
     p.sub Tom Hooper, 2010
     img(data-src='#{path}/the_kings_speech.png') 
     p.date 1 January 2020
-    //- p.description 
       
   +menu(2020)
       
