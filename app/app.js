@@ -13,6 +13,7 @@ var art = require('./routes/art');
 var software = require('./routes/software');
 var video = require('./routes/video');
 var read = require('./routes/read');
+var readwell = require('./routes/readwell');
 
 var app = express();
 
@@ -28,19 +29,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// TODO: get subdomains to work
 app.use('/', index);
-app.use(subdomain('watch', watch));
+// app.use(subdomain('watch', watch));
 app.use('/watch', watch);
-app.use(subdomain('write', write));
+// app.use(subdomain('write', write));
 app.use('/write', write);
-app.use(subdomain('art', art));
+// app.use(subdomain('art', art));
 app.use('/art', art);
-app.use(subdomain('software', software));
+// app.use(subdomain('software', software));
 app.use('/software', software);
-app.use(subdomain('video', index));
+// app.use(subdomain('video', index));
 app.use('/video', video);
-app.use(subdomain('read', read));
+// app.use(subdomain('read', read));
 app.use('/read', read);
+app.use('/readwell', readwell);
 
 
 
