@@ -8,20 +8,31 @@ block content
     
   center
     h1
-      i photo journal
-    //- p.sub
+      i photos
+    //- p.sub.photo Equipment: For digital, I have a Panasonic Lumix GX85 mirrorless camera with 12-32mm and 45-150mm lenses. For film, I have an Argus C3 35mm with a 50mm lens.
 
     br
     
     div.time-jump 
       span time travel &#10513;
-      a(href='#2018') 2019
-    //-   span &bull;
-    //-   a(href='#2018') 2018
 
+      a(href='#2020') 2020
+      span &bull;
+      a(href='#2019') 2019
+
+    br
+    .photojournal.sub <center>Equipment Note:</center>For digital, I have a Panasonic Lumix GX85 mirrorless camera with 12-32mm and 45-150mm lenses. For film, I have an Argus C3 (35mm film format) with a 50mm lens. Unless specified all photos are taken by the GX85.
+
+
+    br
+    a(name='2020')
+    h2.year 2020
+    - var path = '/images/art/photos/2020'
+    div.art.photojournal
+      img(data-src='#{path}/IMG_5278.jpg')
+      p.sub Poughkeepsie, New York<br>2020/05<br>[film]
       
     br
-
     a(name='2019')
     h2.year 2019
     - var path = '/images/art/photos/2019'

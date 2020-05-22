@@ -8,7 +8,7 @@ block content
   
   center
     h1
-      i portfolio
+      i paintings
     //- p.sub.
       finished, <i>abandoned</i>, longer, what have you
       
@@ -16,7 +16,9 @@ block content
     
     div.time-jump 
       span time travel &#10513;
-      
+
+      a(href='#2020') 2020
+      span &bull;
       a(href='#2019') 2019
       span &bull;
       a(href='#2018') 2018
@@ -24,16 +26,44 @@ block content
       a(href='#2016') 2016
       span &bull;
       a(href='#2015') 2015
-      
+
+    br
+    a(name='2020')
+    h2.year 2020
+    - var path = '/images/art/2020'
+
+    div.art
+      img(data-src='#{path}/2020_05_17.jpg')
+      p.sub RIP THIS PAINTING OIL ON CANVAS MAY 2020 IT WAS RUINED AKA "EPHEMERAL"
+
+    div.art
+      img(data-src='#{path}/2020_05_16.jpg')
+      p.sub Oil on wood, 16 May 2020
+
+    div.art
+      img(data-src='#{path}/2020_01_27_apt.jpg')
+      p.sub Consider this a love letter to my new apartment.<br>Oil on canvas, 27 Jan 2020
       
     br
     a(name='2019')
     h2.year 2019
-    - var path = '/images/art/finished/2019'
+    - var path = '/images/art/2019'
+
+    div.art
+      img(data-src='#{path}/2019_09_21__basil_old.jpg')
+      p.sub Basil during golden hour!<br>Oil, September 21, 2019
+
+    div.art
+      img(data-src='#{path}/2019_09_20__trees_old.jpg')
+      p.sub The trees in my backyard...with a lovely hint of autumn<br>Oil, September 20, 2019
+    
+    div.art 
+      img(data-src='#{path}/2019_06_26.jpg')
+      p.sub Oil on gessoed paper, 26 June 2019
 
     div.art 
       img(data-src='#{path}/2019_06_20.jpg')
-      p.sub Oil on gessoed paper, June 2019
+      p.sub Oil on gessoed paper, 20 June 2019
 
     div.art 
       img(data-src='#{path}/snow_2019_03_03.jpg')
@@ -44,14 +74,34 @@ block content
     
     a(name='2018')
     h2.year 2018
-    - var path = '/images/art/finished/2018'
+    - var path = '/images/art/2018'
+  
+    div.art
+      img(data-src='#{path}/2018_12_chamounix.jpg')
+      p.sub Chamounix<br>Oil, December 2018.
+  
+    div.art
+      img(data-src='#{path}/2018_12_figures_window.jpg')
+      p.sub Oil on canvas, December 2018
+
+    div.art
+      img(data-src='#{path}/11_25_18_acrylic_self.jpg')
+      p.sub acrylic, november 25 2018
 
     div.art 
       img(data-src='#{path}/2018_11_05.jpg')
-      p.sub Oil on canvas, November. <br>More abandoned, than finished... but I think I'm quite satisfied with how it turned out. The meticulous few hours I put into this were certainly a labor of love...so this self-portrait is quite special to me, even though I tried very hard to not be precious about it!
+      p.sub Oil on canvas, November. <br>More abandoned, than finished...based on Rembrandt's <a href='https://en.wikipedia.org/wiki/Self-Portrait_with_Dishevelled_Hair#/media/File:Self-portrait_(1628-1629),_by_Rembrandt.jpg' target='_blank'>"Self Portrait with Disheveled Hair"</a>.<br>The meticulous few hours I put into this were certainly a labor of love...so this self-portrait is special to me, even though I tried very hard to not be precious about it!
+
+    div.art 
+      img(data-src='#{path}/2018_10_caravaggio.jpg')
+      p.sub Study of Caravaggio's <a href='https://en.wikipedia.org/wiki/The_Lute_Player_(Caravaggio)#/media/File:1596_Caravaggio,_The_Lute_Player_New_York.jpg' target='_blank'>"The Lute Player"</a>. Oil on canvas, October 2018
 
     div.art 
       img(data-src='#{path}/2018_10_22.jpg')
+      p.sub Oil on canvas, October 2018
+
+    div.art 
+      img(data-src='#{path}/2018_10_14_hand.jpg')
       p.sub Oil on canvas, October 2018
 
     div.art 
@@ -67,7 +117,7 @@ block content
     
     a(name='2016')
     h2.year 2016
-    - var path = '/images/art/finished/2016'
+    - var path = '/images/art/2016'
     div.art
       img(data-src='#{path}/2016-11-09.jpg')
       p.sub November 9th, 2016 -- do you remember that day? <br> Acrylic on paper
@@ -90,7 +140,7 @@ block content
 
     a(name='2015')
     h2.year 2015
-    - var path = '/images/art/finished/2013-15'
+    - var path = '/images/art/2013-15'
 
     div.art
       img(data-src='#{path}/2015_winter_animation.gif')

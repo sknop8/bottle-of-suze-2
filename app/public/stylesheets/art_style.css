@@ -91,6 +91,13 @@ div.art {
   font-family: 'Courier New', monospace;
 }
 
+.photojournal.sub {
+  font-family: 'Courier New', monospace;
+  font-size: 9pt;
+  text-align: left;
+  max-width: 50%;
+}
+
 img {
   display: block;
   height: auto\9;
