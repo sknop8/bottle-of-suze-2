@@ -1,0 +1,51 @@
+@font-face{
+	font-family: cambria;
+	src:url(cambria.woff);
+}
+body{
+
+	font-family: cambria;
+}
+#canvas{
+	margin:;
+	display:block;
+}
+#play{
+	font-size: 20pt;
+	background-color: rgb(240,240,240);
+	padding:10px;
+	text-align: center;
+	/*position: width/3;*/
+}
+#play:hover{
+	cursor:pointer;
+	background-color: rgb(100,10,10);
+	color:rgb(240,240,200);
+	-webkit-transition:  color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+    -moz-transition:  color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+	-o-transition:  color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+    transition: color ease-in-out 0.5s, background-color ease-in-out 0.5s;
+}
+#song-title{
+	font-size:20pt;
+	/*color:white;*/
+	color:rgb(100,10,10);
+	padding:10px;
+	opacity:0;
+	
+	/*background-color: black;*/
+    -webkit-transition:  opacity ease-in-out 0.5s;
+    -moz-transition:  opacity ease-in-out 0.5s;
+    -o-transition:  opacity ease-in-out 0.5s;
+    transition:  opacity ease-in-out 0.5s;
+
+}
+#main{
+	/*width:40%;*/
+	padding-top:2vh;
+	width:50vw;
+	margin-left:5vw;
+	margin-right:5vw;
+	/*margin-left:10%;*/
+	/*margin-right:25%;*/
+}

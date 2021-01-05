@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>clouds</title>
+ </head>
+ <body>
+
+ <script src="../js/processing.min.js"></script>
+
+ <script src="../js/jquery.min.js"></script>
+ <link rel="stylesheet" type ="text/css" href="../projects/clouds/style.css">
+ <div id='main'>
+ <canvas id='canvas' data-processing-sources="../projects/clouds/clouds_alexg.pde">
+
+ </canvas>
+ <br>
+<span id='play'>play</span>
+<span id='song-title'>clouds by alex g</span>
+</div>
+<script type="text/javascript">
+	var audio = new Audio('../projects/clouds/clouds.mp3');
+	$('#play').click( function(){
+		if (audio.paused) {
+			audio.play();
+			$(this).html("pause");
+		} else {
+			audio.pause();
+
+			$(this).html("play");
+		}
+
+			$("#song-title").css('opacity', '1');
+
+		}
+	);
+
+	audio.addEventListener('ended', function() {
+    	this.currentTime = 0;
+    	this.play();
+	}, false);
+
+
+// function func (processing) {
+// 	processing.draw = function() {
+
+ 		
+// 	};
+// }
+// var canvas = $('#canvas');
+// var processingInstance = new Processing(canvas, func);
+</script>
+ 	
+
+ </body>
+ </html>

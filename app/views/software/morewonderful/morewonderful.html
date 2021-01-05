@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>More:Wonderful</title>
+    <style>
+      html, body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        width: 100%;
+        height: 100%;
+      }
+      #title, #info {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 100;
+        display: block;
+        font-family: sans-serif;
+      }
+      #title {
+        top: 50px;
+        color: #900C3F ;
+        font-weight:800;
+      }
+      #info {
+        top: 100px;
+        color: gray;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='title'>MORE:WONDERFUL</div>
+    <div id='info'><i>click anywhere to play</i></div>
+    <video id="video" width="100%" height="100%" loop muted style="display:none" src="couchme.mp4" crossorigin="anonymous"></video>
+    <script src="https://sknop8.github.io/morewonderful/bundle.js"></script>
+</video>
+  </body>
+</html>
