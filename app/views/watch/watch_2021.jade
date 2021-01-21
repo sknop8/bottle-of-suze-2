@@ -1,0 +1,39 @@
+include ./../layout
+include watch_menu
+
+link(rel='stylesheet', href='/stylesheets/watch_style.css')
+
+block content
+  h1
+    i watch
+    
+  +menu(2021)
+
+  br
+  
+  - var path = '../images/watch'
+
+  div.movie
+    p.title Before Sunrise
+    p.sub Richard Linklater, 1995
+    img(data-src='#{path}/before_sunrise.png') 
+    p.date 20 Jan 2021
+    p.description ah wow. so beautiful, ethan hawke and julie delpy were so young and squishy and endearing, and I could feel the excited awkwardness of their first meeting and conversation, and then how things relaxed as they got to know each other in deeper and more nuanced ways, even each others physical presences. The film is essentially one long conversation, and it captures that wonderfully intimate and special space created between two people who are in a joint journey of knowing each other, and relishing being absorbed in life and in the other person. It also captures the liminal space of travel, where one is free from the confines of regular life, and the way the foreign and the new seem fuzzy and warm rather than cold and scary when in the safety of being with someone. From my own experience in travel, I've come to the conculsion that travelling with another person is a remarkably swift way to get to know them. To wander around, to ask questions, to be vulnerable, to act relexively, to get into shenanigans, to rest together, to eat together, to navigate together: this is the exceptional privilege of being in a new place with a new person. I think the experience in this film speaks to that, and showcases so beautifully the space created at the conjunction of three beings: jesse, celine, and vienna. what a special film, one long, full, rich moment. 
+
+  div.movie
+    p.title Twin Peaks
+    p.sub David Lynch & Mark Frost, 1990-1991
+    img(data-src='#{path}/twin_peaks_6.png') 
+    p.date Nov 2020 - Jan 2021
+    p.description I should really say something about finally finishing twin peaks! I loved this show, it was wildly compelling I think solely because of the interesting and beautiful and strange characters, and kyle maclachlan's charm that grows on you. lynch's unpredictability gave the plot a nice mystery/horror edge; his pull toward the surreal and uncanny I think added depth instead of being downright frightening (like in his films), and at the core this was the drama of the heart of a small pacific northwest town and its weird happenings. the music was phenomenal: cool jazz and lush dream pop.
+      //- todo: uncomment when all these photos are minified
+      //- <br>It's hard to capture such a visually strong show in just one screenshot, so here's my expanded Twin Peaks photo gallery:
+      //- a(href='/watch/twinpeaks').quiet-link <strong>x &rarr;</strong>
+      
+
+ 
+  +menu(2021)
+      
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
