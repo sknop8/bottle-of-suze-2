@@ -127,6 +127,8 @@ img {
 
 .title {
   font-style: italic;
+  /* TODO: find an italic typeface for this that is not so aggressively italic */
+  /* font-family: 'Garamond Pro'; */
   font-weight: bold;
   font-size: 16pt;
 }

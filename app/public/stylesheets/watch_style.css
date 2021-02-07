@@ -133,8 +133,12 @@ a.quiet-link {
   font-weight: 100;
 }
 
+.movie-list ol {
+  /* counter-reset: list 3; */
+}
+
 .movie-list ol li {
-  counter-increment: list;
+  counter-increment: list -1;
   list-style-type: none;
   position: relative;
 }
