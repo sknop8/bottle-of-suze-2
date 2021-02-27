@@ -8,9 +8,9 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/help', function(req, res, next) {
+router.get('/to-the-writer', function(req, res, next) {
   res.render('write/help',
-    { title: 'write help | bottle of suze' }
+    { title: 'to the writer | bottle of suze' }
   );
 });
 

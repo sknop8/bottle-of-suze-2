@@ -202,9 +202,9 @@ p.title:hover {
 
 .quote { /* Like an indent, but with a line on the left */
   padding-left: 15px;
-  margin-left: 3em;
+  margin-left: 1em;
   border-left: 4px solid #ededed;
-  margin-right: 3em;
+  margin-right: 1em;
   /* font-family: 'Open Sans';   */
   /* font-weight: 100; */
 }
