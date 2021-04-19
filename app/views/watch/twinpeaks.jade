@@ -1,0 +1,42 @@
+include ./../layout
+
+link(rel='stylesheet', href='/stylesheets/watch_longform_style.css')
+
+block content
+  div.longform
+
+    - var path = '../images/watch'
+    h2
+     i twin peaks long
+
+    img(data-src='#{path}/twin_peaks_title.png')
+    img(data-src='#{path}/twin_peaks_0.png')
+    img(data-src='#{path}/twin_peaks_1.png')
+    img(data-src='#{path}/twin_peaks_2.png')
+    img(data-src='#{path}/twin_peaks_3.png')
+    img(data-src='#{path}/twin_peaks_20.png')
+    //- img(data-src='#{path}/twin_peaks_4.png')
+    img(data-src='#{path}/twin_peaks_5.png')
+    img(data-src='#{path}/twin_peaks_6.png')
+    img(data-src='#{path}/twin_peaks_17.png')
+    img(data-src='#{path}/twin_peaks_7.png')
+    img(data-src='#{path}/twin_peaks_8.png')
+    img(data-src='#{path}/twin_peaks_9.png')
+    img(data-src='#{path}/twin_peaks_10.png')
+    img(data-src='#{path}/twin_peaks_11.png')
+    img(data-src='#{path}/twin_peaks_19.png')
+    img(data-src='#{path}/twin_peaks_12.png')
+    img(data-src='#{path}/twin_peaks_13.png')
+    img(data-src='#{path}/twin_peaks_14.png')
+    img(data-src='#{path}/twin_peaks_15.png')
+    img(data-src='#{path}/twin_peaks_18.png')
+    img(data-src='#{path}/twin_peaks_16.png')
+    
+
+    
+    
+  
+  
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
