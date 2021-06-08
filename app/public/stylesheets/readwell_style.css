@@ -144,7 +144,8 @@ img {
 
 .publish-info {
   font-size: 10pt;
-  line-height: 2em;
+  line-height: 1.3em;
+  padding: 6px 0 6px 0;
 }
 
 .review {
