@@ -129,7 +129,7 @@ a.quiet-link {
 }
 
 .movie-list .sub {
-  padding: 0 6px;
+  padding: 0 3px 0 6px;
   font-weight: 100;
 }
 
@@ -151,6 +151,26 @@ a.quiet-link {
   text-align: right;
   width: 26px;
   font-weight: 100;
+}
+
+ul.marker-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol > .fav :before,
+ul > .fav :before {
+  color: #a44;
+  content: "* ";
+  font-weight: 800;
+}
+
+ol > .good :before,
+ul > .good :before {
+  color: #666;
+  content: "* ";
+  font-weight: 800;
 }
 
 footer {
