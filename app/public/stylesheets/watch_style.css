@@ -133,10 +133,6 @@ a.quiet-link {
   font-weight: 100;
 }
 
-.movie-list ol {
-  /* counter-reset: list 3; */
-}
-
 .movie-list ol li {
   counter-increment: list -1;
   list-style-type: none;
@@ -162,15 +158,17 @@ ul.marker-list{
 ol > .fav :before,
 ul > .fav :before {
   color: #a44;
-  content: "* ";
+  content: "*";
   font-weight: 800;
+  padding: 0 4.5px 0 0;
 }
 
 ol > .good :before,
 ul > .good :before {
   color: #666;
-  content: "* ";
+  content: "*";
   font-weight: 800;
+  padding: 0 5px 0 0;
 }
 
 footer {
