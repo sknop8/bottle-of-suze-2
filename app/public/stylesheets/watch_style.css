@@ -33,6 +33,11 @@ h1 {
   font-weight: 700;
 }
 
+h1 a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+
 .menu {
   color: #444;
   font-size: 10.5pt;
@@ -155,20 +160,33 @@ ul.marker-list{
   padding: 0;
 }
 
-ol > .fav :before,
+ol > .fav > span:nth-child(1):before,
 ul > .fav :before {
   color: #a44;
   content: "*";
   font-weight: 800;
-  padding: 0 4.5px 0 0;
+  padding: 0 5px 0 0;
 }
 
-ol > .good :before,
+ol > .good > span:nth-child(1):before,
 ul > .good :before {
   color: #666;
   content: "*";
   font-weight: 800;
   padding: 0 5px 0 0;
+}
+
+.movie-list .date {
+  font-size: 8pt;
+  color: #313d52;
+  font-style: italic;
+  font-family: 'Lato';
+}
+
+.movie-list .date:before {
+  content: ' ··· ';
+  color: #1e2c42;
+  padding: 0 2px 0 1px;
 }
 
 footer {
