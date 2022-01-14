@@ -6,7 +6,8 @@ link(rel='stylesheet', href='/stylesheets/watch_style.css')
 
 block content
   h1
-    i watch
+    i 
+      a(href='/watch') watch
     
   +menu('Index')
   br
@@ -18,46 +19,123 @@ block content
       li.good
         span.sub = exceptionally good / would rewatch / recommend
       li.fav
-        span.sub = my personal favorites
+        span.sub = ^ + my personal favorites
 
   br
+  div.movie-list
+    div.title 2022
+    ol(style="counter-reset: list 5")
+      li.fav Interface (Web Series)
+        span.sub 2017-, u m a m i
+      li Black Widow
+        span.sub 2021
+      li Spiderman: No Way Home
+        span.sub 2021
+      li Don't Look Up
+        span.sub 2021, Adam McKay
 
   div.movie-list
     div.title 2021
-    ol(style="counter-reset: list 118")
+    ol(style="counter-reset: list 134")
+      li Our Idiot Brother
+        span.sub 2011
+      li The Alpinist
+        span.sub 2020
+      li 14 Peaks: Nothing is Impossible
+      li Doctor Strange
+        span.sub 2016
+      li.fav Possession
+        span.sub 1981, Andrzej Żuławski
+        span.date 19 Dec
+        //- 19 dec
+        //- woah
+      li.good Barton Fink
+        span.sub 1991, Joel & Ethan Coen
+        //- 17 dec
+      li.fav Harold and Maude
+        span.sub 1971, Hal Ashby
+        span.date 16 Dec
+        //- 16 dec
+        //- enjoyed this so much, so funny, the acting and writing was amazing, very 70s
+        //- this is the version of the graduate that i wanted lol
+        //- 
+      li It Follows
+        span.date 15 Dec
+        //- 15 dec
+      li Eyes Wide Shut
+        span.sub 1999, Stanley Kubrick
+        span.date 14 Dec
+        //- 14 dec
+        //- hmm. throughout the movie i almost thought it would be better suited as a lynch film, but by the end i think i see the kubrick-ness. kidman's character i felt summed it up at the end re: being grateful they made it out alive of their adventures, whether it be one weird night or dreams. i think there is something in that: like the crazy things we've seen being akin to the crazy things we fantasize about- that it doesn't necessarily need to impact daily life? the classical music (shostakovich jazz suite? feels very kubrick ).  the masks FREAKED me out. I don't feel there was much resolution to the secret sex party thing, but i also dont think there was much more to figure out. i  liked all the secondary characters in tom cruise's long night, and also as he tries to retrace his steps.
+      li Melancholia
+        span.sub 2011, Lars von Trier
+        span.date 13 Dec
+        //- 13 dec
+        //- about depression, kirsten dunst was pretty great, but overly artistic weak scifi just doesn't do it for me, and i felt the first and second halves didn't feel like part of the same movie
+      li Closer
+        span.sub 2004, Mike Nichols
+        span.date 11 Dec
+        //- 11 dec 2021
+        //- performances were  good but i felt like the editing was so bad and confusing like pls add some transitions??
+      li Licorice Pizza
+        span.sub 2021, Paul Thomas Anderson
+      li Phantom Thread
+        span.sub 2017, Paul Thomas Anderson
+        span.date 2 Dec
+        //- 2 dec 2021
+        //- hmmmm interesting
+        //- daniel day lewis great, story i feel i didnt fully get
+        //- his character was interesting, obviously faulted and somewhat immature
+        //- (breaking down the romanticization of stubborn artist god-like dude?)
+        //- didn't expect the ending but i liked it, alma poisoning him to soften him occasionly, and he liking it
+        //- that was my favorite aspect i think of the story
+        //- also rly beautiful music score, piano
+      li Last Night in Soho
+        span.sub 2021
+      li Luca
+        span.sub 2021
       li The Abyss
         span.sub 1989, James Cameron
+        span.date 22 Nov
         //- 22 nov
       li The Holiday
         span.sub 2006, Nancy Meyers
+        span.date 16 Nov
         //- 16 nov
+      li Chef
+        span.sub 2014, Jon Favreau
       li A Single Man
         span.sub 2009, Tom Ford
+        span.date 10 Nov
         //- 10 nov
         //- :"o
         //- moments that save one from suicide
         //- beautiful violin-filled score (Abel Korzeniowski)
-        //- cinemetograophy a bit navie  but effective (like more saturated color during moments  of Life/beauty/richness/break from depression)
+        //- cinemetograophy a bit naive  but effective (like more saturated color during moments  of Life/beauty/richness/break from depression)
         //- im all for beautiful gay movies set in the 60s
       li Minority Report
         span.sub 2002, Steven Spielberg
         //- nov
       li Wayne's World
         span.sub 1992, Penelope Spheeris
+        span.date 3 Nov
         //- lmao
         //- 3 nov 2021 
       li Boogie Nights
         span.sub 1997, Paul Thomas Anderson
+        span.date 2 Nov
         //- 2 nov 2021
         //- fun cast
         //- young mark wahlberg very golden boy
         //- ultimately a wholesome movie sort of about chosen family :")
       li Mystic River
         span.sub 2003, Clint Eastwood
+        span.date 1 Nov
         //- 1 nov 2021
         //- okay, not terribly interesting
-      li Dead Ringers
+      li.good Dead Ringers
         span.sub 1988, David Cronenberg
+        span.date 31 Oct
         //- 31 oct
         //- really pretty film, slow and not very  frightening
         //- emotionally i thought it was quite beautiful, (reminded me of upstream color, I'm sure it had an influence on that) - about twin dependency on each other, depression, needing to syncronize
@@ -68,6 +146,7 @@ block content
         //- i didn't find this film as disturrbing as a lot of the reviews seem to suggest, but i don't think this is a flaw haha since i think it was very effective, and michael irons was great
       li.good Midsommar
         span.sub 2019, Ari Aster
+        span.date 29 Oct
         //- 29 oct
         //- rly good
         //- i like that it was from the perspective of the pagan cult, in that there throughout it was this  overblown/overexposed brightness, colorfulness, and the voice of "this is beautiful, this is how it is" ovoerpowered any voices of judgement. there was also sort of an element of retribution for Dani - she finds a new family, that guy Pelle, and also sends Christian to his death. the tone is very .. like a blanket, it purposefully reframes/distracts from the disturbing nature of everything.
@@ -80,27 +159,33 @@ block content
 
       li Se7en
         span.sub 1995, David Fincher
+        span.date 28 Oct
         //- 28 oct
       li.good Donnie Darko
         span.sub 2001, Richard Kelly
+        span.date 27 Oct
         //- 27 oct
         //- (3 days remaining)
       li Eraserhead
         span.sub 1977, David Lynch
+        span.date 26 Oct
         //- 26 oct
         //- just a lot of weird stuff
         //- visual motifs: going into ominous holes, opening doors etc.
         //- sound design
       li.good Dogtooth
         span.sub 2009, Yorgos Lanthimos
+        span.date 24 Oct
         //- 24 oct
         //- yup, that's messed up. but pretty artful and not scary, just extremely disturbing
         //- i wonder what it means. there are a lot of moments and concepts to analyze. some parts were even humorous, like the fake definitions of words the mother would give, and their weird games. the mother was kind of an ambiguous character, and the motives of the father were unclear. the very clean/white/blue/green/dry color palette was an interesting choice.
       li Dune
         span.sub 2021, Denis Villeneuve
+        span.date 23 Oct
         //- 23 oct
       li Dune
         span.sub 1984, David Lynch
+        span.date 22 Oct
         //- 22 oct 2021
         //- not as bad as i thought it would be. the mystical/surreal/dreamlike stuff was done well, though the plot almost followed the book too closely? (first half kind of slow/boring, not enough time spent with the fremen and wandering the desert part). the house harkonen though was truly scary and the baron absolutely disgusting .. // evil/chaotic clockwork-orangey vibes (that rly felt david lynchy). I can't believe jean-luc picard and STING were in this lmao. kyle maclachan great, but also kind  of too old. 
         //- blade runner/tron/80s vibes for sure - lol score by toto was good!
@@ -108,6 +193,7 @@ block content
         span.sub 2017, Yorgos Lanthimos
       li Velvet Buzzsaw
         span.sub 2019, Dan Gilroy
+        span.date 13 Oct
         //- 13 oct
       li.good Squid Game (TV Series)
         span.sub 2021, Hwang Dong-hyuk
@@ -115,23 +201,28 @@ block content
         span.sub 2015-2018, Wachowskis & J. Michael Straczynski
       li Soylent Green
         span.sub 1973
+        span.date 19 Sep
         //- 19 sep
       li Inherent Vice
         span.sub 2014, Paul Thomas Anderson
+        span.date 9-10 Sep
         //- 9-10 sep
         //- stoner twin peaks
         //- plot pretty confusing, like maybe too closely adapted to the book?
       li.good Following
         span.sub 1998, Christopher Nolan
+        span.date 8 Sep
         //- 8 sep
         //- like a david lynch movie that makes sense???? really well made for a clearly low budget affair (6000 usd!), the plot had so many layers, the editing and out of sequence scenes were just coherent enough to create suspense, mystery, and continually catch the viewer off guard. so many fascinating concepts--following, burgurlary, conning-- all together and working with each other, layering on top each other, yet still simple and with only 3 essential characters. the filmmaking itself was also nice, noir, sort of lynchian (surprisingly, given this is the chris nolan).
       li.good Manchester by the Sea
         span.sub 2016, Kenneth Lonergan
+        span.date 7 Sep
         //- 7 sep
         //- ahh wow .... devestating but beautifully shot.
         //- i really felt for casey affleck's character, his grieving and his depression. i cried a lot. the scenes of massachussetts winter were also extremely vivid and evocative. just really great acting all around. the scene when casey affleck and michelle williams run into each other on the street was so heartwrenching in all its struggle and sorrow and emotion. michelle williams, though a relatively minor character, was amazing as usual. there was a lot that was unspoken but so strongly and precisely implied by the pain in affleck's mannerisms and character and his sadness.
       li Thank Your Lucky Stars
         span.sub 1943
+        span.date 1 Sep
         //- 1 sep
       li Zodiac
         span.sub 2007, David Fincher
@@ -142,59 +233,73 @@ block content
         span.sub 2013, Denis Villeneuve
       li The Man Who Knew Too Much
         span.sub 1934, Alfred Hitchcock
+        span.date 30 Jul
         //- 30 july
       li The Thin Man
         span.sub 1934, W.S. Van Dyke
         //- william powell (also in my man godfrey!), and myrna loy
       li The Story of Vernon and Irene Castle
         span.sun 1939
+        span.date 27 Jul
         //- 27 jul
       li Mr. Smith Goes to Washington
         span.sub 1939, Frank Capra
+        span.date 25 Jul
         //- 25 jul
       li The Machinist
         span.sub 2004, Brad Anderson
+        span.date 24 Jul
         //- 24 jul
         //- dostoyevskian, wow, well done
       li The Saturday Night Kid
         span.sub 1929
       li Zombieland
         span.sub 2009, Ruben Fleischer
+        span.date 21 Jul
         //- 21 jul
       li My Man Godfrey
+        span.date 18 Jul
         //- 18 jul
       //- li Eat Pray Love
       li.good The Lady Eve
         span.sub 1941, Preston Sturges
+        span.date 17 Jul
         //- 17 jul
         //- barbara stanwyckkkkkkkkkkkkkkk
         //- somewhat similar character to baby face
         //- henry fonda, prtty cool
       li Broadchurch (TV Series)
         span.sub 2013-2017, Chris Chibnall
+        span.date 12 Jul
         //- 12 jul
       li Restless Natives
         span.sub 1985, Michael Hoffman
+        span.date 4 Jul
         //- jul 4
       li.good Say Anything
         span.sub 1989, Cameron Crowe
+        span.date 1 Jul
         //- 1 july
       li Grosse Pointe Blank
         span.sub 1997, George Armitage
+        span.date 30 Jun
         //- 30 jun
       li The Time Traveler's Wife
         span.sub 2009
       li Nocturnal Animals
         span.sub 2016, Tom Ford
+        span.date 26 Jun
         //- 26 june
       li Captain Fantastic
         span.sub 2016, Matt Ross
+        span.date 24 Jun
         //- 24 jun
       li.fav Fleabag (TV Series)
         span.sub 2016-2019, Phoebe Waller-Bridge
         //- finished 22 jun
       li Melvin Goes to Dinner
         span.sub 2003, Bob Odendirk
+        span.date 21 Jun
         //- 21 june
       li The Hustle
         span.sub 2019
@@ -206,81 +311,103 @@ block content
         span.sub 2004
       li Scarface
         span.sub 1983, Brian De Palma
+        span.date 8 Jun
         //- 8 june
       li August: Osage County
         span.sub 2013, John Wells, Tracy Letts
+        span.date 7 Jun
         //- 7 june
         //- :(
       li Fun with Dick and Jane
         span.sub 2005, Dean Parisot
+        span.date 6 Jun
         //- 6 June
       li Rain Man
         span.sub 1988, Barry Levinson
+        span.date 5 Jun
         //- 5 june
       li The Land of Steady Habits
         span.sub 2018, Nicole Holofcener
+        span.date 4 Jun
         //- 4 june
       li The Departed
         span.sub 2006, Martin Scorsese
+        span.date 3 Jun
         //- 3 june
         //- wow this was so good???? might be my favorite gangster movie
       li The Squid and the Whale
-        span.sub 2005, Noah Baumbach 
+        span.sub 2005, Noah Baumbach
+        span.date 2 Jun
         //- 2 jun
         //- intersting family influence dynamics
       li Superbad
         span.sub 2007, Greg Mottola
       li I Don't Feel at Home in this World Anymore
-        span.sub 2017, Macon Blair 
+        span.sub 2017, Macon Blair
+        span.date 31 May
         //- 31 may
       li The Dig
         span.sub 2021
+        span.date 30 May
         //- 30 may
       li Stoker
         span.sub 2013, Park Chan-wook
+        span.date 29 May
         //- 29 may
       li Far From Heaven
         span.sub 2002, Todd Haynes
+        span.date 28 May
         //- 28 may
       li All Over Me
         span.sub 1997, Alex & Sylvia Sichel
+        span.date 27 May
         //- 27 may
       li Sorry to Bother You
         span.sub 2018, Boots Riley
+        span.date 26 May
         //- 26 may
       li Bound
         span.sub 1996, the Wachowskis
+        span.date 24 May
         //- 24 may
       li Good Time
         span.sub 2017, Josh & Benny Safdie
+        span.date 23 May
         //- 23 may
       li.good Brokeback Mountain
         span.sub 2005, Ang Lee
+        span.date 22 May
         //- 22 may
         //- ugh these boys
       li I Care a Lot
         span.sub 2020, J Blakeson
+        span.date 16 May
         //- daaannngggg
         //- 16 may
         //- (rosamund pike and eiza gonzalez are just like ... incredibly attractive together, pike in general is stunning and plays powerful but questionable characters well)
       li Alice Adams
         span.sub 1935
+        span.date 12 May
         //- 12 may
       li.fav Queen Christina
         span.sub 1933, Rouben Mamoulian
+        span.date 6 May
         //- 6 may
         //- see notes
       li.good Hannah Gadsby: Douglas
         span.sub 2020
+        span.date 5 May
         //- 5 may 2021
       li Blue Velvet
         span.sub 1986, David Lynch
+        span.date 28 Apr
         //- 28 april
         //- ..about sexual deviancy? idk
         //- a lot of mystery/detective elements / kyle maclachlan that later appear in twin peaks
         //- rossellini very bergman-esque!! (I subconsciously felt that familiarity, but didn't know until afterward that she's the actual daughter of ingrid bergman)
       li.good Before Sunset
         span.sub 2004, Richard Linklater
+        span.date 26 Apr
         //- 26 apr
         //- ahhh wow
         //- conversation about celine's inability to let people go (holding onto the little details) and jesse's frustrations with marriage stuck with me
@@ -288,10 +415,12 @@ block content
         //- i like with both this and before sunrise how things start off awkward and light and kind of descend into an intimate heaviness, that really familiar feeling of spending hours with someone
       li Ma Rainey's Black Bottom
         span.sub 2020, George C. Wolfe
+        span.date 24 Apr
         //- 24 apr
         //- chadwick boseman :"""""
       li.good Sound of Metal
         span.sub 2020, Darius Marder
+        span.date 23 Apr
         //- TEARS FLOWING FOR THE ENTIRE DURATION OF THISFILM
         //- RIZ AHMED'S PERFORMANCE SO SO GREAT I HOPE HE WINS THE OSCAR
         //- all these feelings hit. ahmed gyllenhaal-esque with his huge, expressive eyes
@@ -301,117 +430,148 @@ block content
         //- 23 april
       li Mank
         span.sub 2020, David Fincher
+        span.date 22 Apr
         //- 22 apr
         //- eh
       li Judas and the Black Messiah
         span.sub 2020, Shaka King
+        span.date 21 Apr
         //- 21 april
       li The Father
         span.sub 2020, Florian Zeller
+        span.date 20 Apr
         //- 20 apr
         //- very much like a play
       li Promising Young Woman
         span.sub 2020, Emerald Fennell
+        span.date 18 Apr
         //- 18 apr
         //- wow, I hope men watch this and get scared.
         //- provocative revenge film and good black humor from fennell (who did se2 of killing eve!). The ending nearly turns this thriller into a horror .. horror at even (especially) the nice men of the world.
       li Nomadland
         span.sub 2020, Chloe Zhao
+        span.date 17 Apr
         //- 17 apr
         //- to convey a sense of emptyness?
       li Shall We Dance
         span.sub 1937
+        span.date 15 Apr
         //- 15 apr
       li.fav Killing Eve (TV Series, S2 & 3)
         span.sub 2019 & 2020
+        span.date 14 Apr
         //- 14  apr
       li Trial of the Chicago 7
         span.sub 2020, Aaron Sorkin
+        span.date 10 Apr
         //- 10 Apr
         //- good!
       li Woman of the Year
         span.sub 1942, George Stevens
+        span.date 3 Apr
         //- 3 apr
       li Twentieth Century
         span.sub 1934, Howard Hawks
+        span.date 31 Mar
         //- 31 mar
       li Minari
         span.sub 2020, Lee Isaac Chung
+        span.date 27 Mar
         //- 27 mar
       li Swing Time
         span.sub 1936
+        span.date 20 Mar
         //- 20 mar
       li Easy Living
         span.sub 1937
+        span.date 19 Mar
         //- 19 mar
       li Crazy, Stupid, Love.
         span.sub 2011
+        span.date 18 Mar
         //- 18 mar
       li You Can't Take it With You
         span.sub 1938, Frank Capra
+        span.date 14 Mar
         //- 14 mar
       li Follow the Fleet
         span.sub 1936
+        span.date 3 Mar
         //- 3 mar
       li.fav Baby Face
         span.sub 1933
+        span.date 2 Mar
         //-  2 mar
         //- barbara stanwyck's character remains mysterious, invulnerable and in control until the end ... the whole thing is strangely empowering 
         //- how she blazes through men, knocks them over with barely a struggle
         //- overall an immensely satisfying story
       li Dinner at Eight
        span.sub 1933
+       span.date 22 Feb
         //- 22 feb
         //- billie burke the true star in this haha
       li Little Women
         span.sub 1933
+        span.date 19 Feb
         //- 19 feb
       li.good Top Hat
         span.sub 1935
+        span.date 18 Feb
         //- 18 feb
         //- :")
       li The Divorcee
         span.sub 1930
+        span.date 15 Feb
         //- 15 feb
       li Three on a Match
         span.sub 1932
+        span.date 14 Feb
         //- 14 feb
         //- wow :0
       li Knives Out
         span.sub 2019
+        span.date 13 Feb
         //- 13 feb
       li Grand Hotel
         span.sub 1932, Edmund Goulding
+        span.date 12 Feb
         //- 12 feb
         //- " Grand Hotel. Always the same. People come, people go. Nothing ever happens."
       li Only Angels Have Wings
         span.sub 1939, Howard Hawks
+        span.date 11 Feb
         //- 11 feb
         //- jean arthur
       li Anna Christie
         span.sub 1930, Clarence Brown
+        span.date 8 Feb
         //-  8 feb
         //- garbo talks!!
         //- my first pre-code film .. interesting 
       li Key Largo
         span.sub 1948, John Huston
+        span.date 6 Feb
         //- 6 feb
         //- mobster vs hurricane
         //- cute bogie/bacall
       li.fav Stage Door
         span.sub 1937, Gregory La Cava
+        span.date 5 Feb
         //- 5 feb
         //- :) a gem with ginger rogers, katharine hepburn, and so many other wonderful funny women (and the first pre-50s film I've watched that passes the bechdel test with flying colors!). I really loved Ginger Rogers' spunky, sarcastic, loyal character. The clever banter between Rogers' and Hepburn's characters had me laughing throughout.
       li Camille
         span.sub 1936, George Cukor
+        span.date 4 Feb
         //- Greta Garbo
         //- 4 feb
         //- ...enter  greta  garbo!! sgarbo is perhaps the most special
       li Morning Glory
         span.sub 1933, Lowell Sherman
+        span.date 3 Feb
         //- 3 feb
       li.fav Bringing Up Baby
         span.sub 1939, Howard Hawks
+        span.date 2 Feb
         //- 2 feb
         //- you know these crazy cats kate and cary i think are becoming my favorite duo
         //- both are sillier and more feminine in this, which just adds to the humor and the ridiculous lovability of their eccentric characters. the comedy in this was amazing!!
@@ -421,13 +581,16 @@ block content
 
       li His Girl Friday
         span.sub 1940, Howard Hawks
+        span.date 1 Feb
         //- feb 1
       li Holiday
         span.sub 1938, George Cukor
+        span.date 31 Jan
         //- 31 Jan
         //- I liked this one :-)
       li.good Sylvia Scarlett
         span.sub 1935, George Cukor
+        span.date 29 Jan
         //- 29 jan
         //- omg this was a wild ride. katharine hepburn is a wonderful boy. interesting queer overtones, and now that i've watched a significant number of wwii-era and post-war films, I'm more attuned to the difference in pre-war films: looser, less structured, playful, more promiscuous. I wonder if this film was unsuccessful at the time because hepburn was too good at her part, truly androgynous
         //- wikipedia says it best:
@@ -437,22 +600,28 @@ block content
         //- In conclusion though this movie was fun, interesting, even edgy, and has been one of the most memorable (and probably one of the favoritte) films I've watched pre-1950s. 
       li Adam's Rib
         span.sub 1949
+        span.date 28 Jan
         //- jan 28
       li Pat and Mike
         span.sub 1952, George Cukor
+        span.date 27 Jan
         //- jan 27
       li Rear Window
         span.sub 1954, Alfred Hitchcock
+        span.date 26 Jan
         //- jan 26
       li Happiest Season
         span.sub 2020, Clea Duvall
+        span.date 25 Jan
         //- jan 25
       li.good A Matter of Life and Death
         span.sub 1946, Michael Powell & Emeric Pressburger
+        span.date 23 Jan
         //- 23 jan 
         //- metaphysical fantasmic archers .. love it
       li.fav High Fidelity
         span.sub 2000, Stephen Frears
+        span.date 22 Jan
         //- 22 Jan
         //-  john cusack very good dfw-esque music chump kind of dreamy but selfish and deluded..... jack black a surprising blast... fun to be in a record store in the 90s/00s, weird juggling of records, tapes, cds
       li.good Before Sunrise
@@ -486,16 +655,20 @@ block content
         span.sub 1996, Coen brothers
       li.good Twin Peaks
         span.sub 1990-1991, David Lynch & Mark Frost
+        span.date Nov-Dec
         //- Nov - Dec 2020
       li A Canterbury Tale
         span.sub 1944, Powell / Pressburger (The Archers)
+        span.date 27 Oct
         //- 27 oct 2020
         //- wonderful. pals on the road to canterbury
       li 2010: The Year We Make Contact
-        span.sub 198?, 
+        span.sub 198?,
+        span.date 10 Oct
         //- 10 oct 2020
       li The Life and Death of Colonel Blimp
         span.sub 1943, the archers
+        span.date 2 Oct
         //- a fun movie
         //- love the abrupt alternations between serious War and Politics stuff and
         //- mundanities (want to go the movies? will you stay for dinner?). the editing and writing
@@ -509,6 +682,7 @@ block content
         //- 2 oct 2020
       li.good I Know Where I'm Going!
         span.sub 1945, Powell & Pressburger
+        span.date 28 Sep
         //- playful, i like the camera layers, scene transitions, cheerful expressionism(?) of
         //- the film style
         //- also i appreciate the on location / naturally lit filming in sctoland,
@@ -518,13 +692,16 @@ block content
         //- i enjoyed this, though the plot was kind of wandering, here and there, it had a very british :: scottish qualitiy, and scattered with nuggets of expressionist film style in a wonderfully moody, naturally lit scotland shot on location
       li To Be or Not to Be
         span.sub 1942
+        span.date 26 Sep
         //- 26 sep, pretty funny
       li The Best Years of our Lives
         span.sub 1946
+        span.date 25 Sep
         //- 25 sep
           //- omg have i ever cried this much???
       li.fav The Red Shoes
         span.sub 1948, Michael Powell & Emeric Pressburger
+        span.date 23 Sep
         //- amazing!! captivating, could not take my eyes away .. it's like
         //- the film medium itself was an expressionistic ballet, or perhaps the ballet
         //- was  a film?? idk ... the red shoes also a haunting/chilling metaphor for
@@ -540,9 +717,11 @@ block content
         span.sub 1943, Alfred Hitchcock
       li To Have and Have Not
         span.sub 1944
+        span.date 20 Sep
         //- 20 sep
       li The Setup
         span.sub 1949
+        span.date 18 Sep
         //- 18 sep
         //- strangely engrossing and beautifully shot ...boxing in black & white
         //- i liked this film, it was simple, focused on 1 event, took its time, yet emotionally suspenseful and quite rich, understated
@@ -552,9 +731,11 @@ block content
         //-  more about caring about someone truly than about falling in love
       li Leave Her to Heaven
         span.sub 1945
+        span.date 16 Sep
         //- 16 sep
       li All About Eve
         span.sub 1950, Joseph L. Mankiewicz
+        span.date 14 Sep
         //- 14 sep
       li.good I'm Thinking of Ending Things
         span.sub 2020, Charlie Kaufman
@@ -582,6 +763,7 @@ block content
         span.sub 1945, Billy Wilder
       li Notorious
         span.sub 1946, Alfred Hitchcock
+        span.date 17 Jun
         //- 17 june, ingrid bergman and cary grant's performances were of the most sensual and tremendous (sensual? remarkable? intimate? tremendous?) couples of 40s and 50s films
         //- really well sustained tension/suspense
       li Laura
@@ -596,6 +778,7 @@ block content
         span.sub 1948, Vittorio De Sica
       li The Maltese Falcon
         span.sub 1941, John Huston
+        span.date 7 Jun
         //- 7 june
       li Rebecca
         span.sub 1940, Alfred Hitchcock
