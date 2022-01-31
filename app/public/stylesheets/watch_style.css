@@ -135,13 +135,17 @@ a.quiet-link {
 
 .movie-list .sub {
   padding: 0 3px 0 6px;
-  font-weight: 100;
+  /* font-weight: 100; */
+  vertical-align: middle;
+  line-height: 10px;
 }
 
 .movie-list ol li {
   counter-increment: list -1;
   list-style-type: none;
   position: relative;
+  /* vertical-align:middle; */
+
 }
 
 .movie-list ol li:before {
@@ -177,16 +181,29 @@ ul > .good :before {
 }
 
 .movie-list .date {
-  font-size: 8pt;
-  color: #313d52;
-  font-style: italic;
-  font-family: 'Lato';
+  font-size: 5pt;
+  /* color: #33d52; */
+  color:#777;
+  /* font-style: italic; */
+  /* font-family: 'Lato'; */
+  font-family: 'Roboto Mono';
+  /* margin: 0 0 10px 0; */
+  font-weight: 600;
 }
 
 .movie-list .date:before {
-  content: ' ··· ';
-  color: #1e2c42;
-  padding: 0 2px 0 1px;
+  /* content: ' ··· '; */
+  /* content: '«'; */
+  content: ' ';
+  /* color: #1e2c42; */
+  /* padding: 0 2px 0 1px; */
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.movie-list .date:after {
+  /* content: '»'; */
+  /* color: #1e2c42; */
+  /* padding: 0 0 0 2px; */
 }
 
 footer {

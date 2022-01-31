@@ -44,6 +44,11 @@
   src: url('fonts/HAMMK.woff');
 }
 
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('fonts/RobotoMono-VariableFont_wght.ttf');
+}
+
 body {
   padding: 50px;
   font-family: 'Open Sans', Helvetica, sans-serif;
