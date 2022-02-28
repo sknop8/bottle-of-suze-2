@@ -98,4 +98,11 @@ router.get('/letters', function(req, res, next) {
   );
 });
 
+router.get('/silence', function(req, res, next) {
+  res.render('write/silence',
+    { title: '(Silence) | bottle of suze' }
+  );
+});
+
+
 module.exports = router;
