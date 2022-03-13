@@ -143,6 +143,18 @@ p.title:hover {
   letter-spacing:0.01em;
 }
 
+.toc, .toc a {
+  font-size: 13pt;
+  line-height:1.5;
+  color: black;
+}
+
+.toc a {
+  color: black;
+  /* font-style: italic; */
+}
+
+
 .secret, .secret a {
   color:  #e8e3e3;
 }
@@ -258,6 +270,55 @@ p.title:hover {
   color: #efd07f;
 }
 
+.june h1, .june h3{
+  /* color: #8eb0d4; */
+  /* color:black; */
+  color: #111;
+  /* font-family: 'Garamond Pro'; */
+  letter-spacing: 0px;
+}
+
+.june > .toc a:hover {
+  /* background-color: #f0f0f0; */
+  color: black;
+}
+
+.june ol {
+  counter-reset: item;
+  list-style-type: none;
+  /* color: grey; */
+}
+
+.june li:before {
+  content: counter(item) "ㅤ"; /*Instead of ". " */
+  counter-increment: item;
+}
+
+.june.red > h3 {
+  color: #d49696;
+}
+.june.yellow > h3 {
+  color: #efd07f;
+}
+.june.green > h3 {
+  color: #95ba96;
+}
+.june.purple > h3 {
+  color: #baabc7;
+}
+
+.june .red > a {
+  color: #d49696;
+}
+.june .yellow > a {
+  color: #efd07f;
+}
+.june .green > a {
+  color: #95ba96;
+}
+.june .purple > a {
+  color: #baabc7;
+}
 
 
 /************************ write home page link *************************/

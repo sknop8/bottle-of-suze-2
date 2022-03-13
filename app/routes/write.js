@@ -104,5 +104,11 @@ router.get('/silence', function(req, res, next) {
   );
 });
 
+router.get('/my-june-bug-and-other-stories', function(req, res, next) {
+  res.render('write/my_june_bug_stories',
+    { title: 'My June Bug and Other Stories | bottle of suze' }
+  );
+});
+
 
 module.exports = router;
