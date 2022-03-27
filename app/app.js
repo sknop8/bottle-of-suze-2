@@ -1,3 +1,6 @@
+// load .env
+require('dotenv').config()
+
 var subdomain = require('express-subdomain');
 var express = require('express');
 var path = require('path');
@@ -14,6 +17,7 @@ var software = require('./routes/software');
 var video = require('./routes/video');
 var read = require('./routes/read');
 var readwell = require('./routes/readwell');
+var thoughtblog = require('./routes/thoughtblog');
 
 var app = express();
 
@@ -44,7 +48,7 @@ app.use('/video', video);
 // app.use(subdomain('read', read));
 app.use('/read', read);
 app.use('/readwell', readwell);
-
+app.use('/thoughtblog', thoughtblog);
 
 
 // catch 404 and forward to error handler
@@ -67,6 +71,6 @@ app.use(function(err, req, res, next) {
 
 app.listen(3000, () => {
     console.log('Server is up on 3000')
-})
+});
 
 module.exports = app;
