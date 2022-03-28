@@ -99,17 +99,17 @@ const postTitleToUrl = (title) => {
   return encodeURI(title.toLowerCase().replaceAll(' ', '-'));
 }
 
-// cached map from postUrl to notion blockId
-const postIdMap = {};
-// cached map from postUrl to html
-const postIdHtmlMap = {};
+const postIdMap = {};         // <postUrl: string, notionBlockId: string>
+const postIdHtmlMap = {};     // <postUrl: string, html: string>
+const postLastEditedMap = {}; // <postUrl: string, date(ms): string>
+const postNeedsUpdate = {};   // <postUrl: string, needsUpdate: boolean>
 
 // main page, get post titles, etc.
 const getParentPage = async () => {
   let html = '';
 
   const children = await notion.blocks.children.list({
-    block_id: pageId  
+    block_id: pageId
   });
 
   for (let c of children.results) {
@@ -134,6 +134,14 @@ const getParentPage = async () => {
 
         postIdMap[postUrl] = c.id;
 
+        // flag update if the page has new edits
+        const lastEdited = Date.parse(c.last_edited_time);
+        const prevLastEdited = postLastEditedMap[postUrl];
+        if (!prevLastEdited || prevLastEdited < lastEdited) {
+          postNeedsUpdate[postUrl] = true;
+          postLastEditedMap[postUrl] = lastEdited;
+        }
+
         break;
     }
   }
@@ -141,14 +149,10 @@ const getParentPage = async () => {
 };
 
 // get page content by postid (url)
-const getChildPage = async (postId) => {
-  //  check if we have any html cached
-  if (postIdHtmlMap[postId]) {
-    return postIdHtmlMap[postId];
-  }
-
+const getChildPage = async (postId, checkForUpdates) => {
   let html = '';
   let notionBlockId = postIdMap[postId];
+  let needsUpdate = postNeedsUpdate[postId] ?? true;
 
   if (!notionBlockId) {
     const children = await notion.blocks.children.list({
@@ -159,6 +163,26 @@ const getChildPage = async (postId) => {
     );
     if (!found) return html;
     notionBlockId = found.id;
+    postIdMap[postId] = notionBlockId;
+  }
+
+  if (checkForUpdates) {
+    const pageInfo = await notion.pages.retrieve({
+      page_id: notionBlockId
+    });
+
+    const lastEdited = Date.parse(pageInfo.last_edited_time);
+    const prevLastEdited = postLastEditedMap[postId];
+    if (!prevLastEdited || prevLastEdited < lastEdited) {
+      postNeedsUpdate[postId] = true;
+      postLastEditedMap[postId] = lastEdited;
+      needsUpdate = true;
+    }
+  };
+
+  //  check if we have any html cached
+  if (!needsUpdate && postIdHtmlMap[postId]) {
+    return postIdHtmlMap[postId];
   }
 
   const content = await notion.blocks.children.list({
@@ -168,6 +192,12 @@ const getChildPage = async (postId) => {
   for (let block of content.results)  {
     html += await parseResult(block)
   }
+
+  // update cache
+  postIdHtmlMap[postId] = html;
+
+  // mark updated
+  postNeedsUpdate[postId] = false;
 
   return html;
 };
@@ -187,7 +217,7 @@ router.get('/', async (_req, res) => {
 
 router.get('/:post_id', async (req, res, next) => {
   let postId = req.params.post_id;
-  let html = await getChildPage(postId);
+  let html = await getChildPage(postId, false);
   res.send(`
     <html>
       <head></head>
@@ -198,15 +228,14 @@ router.get('/:post_id', async (req, res, next) => {
     </html>
   `);
 
-  // add to cache
-  postIdHtmlMap[postId] = html;
+  // check for update in background
+  getChildPage(postId, true)
 });
-
 
 // load child pages in background
 getParentPage().then(async () => {
   for (let postId in postIdMap) {
-    postIdHtmlMap[postId] = await getChildPage(postId);
+    await getChildPage(postId, true);
   }
 });
 
