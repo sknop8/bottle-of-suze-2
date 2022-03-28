@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const { Client } = require("@notionhq/client")
 
-
 // Initializing notion client
 const notion = new Client({
   auth: process.env.NOTION_KEY,
@@ -96,7 +95,15 @@ const parseResult = async (block) => {
   return ret;
 };
 
-const getPage = async () => {
+const postTitleToUrl = (title) => {
+  return encodeURI(title.toLowerCase().replaceAll(' ', '-'));
+}
+
+// cached map from postUrl to notion blockId
+const postIdMap = {};
+
+// main page, get post titles, etc.
+const getParentPage = async () => {
   let html = '';
 
   const children = await notion.blocks.children.list({
@@ -117,20 +124,13 @@ const getPage = async () => {
         html += `<h3>${c.heading_3.rich_text[0].plain_text}</h2>`;
         break;
       case 'child_page':
-        // post
-        const content = await notion.blocks.children.list({
-          block_id: c.id  
-        });
+        const postTitle = c.child_page.title;
+        const postUrl = postTitleToUrl(postTitle);
 
-        // making titles h1 while they're all on the same page
-        html += '<br>'
-        html +=`<h1>${c.child_page.title  }</h1>`;
-        // html +=`<strong>${c.child_page.title}</strong>`;
+        // link to the post
+        html +=`<p><a href='/thoughtblog/${postUrl}'>${postTitle}</a></p>`;
 
-        // get html for each post
-        for (let block of content.results)  {
-          html += await parseResult(block);          
-        }
+        postIdMap[postUrl] = c.id;
 
         break;
     }
@@ -138,8 +138,35 @@ const getPage = async () => {
   return html;
 };
 
+// get page content by postid (url)
+const getChildPage = async (postId) => {
+  let html = '';
+  let notionBlockId = postIdMap[postId];
+
+  if (!notionBlockId) {
+    const children = await notion.blocks.children.list({
+      block_id: pageId
+    });
+    let found = children.results.find((c) =>
+      c.type === 'child_page' && postTitleToUrl(c.child_page.title) === postId
+    );
+    if (!found) return html;
+    notionBlockId = found.id;
+  }
+
+  const content = await notion.blocks.children.list({
+    block_id: notionBlockId
+  });
+
+  for (let block of content.results)  {
+    html += await parseResult(block)
+  }
+
+  return html;
+};
+
 router.get('/', async (_req, res) => {
-  const html = await getPage();
+  let html = await getParentPage();
   res.send(`
     <html>
       <head></head>
@@ -151,15 +178,18 @@ router.get('/', async (_req, res) => {
   `);
 });
 
-// create page
-
-// router.get('/', (_req, res) => {
-//   res.render('thoughtblog/thoughtpost', {
-//     title: 'thoughtblog | bottle of suze',
-//     posts: notionPosts
-//   });
-// });
-
-
+router.get('/:post_id', async (req, res, next) => {
+  let postId = req.params.post_id;
+  let html = await getChildPage(postId);
+  res.send(`
+    <html>
+      <head></head>
+      <body>
+        <h1>thoughtblog</h1>
+        ${html}
+      </body>
+    </html>
+  `);
+});
 
 module.exports = router;
