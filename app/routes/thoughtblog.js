@@ -101,6 +101,8 @@ const postTitleToUrl = (title) => {
 
 // cached map from postUrl to notion blockId
 const postIdMap = {};
+// cached map from postUrl to html
+const postIdHtmlMap = {};
 
 // main page, get post titles, etc.
 const getParentPage = async () => {
@@ -140,6 +142,11 @@ const getParentPage = async () => {
 
 // get page content by postid (url)
 const getChildPage = async (postId) => {
+  //  check if we have any html cached
+  if (postIdHtmlMap[postId]) {
+    return postIdHtmlMap[postId];
+  }
+
   let html = '';
   let notionBlockId = postIdMap[postId];
 
@@ -190,6 +197,17 @@ router.get('/:post_id', async (req, res, next) => {
       </body>
     </html>
   `);
+
+  // add to cache
+  postIdHtmlMap[postId] = html;
+});
+
+
+// load child pages in background
+getParentPage().then(async () => {
+  for (let postId in postIdMap) {
+    postIdHtmlMap[postId] = await getChildPage(postId);
+  }
 });
 
 module.exports = router;
