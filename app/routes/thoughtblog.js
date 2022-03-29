@@ -90,6 +90,17 @@ const parseResult = async (block) => {
           ret += await parseResult(res);
         }
       }
+      break;
+    case 'divider':
+      ret = '<hr>';
+      break;
+    case 'bulleted_list_item':
+      const text = richTextToHtml(block.bulleted_list_item.rich_text);
+      ret = `<ul><li>${text}</li></ul>`;
+      break;
+    default:
+      console.warn(`Unexpected block type ${block.type} not being handled`);
+      break;
   }
 
   return ret;
@@ -103,6 +114,7 @@ const postIdMap = {};         // <postUrl: string, notionBlockId: string>
 const postIdHtmlMap = {};     // <postUrl: string, html: string>
 const postLastEditedMap = {}; // <postUrl: string, date(ms): string>
 const postNeedsUpdate = {};   // <postUrl: string, needsUpdate: boolean>
+const postTitleMap = {};      // <postUrl: string, title:string>
 
 // main page, get post titles, etc.
 const getParentPage = async () => {
@@ -128,6 +140,8 @@ const getParentPage = async () => {
       case 'child_page':
         const postTitle = c.child_page.title;
         const postUrl = postTitleToUrl(postTitle);
+
+        postTitleMap[postUrl] = postTitle;
 
         // link to the post
         html +=`<p><a href='/thoughtblog/${postUrl}'>${postTitle}</a></p>`;
@@ -189,6 +203,9 @@ const getChildPage = async (postId, checkForUpdates) => {
     block_id: notionBlockId
   });
 
+  // Add title
+  html = `<h1>${postTitleMap[postId]}</h1>`;
+
   for (let block of content.results)  {
     html += await parseResult(block)
   }
@@ -222,7 +239,7 @@ router.get('/:post_id', async (req, res, next) => {
     <html>
       <head></head>
       <body>
-        <h1>thoughtblog</h1>
+        <h3><a href='/thoughtblog'>thoughtblog</a></h3>
         ${html}
       </body>
     </html>
