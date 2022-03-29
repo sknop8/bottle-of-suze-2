@@ -203,9 +203,6 @@ const getChildPage = async (postId, checkForUpdates) => {
     block_id: notionBlockId
   });
 
-  // Add title
-  html = `<h1>${postTitleMap[postId]}</h1>`;
-
   for (let block of content.results)  {
     html += await parseResult(block)
   }
@@ -240,11 +237,13 @@ router.get('/', async (_req, res) => {
 router.get('/:post_id', async (req, res, next) => {
   let postId = req.params.post_id;
   let html = await getChildPage(postId, false);
+  let title = postTitleMap[postId] ?? postId;
   res.send(`
     <html>
       <head></head>
       <body>
         <h3><a href='/thoughtblog'>thoughtblog</a></h3>
+        <h1>${title}</h1>
         ${html}
       </body>
     </html>
