@@ -230,6 +230,11 @@ router.get('/', async (_req, res) => {
       </body>
     </html>
   `);
+
+  // load child pages in background
+  for (let postId in postIdMap) {
+    getChildPage(postId, true)
+  }
 });
 
 router.get('/:post_id', async (req, res, next) => {
@@ -249,11 +254,11 @@ router.get('/:post_id', async (req, res, next) => {
   getChildPage(postId, true)
 });
 
-// load child pages in background
-getParentPage().then(async () => {
-  for (let postId in postIdMap) {
-    await getChildPage(postId, true);
-  }
-});
+// // load child pages in background
+// getParentPage().then(async () => {
+//   for (let postId in postIdMap) {
+//     await getChildPage(postId, true);
+//   }
+// });
 
 module.exports = router;
