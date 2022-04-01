@@ -1,9 +1,9 @@
 body {
   background-color: #eee;
   color: #000;
-  max-width: 100vw;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  max-width: 900px;
+  /* padding-left: 25vw; */
+  /* padding-right: 25vw; */
   /* font-family: 'Garamond Pro'; */
   font-family: 'Minion Pro';
 }
@@ -17,17 +17,14 @@ body {
 
   .book {
     align-items: top;
-    
   }
 
   .book-info {
     max-width: 185px !important;
   }
 
-
-
   img {
-    padding: 0 15px 15px 0 !important;
+    padding: 0 15px 0px 0 !important;
   }
 
   .title {
@@ -41,6 +38,10 @@ body {
   .start-date, .end-date {
     font-size: 9pt !important;
   }
+
+  /* .book-info, .review {
+    padding: 0 auto !important;
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -49,8 +50,8 @@ body {
     padding-right: 5vw;
   }
 
-  .book-info {
-    /* max-width: 150px !important; */
+  .book-info, .review {
+    padding: 0 auto !important;
   }
 }
 
@@ -109,7 +110,7 @@ hr {
 
 .img-wrapper {
   width: 100px;
-  padding: 0 30px 15px 0;
+  padding: 0 30px 0px 0;
 }
 
 img {
@@ -149,7 +150,7 @@ img {
 }
 
 .review {
-  min-width: 150px;
+  min-width: 200px;
   padding: 20px 0 0 0;
   flex: 2;
   font-weight:  300;
