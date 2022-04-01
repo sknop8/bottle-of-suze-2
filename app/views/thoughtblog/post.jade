@@ -1,0 +1,10 @@
+include ./../layout
+
+link(rel='stylesheet', href='/stylesheets/thoughtblog_style.css')
+
+block content
+  div.post
+    h3
+      a(href='/thoughtblog').title thoughtblog
+    h1 #{postInfo.title}
+    | !{postInfo.html}

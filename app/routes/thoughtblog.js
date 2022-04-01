@@ -15,6 +15,10 @@ const richTextToHtml = (textArr) => {
     let plainText = t.plain_text;
     let config = t.annotations;
     let style = [];
+
+    // line breaks
+    plainText = plainText.replace(/(\r\n|\n|\r)/gm, '<br>');
+
     if (config.bold) {
       html += '<strong>'
       style.push('</strong>');
@@ -55,28 +59,26 @@ const parseResult = async (block) => {
       ret = `<h3>${block.heading_3.rich_text[0].plain_text}</h3>`;
       break;
     case 'quote':
-      // TODO: will need to style these in css
-      ret = `<q>${richTextToHtml(block.quote.rich_text)}</q>`
+      ret = `<p class='quote'>${richTextToHtml(block.quote.rich_text)}</p>`
       break;  
     case 'image':
       // center images
       ret = '<center>';
 
       if (block.image.file) {
-        ret += `<img height='200px' src=${block.image.file.url} />`;
+        ret += `<img src=${block.image.file.url} />`;
         console.warn(`Warning: Notion-hosted image being used and will expire on ${block.image.file.expiry_time}`)
       } else if (block.image.external)  {
-        ret += `<img height='200px' src=${block.image.external.url} />`;
+        ret += `<img src=${block.image.external.url} />`;
       }
 
       // Captions
       if (block.image.caption) {
-        ret += `<p>${richTextToHtml(block.image.caption)}</p>`;
+        ret += `<div class='caption'>${richTextToHtml(block.image.caption)}</div>`;
       }
 
       ret += '</center>';
 
-      // TODO: style img and caption padding
       break;
     case 'column_list':
       const columnChildren = await notion.blocks.children.list({
@@ -127,15 +129,16 @@ const getParentPage = async () => {
   for (let c of children.results) {
     switch(c.type) {
       case 'heading_1':
-        html += `<h1>${c.heading_1.rich_text[0].plain_text}</h1>`;
+        html += `<h1>${richTextToHtml(c.heading_1.rich_text)}</h1>`;
         break;
       case 'heading_2':
-        // year
-        html += `<h2>${c.heading_2.rich_text[0].plain_text}</h2>`;
+        html += `<h2>${richTextToHtml(c.heading_2.rich_text)}</h2>`;
         break;
       case 'heading_3':
-        // month]
-        html += `<h3>${c.heading_3.rich_text[0].plain_text}</h2>`;
+        html += `<h3>${richTextToHtml(c.heading_3.rich_text)}</h2>`;
+        break;
+      case 'paragraph':
+        html += `<p>${richTextToHtml(c.paragraph.rich_text)}</p>`;
         break;
       case 'child_page':
         const postTitle = c.child_page.title;
@@ -144,7 +147,7 @@ const getParentPage = async () => {
         postTitleMap[postUrl] = postTitle;
 
         // link to the post
-        html +=`<p><a href='/thoughtblog/${postUrl}'>${postTitle}</a></p>`;
+        html +=`<p><a class='thoughtpost' href='/thoughtblog/${postUrl}'>${postTitle}</a></p>`;
 
         postIdMap[postUrl] = c.id;
 
@@ -178,6 +181,7 @@ const getChildPage = async (postId, checkForUpdates) => {
     if (!found) return html;
     notionBlockId = found.id;
     postIdMap[postId] = notionBlockId;
+    postTitleMap[postId] = found.child_page.title;
   }
 
   if (checkForUpdates) {
@@ -218,15 +222,13 @@ const getChildPage = async (postId, checkForUpdates) => {
 
 router.get('/', async (_req, res) => {
   let html = await getParentPage();
-  res.send(`
-    <html>
-      <head></head>
-      <body>
-        <h1>thoughtblog</h1>
-        ${html}
-      </body>
-    </html>
-  `);
+
+  res.render('thoughtblog/main', {
+    title: 'thoughtblog | bottle of suze',
+    info: {
+      html
+    }
+  });
 
   // load child pages in background
   for (let postId in postIdMap) {
@@ -238,26 +240,17 @@ router.get('/:post_id', async (req, res, next) => {
   let postId = req.params.post_id;
   let html = await getChildPage(postId, false);
   let title = postTitleMap[postId] ?? postId;
-  res.send(`
-    <html>
-      <head></head>
-      <body>
-        <h3><a href='/thoughtblog'>thoughtblog</a></h3>
-        <h1>${title}</h1>
-        ${html}
-      </body>
-    </html>
-  `);
+
+  res.render('thoughtblog/post', {
+    title: `${title} | bottle of suze`,
+    postInfo: {
+      title,
+      html
+    }
+  });
 
   // check for update in background
   getChildPage(postId, true)
 });
-
-// // load child pages in background
-// getParentPage().then(async () => {
-//   for (let postId in postIdMap) {
-//     await getChildPage(postId, true);
-//   }
-// });
 
 module.exports = router;

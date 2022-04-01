@@ -1,0 +1,108 @@
+:root {
+  --main-color: rgb(19, 109, 212);
+  --hover-color: rgb(47, 179, 255);
+  --subtle-color: rgb(58, 93, 133);
+}
+
+.blog, .post {
+  /* font-family: 'Minion Pro'; */
+  font-family: Times;
+  font-size: 13pt;
+}
+
+footer a {
+  color: #bbb;
+}
+
+
+h3 > a.title {
+  color: #a44;
+  color: rgb(19, 109, 212);
+  text-decoration: none;
+  border: none;
+}
+
+h3 > a.title:hover {
+  color: rgb(47, 179, 255);
+  color: var(--hover-color);
+}
+
+/* links to the posts on the main page */
+a.thoughtpost {
+  text-underline-offset: 4px;
+  color: var(--main-color);
+}
+
+/* regular links within posts */
+a {
+  color: var(--main-color);
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  color: #d64d4d;
+  color: rgb(47, 179, 255);
+  color: var(--hover-color);
+}
+
+h1 {
+  font-size: 30pt;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-size: 20pt;
+  margin: 0.5em 0;
+}
+
+h3 {
+  font-size: 17pt;
+  margin: 0.5em 0;
+}
+
+h1, h2, h3, .title{
+  font-family: 'Secular One';
+  font-family: Georgia;
+}
+
+p {
+  margin: 1em 0 0.25em 0;
+}
+
+ul {
+  margin: auto 0;
+}
+
+p, ul, div {
+  line-height: 1.25;
+}
+
+div.caption {
+  margin: 0;
+  font-size: 11pt;
+}
+
+img {
+  margin: 1em 0 0 0;
+}
+
+p.quote {
+  margin: 0.5em 0 0 1em;
+  padding: 0 0 0 1em;
+  border-left: 2px solid var(--subtle-color);
+  color: var(--subtle-color);
+}
+
+img {
+  height: auto\9;
+  max-width: 100%;
+  width: auto\9;
+  max-height: 100%;
+}
+
+hr {
+  max-width: 300px;
+  border: none;
+  height: 1px;
+  background-color: var(--subtle-color);
+}
