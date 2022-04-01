@@ -181,7 +181,9 @@ ul > .good :before {
 }
 
 .movie-list .date {
-  font-size: 5pt;
+  /* hide for now, idk how to style this. */
+  visibility: hidden;
+  font-size: 6pt;
   /* color: #33d52; */
   color:#666;
   /* font-style: italic; */
