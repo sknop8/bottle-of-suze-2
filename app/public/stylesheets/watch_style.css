@@ -182,7 +182,7 @@ ul > .good :before {
 
 .movie-list .date {
   /* hide for now, idk how to style this. */
-  visibility: hidden;
+  display: none;
   font-size: 6pt;
   /* color: #33d52; */
   color:#666;
