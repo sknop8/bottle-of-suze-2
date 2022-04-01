@@ -52,19 +52,19 @@
 body {
   padding: 50px;
   font-family: 'Open Sans', Helvetica, sans-serif;
-  padding-left: 30vw;
+  margin: 0 auto;
   max-width: 600px;
   font-size: 12pt;
 }
 @media screen and (max-width: 850px) {
   body {
-    padding-left: 15vw;
+    padding: 30px
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    padding-left: 5vw;
+    padding: 20px;
   }
 }
 
