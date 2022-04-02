@@ -1,5 +1,6 @@
 include ./../layout
 include watch_menu
+include watch_imgs
 
 link(rel='stylesheet', href='/stylesheets/watch_style.css')
 
@@ -11,27 +12,25 @@ block content
   +menu(2021)
 
   br
-  
-  - var path = '../images/watch/'
 
   div.movie
     p.title Brokeback Mountain
     p.sub 2005, Ang Lee
-    img(data-src='#{path}/brokeback_mountain.jpg') 
+    img(data-src='#{brokeback_mountain}')
     p.date 22 May 2021
     p.description ahh, AH, ugh, these boys
 
   div.movie
     p.title Sound of Metal
     p.sub 2020, Darius Marder
-    img(data-src='#{path}/sound_of_metal_2.jpg') 
+    img(data-src='#{sound_of_metal}')
     p.date 23 Apr 2021
     p.description my personal favorite of the oscar nominees <br><br>a story about abilities and humanhood; of the central thing of life. It really shows how committed to telling this story the writers, director, and actors were - for it's so powerfully, effectively told, so nuanced  and specific and special. Riz Ahmed blew me away -- the way his character reacted and how it changed over the course of the movie and how he grew into accepting the silence, and moving forward with life though it has been so difficult and so devestating. The portrayal of the deaf community was so amazing as well, and Paul Raci's performance was great. What a precious, compassionate film.<br><br>I think my personal connection to this had to do with the specificity of Ahmed's and Cooke's characters--their being a former addict and former cutter, respectively--and the intensity by which they stayed alive and safe with/for each other, the role that music and being on the road played, and how scary it is for the thin thread by which you're hanging onto life to be threatened. Like, more than a film just about losing a physical ability, this was a film about what it could mean to be saved (does a person save you? a community? a god? yourself?), and how to survive the loss of one's anchor in life (and how to find enough peace to search for a new anchor).
 
   div.movie
     p.title Baby Face
     p.sub 1933
-    img(data-src='#{path}/baby_face_3.jpg') 
+    img(data-src='#{baby_face}')
     p.date 2 Mar 2021
     p.description barbara stanwyck's character remains mysterious, invulnerable and in control until the end ... the whole thing is strangely empowering - how she blazes through men, knocks them over with barely a struggle. overall an immensely satisfying story.
 
@@ -39,7 +38,7 @@ block content
   div.movie
     p.title Top Hat
     p.sub 1935
-    img(data-src='#{path}/top_hat.jpg') 
+    img(data-src='#{top_hat}')
     p.date 18 Feb 2021
     p.description :") <br><br>(note from the future: this first astaire/rogers dance musical remains my favorite after having seen a few more. will update once i've seen all of them, because they are all so wonderful. dance is the best expression of human joy!)
 
@@ -47,7 +46,7 @@ block content
   div.movie
     p.title Anna Christie
     p.sub 1930, Clarence Brown
-    img(data-src='#{path}/anna_christie_3.jpg') 
+    img(data-src='#{anna_christie}')
     p.date 8 Feb 2021
     p.description *~* the garbo *~*
 
@@ -55,7 +54,7 @@ block content
   div.movie
     p.title Stage Door
     p.sub 1937, Gregory La Cava
-    img(data-src='#{path}/stage_door_2.jpg') 
+    img(data-src='#{stage_door}')
     p.date 5 Feb 2021
     p.description :) a gem with ginger rogers, katharine hepburn, and so many other wonderful funny women (and the first pre-50s film I've watched that passes the bechdel test with flying colors!). I really loved Ginger Rogers' spunky, sarcastic, loyal character. The clever banter between Rogers' and Hepburn's characters had me laughing throughout.
 
@@ -63,7 +62,7 @@ block content
   div.movie
     p.title Bringing Up Baby
     p.sub 1939, Howard Hawks
-    img(data-src='#{path}/bringing_up_baby.jpg') 
+    img(data-src='#{bringing_up_baby}')
     p.date 2 Mar 2021
     p.description.
       you know these crazy cats kate and cary i think are becoming my favorite duo. this is a hilarious screwball! really funny and absurd
@@ -73,7 +72,7 @@ block content
   div.movie
     p.title Sylvia Scarlett
     p.sub 1935, George Cukor
-    img(data-src='#{path}/sylvia_scarlett.jpg') 
+    img(data-src='#{sylvia_scarlett}')
     p.date 29 Jan 2021
     p.description.
       omg this was a wild ride. katharine hepburn is a wonderful boy. interesting queer overtones, and now that i've watched a significant number of wwii-era and post-war films, I'm more attuned to the difference in pre-war films: looser, less structured, playful, more promiscuous. I wonder if this film was unsuccessful at the time because hepburn was too good at her part, truly androgynous 
@@ -87,21 +86,21 @@ block content
   div.movie
     p.title High Fidelity
     p.sub  2000, Stephen Frears
-    img(data-src='#{path}/high_fidelity_3.jpg') 
+    img(data-src='#{high_fidelity}')
     p.date 22 Jan 2021
     p.description john cusack very good dfw-esque music chump kind of dreamy but selfish and deluded..... jack black a surprising blast... fun to be in a record store in the 90s/00s, weird juggling of records, tapes, cds
 
   div.movie
     p.title Before Sunrise
     p.sub Richard Linklater, 1995
-    img(data-src='#{path}/before_sunrise.jpg') 
+    img(data-src='#{before_sunrise}')
     p.date 20 Jan 2021
     p.description ah wow. so beautiful, ethan hawke and julie delpy were so young and squishy and endearing, and I could feel the excited awkwardness of their first meeting and conversation, and then how things relaxed as they got to know each other in deeper and more nuanced ways, even each others physical presences. The film is essentially one long conversation, and it captures that wonderfully intimate and special space created between two people who are in a joint journey of knowing each other, and relishing being absorbed in life and in the other person. It also captures the liminal space of travel, where one is free from the confines of regular life, and the way the foreign and the new seem fuzzy and warm rather than cold and scary when in the safety of being with someone. From my own experience in travel, I've come to the conculsion that travelling with another person is a remarkably swift way to get to know them. To wander around, to ask questions, to be vulnerable, to act reflexively, to get into shenanigans, to rest together, to eat together, to navigate together: this is the exceptional privilege of being in a new place with a new person. I think the experience in this film speaks to that, and showcases so beautifully the space created at the conjunction of three beings: jesse, celine, and vienna. what a special film, one long, full, rich moment. 
 
   div.movie
     p.title Twin Peaks
     p.sub David Lynch & Mark Frost, 1990-1991
-    img(data-src='#{path}/twin_peaks_6.jpg') 
+    img(data-src='#{twin_peaks_6}')
     p.date Nov 2020 - Jan 2021
     p.description I should really say something about finally finishing twin peaks! I loved this show, it was wildly compelling I think solely because of the interesting and beautiful and strange characters, and kyle maclachlan's charm that grows on you. lynch's unpredictability gave the plot a nice mystery/horror edge; his pull toward the surreal and uncanny I think added depth instead of being downright frightening (like in his films), and at the core this was the drama of the heart of a small pacific northwest town and its weird happenings. the music was phenomenal: cool jazz and lush dream pop.
       //- todo: minify
