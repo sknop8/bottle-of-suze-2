@@ -1,4 +1,5 @@
 include ./../layout
+include art_imgs
 
 link(rel='stylesheet', href='/stylesheets/art_style.css')
 
@@ -33,15 +34,15 @@ block content
     - var path = '/images/art/2020'
 
     div.art
-      img(data-src='#{path}/2020_05_17.jpg')
+      img(data-src='#{p_2020_05_17}')
       p.sub RIP THIS PAINTING OIL ON CANVAS MAY 2020 IT WAS RUINED AKA "EPHEMERAL"
 
     div.art
-      img(data-src='#{path}/2020_05_16.jpg')
+      img(data-src='#{p_2020_05_16}')
       p.sub Oil on wood, 16 May 2020
 
     div.art
-      img(data-src='#{path}/2020_01_27_apt.jpg')
+      img(data-src='#{p_2020_01_27_apt}')
       p.sub Consider this a love letter to my new apartment.<br>Oil on canvas, 27 Jan 2020
       
     br
@@ -50,23 +51,23 @@ block content
     - var path = '/images/art/2019'
 
     div.art
-      img(data-src='#{path}/2019_09_21__basil_old.jpg')
+      img(data-src='#{p_2019_09_21__basil_old}')
       p.sub Basil during golden hour!<br>Oil, September 21, 2019
 
     div.art
-      img(data-src='#{path}/2019_09_20__trees_old.jpg')
+      img(data-src='#{p_2019_09_20__trees_old}')
       p.sub The trees in my backyard...with a lovely hint of autumn<br>Oil, September 20, 2019
     
     div.art 
-      img(data-src='#{path}/2019_06_26.jpg')
+      img(data-src='#{p_2019_06_26}')
       p.sub Oil on gessoed paper, 26 June 2019
 
     div.art 
-      img(data-src='#{path}/2019_06_20.jpg')
+      img(data-src='#{p_2019_06_20}')
       p.sub Oil on gessoed paper, 20 June 2019
 
     div.art 
-      img(data-src='#{path}/snow_2019_03_03.jpg')
+      img(data-src='#{p_snow_2019_03_03}')
       p.sub Poughkeepsie Winter<br>Acrylic on canvas, March 2019
 
     br
@@ -77,39 +78,39 @@ block content
     - var path = '/images/art/2018'
   
     div.art
-      img(data-src='#{path}/2018_12_chamounix.jpg')
+      img(data-src='#{p_2018_12_chamounix}')
       p.sub Chamounix<br>Oil, December 2018.
   
     div.art
-      img(data-src='#{path}/2018_12_figures_window.jpg')
+      img(data-src='#{p_2018_12_figures_window}')
       p.sub Oil on canvas, December 2018
 
     div.art
-      img(data-src='#{path}/11_25_18_acrylic_self.jpg')
+      img(data-src='#{p_11_25_18_acrylic_self}')
       p.sub acrylic, november 25 2018
 
     div.art 
-      img(data-src='#{path}/2018_11_05.jpg')
+      img(data-src='#{p_2018_11_05}')
       p.sub Oil on canvas, November. <br>More abandoned, than finished...based on Rembrandt's <a href='https://en.wikipedia.org/wiki/Self-Portrait_with_Dishevelled_Hair#/media/File:Self-portrait_(1628-1629),_by_Rembrandt.jpg' target='_blank'>"Self Portrait with Disheveled Hair"</a>.<br>The meticulous few hours I put into this were certainly a labor of love...so this self-portrait is special to me, even though I tried very hard to not be precious about it!
 
     div.art 
-      img(data-src='#{path}/2018_10_caravaggio.jpg')
+      img(data-src='#{p_2018_10_caravaggio}')
       p.sub Study of Caravaggio's <a href='https://en.wikipedia.org/wiki/The_Lute_Player_(Caravaggio)#/media/File:1596_Caravaggio,_The_Lute_Player_New_York.jpg' target='_blank'>"The Lute Player"</a>. Oil on canvas, October 2018
 
     div.art 
-      img(data-src='#{path}/2018_10_22.jpg')
+      img(data-src='#{p_2018_10_22}')
       p.sub Oil on canvas, October 2018
 
     div.art 
-      img(data-src='#{path}/2018_10_14_hand.jpg')
+      img(data-src='#{p_2018_10_14_hand}')
       p.sub Oil on canvas, October 2018
 
     div.art 
-      img(data-src='#{path}/long_2018_10_08.jpg')
+      img(data-src='#{p_long_2018_10_08}')
       p.sub My first longer figure painting in oils <br>October 2018
     
     div.art 
-      img(data-src='#{path}/short_2018_09_24.jpg')
+      img(data-src='#{p_short_2018_09_24}')
       p.sub Finished this one up... study of white cloth (I will go back and take better pictures of these later)<br>Oil on gessoed paper, September 2018
       
     br
@@ -131,6 +132,8 @@ block content
       img(data-src='#{path}/2016-04 2.jpg')
     div.art
       img(data-src='#{path}/2016-04 3.jpg')
+
+    //- TODO: move these 3d models to some CG section
     div.art
       img(data-src='#{path}/2016-02.png')
       p.sub My dear Keurig 3D modeled in Autodesk Maya :') and made out of the homesickness of my heart.
@@ -142,6 +145,7 @@ block content
     h2.year 2015
     - var path = '/images/art/2013-15'
 
+    //- TODO: move to animation section??
     div.art
       img(data-src='#{path}/2015_winter_animation.gif')
       p.sub Snowed In<br>Created in Photoshop, Fall 2015 

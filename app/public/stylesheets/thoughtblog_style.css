@@ -101,7 +101,7 @@ img {
 }
 
 hr {
-  max-width: 300px;
+  max-width: 250px;
   border: none;
   height: 1px;
   background-color: var(--subtle-color);

@@ -1,4 +1,5 @@
 include ./../layout
+include art_imgs
 
 link(rel='stylesheet', href='/stylesheets/art_style.css')
 
@@ -27,32 +28,31 @@ block content
     br
     a(name='2020')
     h2.year 2020
-    - var path = '/images/art/photos/2020'
+
     div.art.photojournal
-      img(data-src='#{path}/IMG_5278.jpg')
+      img(data-src='#{p_2020_05_dk}')
       p.sub Poughkeepsie, New York<br>2020/05<br>[film]
       
     br
     a(name='2019')
     h2.year 2019
-    - var path = '/images/art/photos/2019'
 
     div.art.photojournal
-      img(data-src='#{path}/P1170326.jpg')
+      img(data-src='#{p_2019_12_tel_aviv}')
       p.sub Tel Aviv, Israel<br>2019/12
 
 
     div.art.photojournal
-      img(data-src='#{path}/P1130633.jpg')
+      img(data-src='#{p_2019_10_portland}')
       p.sub Portland, Oregon<br>2019/10/23
 
 
-    div.art.photojournal 
-      img(data-src='#{path}/P1120246.jpg')
+    div.art.photojournal
+      img(data-src='#{p_2019_10_innisfree}')
       p.sub Innisfree Garden, Millbrook, New York<br>2019/10/06
 
     div.art.photojournal
-      img(data-src='#{path}/P1060920.jpg')
+      img(data-src='#{p_2019_10_hokkaido}')
       p.sub Abashiri, Hokkaidō, Japan<br>2019/07/11
 
           
