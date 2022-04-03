@@ -1,13 +1,18 @@
 :root {
-  --main-color: rgb(19, 109, 212);
+  --main-color: rgb(17, 100, 196);
   --hover-color: rgb(47, 179, 255);
-  --subtle-color: rgb(58, 93, 133);
+  --subtle-color: rgb(171, 200, 236);
+  --highlight-color:  rgb(47, 179, 255, 0.25);
 }
 
 .blog, .post {
   /* font-family: 'Minion Pro'; */
   font-family: Times;
   font-size: 13pt;
+}
+
+::selection {
+  background: var(--highlight-color);
 }
 
 footer a {
@@ -31,12 +36,14 @@ h3 > a.title:hover {
 a.thoughtpost {
   text-underline-offset: 4px;
   color: var(--main-color);
+  text-decoration-color: var(--subtle-color);
 }
 
 /* regular links within posts */
 a {
   color: var(--main-color);
-  text-underline-offset: 4px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--subtle-color);
 }
 
 a:hover {
@@ -89,8 +96,8 @@ img {
 p.quote {
   margin: 0.5em 0 0 1em;
   padding: 0 0 0 1em;
-  border-left: 2px solid var(--subtle-color);
-  color: var(--subtle-color);
+  border-left: 2px solid var(--main-color);
+  font-size: 11.5pt;
 }
 
 img {

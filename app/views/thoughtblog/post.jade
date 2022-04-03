@@ -8,3 +8,7 @@ block content
       a(href='/thoughtblog').title thoughtblog
     h1 #{postInfo.title}
     | !{postInfo.html}
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
