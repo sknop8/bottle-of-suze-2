@@ -237,7 +237,7 @@ router.get('/', async (_req, res) => {
 });
 
 router.get('/:post_id', async (req, res, next) => {
-  let postId = req.params.post_id;
+  let postId = postTitleToUrl(req.params.post_id);
   let html = await getChildPage(postId, false);
   let title = postTitleMap[postId] ?? postId;
 
