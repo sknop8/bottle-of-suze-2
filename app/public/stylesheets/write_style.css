@@ -1,7 +1,11 @@
+:root {
+  --text-color: #333;
+}
+
 body {
   /* background-color: #e8e3e3; */
   background-color: #e5dada;
-  color: #333;
+  color: var(--text-color);
   max-width: 600px;
 }
 
@@ -105,6 +109,11 @@ div.link {
   padding: 0 10px 0 10px;
   font-size: 10pt;
   font-weight: lighter;
+}
+
+a.stealth-link {
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 .title {
