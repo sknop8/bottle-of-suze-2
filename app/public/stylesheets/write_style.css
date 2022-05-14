@@ -18,6 +18,10 @@ body {
   body {
     max-width: 400px;
   }
+
+  .poem {
+    font-size: 13pt !important;
+  }
 }
 
 ::selection {
@@ -179,7 +183,13 @@ p.title:hover {
   margin: 0px;
   line-height: 1.3;
   font-size: 15pt;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+}
+
+pre.poem {
+  /* uncomment to wrap overflow poem lines */
+  /* but no great way to format this */
+  /* white-space:pre-wrap; */
 }
 
 .poem-title {
