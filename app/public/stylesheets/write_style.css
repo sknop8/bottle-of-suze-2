@@ -20,7 +20,7 @@ body {
   }
 
   .poem {
-    font-size: 13pt !important;
+    font-size: 14pt !important;
   }
 }
 
@@ -187,9 +187,9 @@ p.title:hover {
 }
 
 pre.poem {
-  /* uncomment to wrap overflow poem lines */
-  /* but no great way to format this */
-  /* white-space:pre-wrap; */
+  /* to wrap overflow poem lines */
+  /* not sure if this is the best way to format this */
+  white-space: pre-wrap;
 }
 
 .poem-title {
