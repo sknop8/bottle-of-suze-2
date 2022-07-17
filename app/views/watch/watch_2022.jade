@@ -1,0 +1,42 @@
+include ./../layout
+include watch_menu
+include watch_imgs
+
+link(rel='stylesheet', href='/stylesheets/watch_style.css')
+
+block content
+  h1
+    i 
+      a(href='/watch') watch
+    
+  +menu(2022)
+
+  br
+
+  div.movie
+    p.title Sympathy for Mr. Vengeance
+    p.sub 2002, Park Chan-wook
+    img(data-src=sympathy_for_mr_vengeance)
+    p.date 10 Jul 2022
+    p.description.
+      WOOOOWWWWWW stunning movie
+      <br>
+      dark, two vengeances pitted against each other
+      <br>
+      but whose vengeance is more justified? is it only in a deeply unjust world do we even need to ask questions like that?
+
+  div.movie
+    p.title Videodrome
+    p.sub 1983, David Cronenberg
+    img(data-src=videodrome)
+    p.date 14 Jun 2022
+    p.description freaky but so creative .. I liked it a lot, so many fascinating ideas and cool visual imagery. The underlying fear driving the film is of the effect of tv/screens on our psyches and how it drives our need for increasingly exciting stimulation and entertainment (it's established early on, but this basically means snuff film). I think what gives Cronenberg's treatment of this topic an unsettling vibe in <i>Videodrome</i> is its amorality. The film shows several reactive paths to this fear, but doesn't give any moral preference. I like so far of what I've watched of Cronenberg - while his films are sexual they aren't exploitative, and they seem to be more about exploring limits and edges than evoking visceral shock/horror for its own sake.
+
+
+
+ 
+  +menu(2022)
+      
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
