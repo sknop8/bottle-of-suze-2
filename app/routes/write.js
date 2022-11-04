@@ -110,5 +110,18 @@ router.get('/my-june-bug-and-other-stories', function(req, res, next) {
   );
 });
 
+router.get('/dusk', function(req, res, next) {
+  res.render('write/dusk',
+    { title: 'dusk, suspended | bottle of suze' }
+  );
+});
+
+router.get('/dusk/difficult-ask', function(req, res, next) {
+  res.render('write/difficult_ask',
+    { title: 'dusk, suspended | bottle of suze' }
+  );
+});
+
+
 
 module.exports = router;

@@ -9,6 +9,11 @@ body {
   max-width: 600px;
 }
 
+body.dusk {
+  background-color:rgb(223, 224, 243);
+  font-family: Georgia;
+}
+
 @media screen and (max-width: 850px) {
   body {
   }
@@ -359,4 +364,12 @@ pre.poem {
 
   /* border-bottom: 4px solid #e8a7a7; */
   transition-duration: 0.2s;
+}
+ 
+.dusk > .home {
+  color:rgb(118, 144, 217);
+}
+
+.dusk > .home:hover {
+  background-color:rgb(31, 60, 138);
 }
