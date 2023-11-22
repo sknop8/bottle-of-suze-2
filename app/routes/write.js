@@ -122,6 +122,12 @@ router.get('/dusk/difficult-ask', function(req, res, next) {
   );
 });
 
+router.get('/screen', function(req, res, next) {
+  res.render('write/screen',
+    { title: 'screen | bottle of suze' }
+  );
+});
+
 
 
 module.exports = router;
