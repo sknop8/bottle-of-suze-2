@@ -3,8 +3,8 @@ var router = express.Router();
 
 /* GET watch listing. */
 router.get('/', function(req, res, next) {
-  res.render('watch/watch_2022', {
-    title: 'watch | 2022 | bottle of suze'
+  res.render('watch/watch_index', {
+    title: 'watch index | bottle of suze'
   });
 });
 
