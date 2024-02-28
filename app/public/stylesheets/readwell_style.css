@@ -96,7 +96,7 @@ h2 {
 
 hr {
   border: 1px solid #d0dbd6;
- 
+
 }
 
 
@@ -127,7 +127,7 @@ img {
 }
 
 .title {
-  font-style: italic;
+  /* font-style: italic; */
   /* TODO: find an italic typeface for this that is not so aggressively italic */
   /* font-family: 'Garamond Pro'; */
   font-weight: bold;
@@ -154,7 +154,7 @@ img {
   padding: 20px 0 0 0;
   flex: 2;
   font-weight:  300;
-  
+
   /* color: #666; */
   /* font-size: 10pt; */
   /* font-family: 'Open Sans'; */

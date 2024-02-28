@@ -26,5 +26,9 @@ router.get('/music', function(req, res, next) {
   res.status(301).redirect("https://soundcloud.com/suzanne-knop/tracks");
 });
 
+router.get('/landing', function(req, res, next) {
+  res.render('landing', { title: 'bottle of suze' });
+});
+
 
 module.exports = router;

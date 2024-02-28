@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+body {
+    background-color: #eee;
+    color: #000;
+    font-family: 'Minion Pro';
+    font-size: 13pt;
+    max-width: 500px;
+    /* font-family: 'Space Mono'; */
+
+}
+
+h1, h2, h3,h4{
+    font-family: 'Space Mono';
+    /* font-style: italic; */
+    /* font-weight: 700; */
+
+}
+
+a {
+    font-family: 'Space Mono';
+    color: #898989;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+a:hover {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #9da4da;
+    color: #9da4da;
+}

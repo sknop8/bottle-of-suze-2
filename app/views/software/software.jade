@@ -9,19 +9,18 @@ block content
   a(href='https://github.com/sknop8' target='_blank') github
   br
   a(href='mailto:sknop8@gmail.com') contact
-    
+
   br
   br
-  
+
   - var path = '../images/software'
 
   p.description I am currently a software engineer at Bloomberg working on data visualization. Previously I worked at Adobe on Lightroom Web, did mobile app development at Zynga, and VR research at the University of Pennsylvania.
   p.description In my own time I like to work on visual and audio software projects using libraries like ThreeJS and ProcessingJS.
   br
-  
-  h2 QUICK LINKS because I need to clean up:
 
-  
+  h3 fun projects
+
   strong
     a(href='/software/clouds') /clouds
     br
@@ -79,8 +78,13 @@ block content
   br
   br
   hr
+  br
+  br
+  br
+  br
+  hr
 
-  div.project 
+  div.project
     p.title Story Maker
     p.blurb Interactive Plot-Based Narrative Generation
     img(data-src='#{path}/storymaker_demo.gif')
@@ -89,14 +93,14 @@ block content
     p.description
       a(href="https://github.com/sknop8/storymaker" target="_blank") github repo &rarr;
 
-  div.project 
+  div.project
     p.title More:Wonderful
     p.blurb Audio-processing video art web app
     img(data-src='#{path}/morewonderful.gif')
     p.description
       a(href="https://sknop8.github.io/morewonderful/" target="_blank") go here for a friend and a song &rarr;
     p.description JavaScript, Webpack, ThreeJS
-    p.description I wrote a function that maps an audio source's realtime fundamental frequency (pitch) onto an RGB color spectrum, and played around with creating video art programmatically. 
+    p.description I wrote a function that maps an audio source's realtime fundamental frequency (pitch) onto an RGB color spectrum, and played around with creating video art programmatically.
     p.description
       a(href="https://github.com/sknop8/morewonderful" target="_blank") (github repo)
 
@@ -105,11 +109,11 @@ block content
     p.blurb Technical Lead, Full Stack Engineer for <a href='hack4impact.org' target='_blank'>Hack4Impact</a>
     p.date Spring 2018
     img(data-src='#{path}/bread_and_roses.gif')
-    p.description. 
+    p.description.
       As the technical lead of a team of four, I oversaw the technical completion of this project for <a href='https://breadrosesfund.org/' target='_blank'>Bread & Roses Community Fund</a>, a local Philadelphia nonprofit that supports community-based movements for racial equity and economic opportunity through fundraising and grantmaking. My responsibilities included leading technical infrastructure decisions, mentoring other members, assigning weekly tasks, and communicating the project scope and details to the client.
       <br><br>
       <strong><i>The Problem</i></strong><br>
-      We built a Flask web application specifically for Bread & Roses' <a href='https://breadrosesfund.org/about/giving-project/' target='_blank'>Giving Project</a>, to help out with their overloaded recruitment process and longer-term donation tracking. The Giving Project seeks to bring together a group of diverse, passionate individuals, so cohort balance is a huge consideration in recruitment. 
+      We built a Flask web application specifically for Bread & Roses' <a href='https://breadrosesfund.org/about/giving-project/' target='_blank'>Giving Project</a>, to help out with their overloaded recruitment process and longer-term donation tracking. The Giving Project seeks to bring together a group of diverse, passionate individuals, so cohort balance is a huge consideration in recruitment.
       <br><br>
       <strong><i>The Product</i></strong><br>
       We built a <strong>recruitment management system</strong> that allows admins to track applicants, see overall cohort statistics, and search for and manage previous applicants. With this system, no applicant gets lost through the cracks, and balancing a new cohort becomes less of a headache.
@@ -120,7 +124,7 @@ block content
       This application was built off of <a href='https://github.com/hack4impact/flask-base' target='_blank'>flask-base</a>, a Hack4Impact open source Flask boilerplate app. It was written in Python and JavaScript, using Jinja templating and CSS.
       <br><br>
       <strong><i>See It Live</i></strong><br>
-      We deployed the product in July 2018 at <a href='https://giving-project.herokuapp.com/' target='_blank')>giving-project.herokuapp.com</a>! The application is only accessible to admins and participants, but feel free to check out the landing page and interest form. 
+      We deployed the product in July 2018 at <a href='https://giving-project.herokuapp.com/' target='_blank')>giving-project.herokuapp.com</a>! The application is only accessible to admins and participants, but feel free to check out the landing page and interest form.
 
 
   div.project
@@ -128,7 +132,7 @@ block content
     p.blurb Technical Lead, Full Stack Engineer for <a href='hack4impact.org' target='_blank'>Hack4Impact</a>
     p.date Fall 2017
     img(data-src='#{path}/habitat.png')
-    p.description. 
+    p.description.
        As the technical lead of a team of five, I oversaw the technical aspects of this project for <a href='https://www.habitatphiladelphia.org/' target='_blank'>Habitat for Humanity Philadelphia</a>, the Philly chapter of Habitat for Humanity, a global nonprofit housing organization with the vision of a world where everyone has a decent place to live.
        <br><br>
        <strong><i>The Problem</i></strong><br>
@@ -137,13 +141,13 @@ block content
        <strong><i>The Product</i></strong><br>
         We sought to solve Habitat's application process bottleneck by building a completely <strong>customizable, conditional application processing software</strong>.
         <br><br>
-        With this system, an admin can specify conditional formulae (like in Excel) that process each round of inputs in an application, automatically doing the calculations that would have been done by hand for each level of background checks. Admins can also customize forms and their order to represent each phase of checks. 
+        With this system, an admin can specify conditional formulae (like in Excel) that process each round of inputs in an application, automatically doing the calculations that would have been done by hand for each level of background checks. Admins can also customize forms and their order to represent each phase of checks.
         <br><br>
         <strong><i>Technology</i></strong><br>
         This application was built off of <a href='https://github.com/hack4impact/flask-base' target='_blank'>flask-base</a>, a Hack4Impact open source Flask boilerplate app. It was written in Python and JavaScript, using Jinja templating and CSS.
 
-        //- We deployed this product in February 2018 
-        
+    //- We deployed this product in February 2018
+
 
   div.project
     p.title Procedural City
@@ -159,7 +163,7 @@ block content
       <br><br>
       This project was written primarily using <a href='https://threejs.org/' target='_blank'>ThreeJS</a>, a 3d library for JavaScript. I created this project in the context of the experimental (CIS 700) Procedural Graphics class taught in the Spring of 2017.
 
-  div.project 
+  div.project
     p.title Music xx
     p.blurb Interactive Spotify 3D music experience
     p.date Spring 2016
