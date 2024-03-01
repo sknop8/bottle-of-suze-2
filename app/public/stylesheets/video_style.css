@@ -48,7 +48,7 @@ img {
   padding-top: 56.25%;
   position: relative;
 }
- 
+
 .iframe-container iframe {
    border: 0;
    height: 100%;
@@ -94,6 +94,10 @@ a {
 
 a:hover {
   font-style: italic;
+}
+
+a.section, a.section :hover {
+  color: #eeeeee;
 }
 
 footer {
