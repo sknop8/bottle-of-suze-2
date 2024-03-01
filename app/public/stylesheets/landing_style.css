@@ -33,11 +33,30 @@ body {
 
 }
 
+/* @media screen and (max-width: 600px) {
+    body {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        max-width: 300;
+    }
+} */
+
+@media screen and (max-width: 850px) {
+    body {
+      padding-left: 14vw;
+      padding-right: 14vw;
+    }
+  }
+
 h1, h2, h3,h4{
     font-family: 'Space Mono';
     /* font-style: italic; */
     /* font-weight: 700; */
 
+}
+
+div {
+    /* text-align: justify; */
 }
 
 a {
