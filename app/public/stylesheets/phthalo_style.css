@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    background-color: #484b69;
+    color:#cdbb89;
+    font-family: 'Space Mono'
+  }
+
+
+footer a {
+    color: #4b4432;
+  }
+

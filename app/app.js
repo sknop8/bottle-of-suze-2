@@ -1,25 +1,26 @@
 // load .env
 require('dotenv').config()
 
-var subdomain = require('express-subdomain');
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+const subdomain = require('express-subdomain');
+const express = require('express');
+const path = require('path');
+const favicon = require('serve-favicon');
+const logger = require('morgan');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var watch = require('./routes/watch');
-var write = require('./routes/write');
-var art = require('./routes/art');
-var software = require('./routes/software');
-var video = require('./routes/video');
-var read = require('./routes/read');
-var readwell = require('./routes/readwell');
-var thoughtblog = require('./routes/thoughtblog');
+const index = require('./routes/index');
+const watch = require('./routes/watch');
+const write = require('./routes/write');
+const art = require('./routes/art');
+const software = require('./routes/software');
+const video = require('./routes/video');
+const read = require('./routes/read');
+const readwell = require('./routes/readwell');
+const thoughtblog = require('./routes/thoughtblog');
+const phthalo = require('./routes/phthalo');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,11 +50,12 @@ app.use('/video', video);
 app.use('/read', read);
 app.use('/readwell', readwell);
 app.use('/thoughtblog', thoughtblog);
+app.use('/phthalo', phthalo);
 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  const err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
