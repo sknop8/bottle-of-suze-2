@@ -8,6 +8,12 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/2024', function(req, res, next) {
+  res.render('watch/watch_2024', {
+    title: 'watch | 2024 | bottle of suze'
+  });
+});
+
 router.get('/2022', function(req, res, next) {
   res.render('watch/watch_2022', {
     title: 'watch | 2022 | bottle of suze'

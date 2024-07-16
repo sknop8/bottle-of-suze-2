@@ -1,0 +1,29 @@
+include ./../layout
+include watch_menu
+include watch_imgs
+
+link(rel='stylesheet', href='/stylesheets/watch_style.css')
+
+block content
+  h1
+    i
+      a(href='/watch') watch
+
+  +menu(2024)
+
+  br
+
+  div.movie
+    p.title The Age of Innocence
+    p.sub 1993, Martin Scorcese
+    img(data-src=the_age_of_innocence)
+    p.date 28 Jun 2024
+    //- p.description.
+
+
+
+  +menu(2024)
+
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/8.7.1/lazyload.min.js")
+  script.
+    new LazyLoad();
