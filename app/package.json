@@ -15,7 +15,7 @@
     "express-subdomain": "^1.0.5",
     "jade": "~1.11.0",
     "markdown-js": "0.0.4",
-    "morgan": "~1.9.0",
+    "morgan": "~1.9.1",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
