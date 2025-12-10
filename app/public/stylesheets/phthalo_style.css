@@ -21,12 +21,59 @@
     font-style: italic;
     font-weight: bold;
 }
+h1,h2,h3 {
+    font-family: 'Space Mono';
+}
 
 body {
     background-color: #484b69;
     color:#cdbb89;
-    font-family: 'Space Mono'
+    /* font-family: 'Space Mono'; */
+
+    font-family: 'Minion Pro';
+    font-size: 13pt;
+    max-width: 500px;
   }
+
+  a{
+    text-decoration: none;
+    color:#cdbb89;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,0);
+
+  }
+
+  .dir {
+    color:#89702b;
+    text-decoration: none;
+    font-family: 'Space Mono';
+    font-size: 11pt;
+    font-weight: bold;
+    /* border-bottom: 1px solid #89702b; */
+  }
+  a:hover {
+        border: 1px solid #89702b;
+
+
+  }
+
+  .gray {
+    color:#6e859a;
+    font-size: 9pt;
+    font-family: 'Space Mono';
+    /* font-style: italic; */
+
+  }
+
+  body {
+    padding: 0 5vw 0 5vw;
+
+  }
+
+  center {
+    padding: 0 5vw 0 5vw;
+  }
+
 
 
 footer a {
