@@ -77,6 +77,12 @@ body {
 
 
 footer a {
-    color: #4b4432;
-  }
+    color: #6e859a;
+    font-family: 'Space Mono';
+
+}
+footer a:hover {
+    border: 1px solid rgba(0,0,0,0);
+
+}
 
