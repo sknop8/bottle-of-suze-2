@@ -128,6 +128,12 @@ router.get('/screen', function(req, res, next) {
   );
 });
 
+router.get('/rain-1', function(req, res, next) {
+  res.render('write/rain_1',
+    { title: 'rain 1 | bottle of suze' }
+  );
+});
+
 
 
 module.exports = router;
