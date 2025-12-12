@@ -51,10 +51,9 @@ body {
     font-weight: bold;
     /* border-bottom: 1px solid #89702b; */
   }
+
   a:hover {
-        border: 1px solid #89702b;
-
-
+    border: 1px solid #935a34;
   }
 
   .gray {
